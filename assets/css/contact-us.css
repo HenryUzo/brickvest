@@ -1,4 +1,4 @@
-/* @import url(c:\Users\Henry Tavia\Brickvest\assets\css\font\stylesheet.css); */
+@import url(c:\Users\Henry Tavia\Brickvest\assets\css\font\stylesheet.css);
 * {
   margin: 0;
   padding: 0;
@@ -425,7 +425,7 @@
 }
 
 .inv-section {
-  background-image: url("../img/background-inv.png");
+  background-image: url("/assets/img/background-inv.png");
   background-position: center center;
   background-size: cover;
 }
@@ -716,7 +716,7 @@
 }
 
 .client-testimony .testimony-row {
-  background-image: url("../img/client-background.png");
+  background-image: url("/assets/img/client-background.png");
   background-size: cover;
   background-position: center center;
   height: 65vh;
@@ -1171,4 +1171,225 @@ iframe#youtube {
   transform: translate(0%, 0%);
   -webkit-transform: translate(0%, 0%);
 }
-/*# sourceMappingURL=home.css.map */
+
+.banner {
+  height: auto;
+}
+
+.banner .about-banner .banner-row .banner-image .image {
+  width: 60%;
+}
+
+@media (min-width: 600px) {
+  .banner .about-banner .banner-row .banner-image .image {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .banner .about-banner .banner-row .banner-image .image {
+    width: 60%;
+  }
+}
+
+.banner .about-banner .banner-row .banner-image .image img {
+  width: 100%;
+}
+
+.banner .about-banner .banner-row .heading h1 {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin: 30px 0;
+}
+
+@media (min-width: 1000px) {
+  .banner .about-banner .banner-row .heading h1 {
+    text-align: left;
+  }
+}
+
+div.row.support-form-row {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(1) > h4 {
+  text-transform: uppercase;
+  color: #000000;
+  padding: 30px 0;
+  font-weight: 700;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(2) > form.row.g-3 > div.col-md-6:nth-of-type(1) > input#inputEmail4 {
+  height: 60px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(2) > form.row.g-3 > div.col-md-6:nth-of-type(2) > input#inputPassword4 {
+  height: 60px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(2) > form.row.g-3 > div.col-12 > textarea.form-control {
+  height: 200px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(3) > h4 {
+  color: #000000;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: italic;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(4) > form.row.g-3 > div.col-md-6:nth-of-type(1) > input#inputEmail4 {
+  height: 60px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(4) > form.row.g-3 > div.col-md-6:nth-of-type(2) > input#inputPassword4 {
+  height: 60px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(4) > form.row.g-3 > div.col-12 > button.btn.btn-primary {
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 50px;
+  background-color: #ca2233;
+  border: none;
+}
+
+@media (max-width: 500px) {
+  div.row.support-form-row > div.col-12:nth-of-type(4) > form.row.g-3 > div.col-12 > button.btn.btn-primary {
+    display: block;
+  }
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(4) > form.row.g-3 > div.col-12 > button.btn.btn-primary a {
+  color: white;
+}
+
+div.row.support-form-row > div.col-12:nth-of-type(4) > form.row.g-3 > div.col-12 > button.btn.btn-primary a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+div.container-fluid.ask > div.row {
+  background-color: #545454;
+  padding: 30px auto;
+}
+
+div.container-fluid.ask > div.row > div.col-md-5 {
+  background-color: #CFF5FF;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  div.container-fluid.ask > div.row > div.col-md-5 {
+    padding-left: 130px;
+    text-align: left;
+  }
+}
+
+div.container-fluid.ask > div.row > div.col-md-5 > h3 {
+  padding-bottom: 10px;
+}
+
+div.container-fluid.ask > div.row > div.col-md-5 > p {
+  padding-bottom: 10px;
+  color: #000000;
+  font-weight: 700;
+}
+
+div.container-fluid.ask > div.row > div.col-md-5 > button.col-md-2 {
+  text-align: left;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  color: #ca2233;
+  font-weight: 700;
+}
+
+div.container-fluid.ask > div.row > div.col-md-7 {
+  padding-bottom: 60px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  div.container-fluid.ask > div.row > div.col-md-7 {
+    padding-left: 70px;
+    padding-right: 90px;
+    padding-top: 40px;
+    text-align: left;
+  }
+}
+
+div.container-fluid.ask > div.row > div.col-md-7 > h3 {
+  color: white;
+}
+
+div.container-fluid.ask > div.row > div.col-md-7 > p {
+  color: white;
+}
+
+div.container-fluid.ask > div.row > div.col-md-7 form.row.subscribe-form > div.col-md-5:nth-of-type(1) > input#inputEmail4 {
+  height: 60px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0pt 20px;
+}
+
+div.container-fluid.ask > div.row > div.col-md-7 form.row.subscribe-form > div.col-md-5:nth-of-type(2) > input#inputPassword4 {
+  height: 60px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div.container-fluid.ask > div.row > div.col-md-7 form.row.subscribe-form > button.col-md-2 {
+  text-align: left;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+/*# sourceMappingURL=contact-us.css.map */

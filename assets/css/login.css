@@ -1,4 +1,5 @@
-/* @import url(c:\Users\Henry Tavia\Brickvest\assets\css\font\stylesheet.css); */
+@import url(c:\Users\Henry Tavia\Brickvest\assets\css\font\stylesheet.css);
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -425,7 +426,7 @@
 }
 
 .inv-section {
-  background-image: url("../img/background-inv.png");
+  background-image: url("/assets/img/background-inv.png");
   background-position: center center;
   background-size: cover;
 }
@@ -716,7 +717,7 @@
 }
 
 .client-testimony .testimony-row {
-  background-image: url("../img/client-background.png");
+  background-image: url("/assets/img/client-background.png");
   background-size: cover;
   background-position: center center;
   height: 65vh;
@@ -1171,4 +1172,277 @@ iframe#youtube {
   transform: translate(0%, 0%);
   -webkit-transform: translate(0%, 0%);
 }
-/*# sourceMappingURL=home.css.map */
+
+.background {
+  background-image: url("/assets/img/background.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+
+.background div.container.login-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.background div.container.login-page .login-row {
+  background-color: white;
+  -webkit-box-shadow: 0px 32px 25px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 32px 25px 0px rgba(50, 50, 50, 0.75);
+}
+
+@media (max-width: 768px) {
+  .background div.container.login-page .login-row {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+.background div.container.login-page .login-row .left-image {
+  padding-left: 0;
+  position: relative;
+}
+
+.background div.container.login-page .login-row .left-image .logo-image {
+  top: 7%;
+  left: 8%;
+}
+
+.background div.container.login-page .login-row .left-image > div.image {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.background div.container.login-page .login-row .left-image > div.image > img {
+  width: 100%;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column {
+  padding: 5% 10%;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column h4 {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column h4 b {
+  color: #ca2233;
+  font-weight: 900;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column p {
+  color: #000000;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email {
+  margin-top: 15px;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon > span.glyphicon {
+  color: #ca2233;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password {
+  margin-top: 15px;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon > span.glyphicon {
+  color: #ca2233;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me {
+  margin-top: 30px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  color: #000000;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox + label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: #bbbbbb;
+  list-style: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:hover + label:before {
+  background: #f35429;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:focus + label:before {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:checked + label:before {
+  background: #f35429;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:disabled + label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #ddd;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:checked + label:after {
+  content: '';
+  list-style: none;
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass {
+  margin-top: 30px;
+  text-align: right;
+}
+
+@media (max-width: 500px) {
+  .background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass {
+    margin-top: 0;
+  }
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass a {
+  font-weight: 600;
+  color: #ca2233;
+  text-decoration: underline;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in {
+  margin-top: 20px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 50px;
+  background-color: #ca2233;
+  border: none;
+}
+
+@media (max-width: 500px) {
+  .background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter {
+    display: block;
+  }
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter a {
+  color: white;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in span {
+  margin-left: 50px;
+  color: #000000;
+}
+
+@media (max-width: 500px) {
+  .background div.container.login-page .login-row .right-form .form-row .form-column .get-in span {
+    display: block;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in span a {
+  margin-left: 20px;
+  color: #ca2233;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 {
+  margin-top: 30px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(1) {
+  color: #000000;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(2) {
+  margin-left: 40px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(3) {
+  margin-left: 20px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(4) {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=login.css.map */
