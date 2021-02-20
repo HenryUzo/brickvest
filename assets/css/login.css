@@ -1,4 +1,5 @@
 @import url(c:\Users\Henry Tavia\Brickvest\assets\css\font\stylesheet.css);
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -1172,266 +1173,276 @@ iframe#youtube {
   -webkit-transform: translate(0%, 0%);
 }
 
-.banner {
-  height: auto;
+.background {
+  background-image: url("/assets/img/background.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
 }
 
-.banner .about-banner .banner-row .banner-image .image {
-  width: 60%;
+.background div.container.login-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-@media (min-width: 600px) {
-  .banner .about-banner .banner-row .banner-image .image {
-    width: 40%;
-    margin: auto;
-  }
-}
-
-@media (min-width: 1000px) {
-  .banner .about-banner .banner-row .banner-image .image {
-    width: 60%;
-  }
-}
-
-.banner .about-banner .banner-row .banner-image .image img {
-  width: 100%;
-}
-
-.banner .about-banner .banner-row .heading h1 {
-  font-size: 48px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #000000;
-  text-align: center;
-  margin: 30px 0;
-}
-
-@media (min-width: 1000px) {
-  .banner .about-banner .banner-row .heading h1 {
-    text-align: left;
-  }
-}
-
-div.container.who-we-are > div.row.who-we-are-row {
-  padding-top: 0px;
-  padding-bottom: 20px;
-}
-
-@media (min-width: 1000px) {
-  div.container.who-we-are > div.row.who-we-are-row {
-    padding-top: 40px;
-  }
-}
-
-div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-}
-
-@media (min-width: 1000px) {
-  div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info {
-    text-align: left;
-  }
-}
-
-div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info > p:nth-of-type(1) {
-  color: #ca2233;
-  font-weight: 700;
-}
-
-div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info > h3 {
-  font-size: 24px;
-  font-weight: 800;
-  margin-bottom: 35px;
-}
-
-div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info > div.image {
-  width: 100%;
-  overflow: hidden;
-}
-
-@media (min-width: 600px) {
-  div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info > div.image {
-    width: 50%;
-    margin: auto;
-  }
-}
-
-div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info > div.image > img {
-  width: 100%;
-}
-
-@media (min-width: 1000px) {
-  div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info > div.image > img {
-    height: 100%;
-    width: auto;
-  }
-}
-
-div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info-image.text-center > div.image {
-  width: 100%;
-  overflow: hidden;
-}
-
-div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info-image.text-center > div.image > img {
-  width: 100%;
-}
-
-@media (min-width: 1000px) {
-  div.container.who-we-are > div.row.who-we-are-row > div.col-lg-6.info-image.text-center > div.image > img {
-    height: 100%;
-    width: auto;
-  }
-}
-
-div.policy {
-  background-color: #2E2E2E;
-}
-
-div.policy > div.container.row.policy-row.text-center.mx-auto {
-  padding-bottom: 60px;
-}
-
-div.policy > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy {
-  padding-top: 60px;
-}
-
-div.policy > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > div.image {
-  width: 86px;
-  height: 86px;
-  margin: auto;
+.background div.container.login-page .login-row {
   background-color: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.75);
-  margin-top: 40px;
+  -webkit-box-shadow: 0px 32px 25px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 32px 25px 0px rgba(50, 50, 50, 0.75);
 }
 
-div.policy > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > div.image > img {
-  position: relative;
-  width: 80%;
-  top: 50%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-div.policy > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > h5 {
-  margin-top: 30px;
-  color: white;
-}
-
-div.policy > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > p {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 30px;
-  color: white;
-}
-
-div.why-choose-us > div.row.why-choose-us-row {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 50px;
-}
-
-@media (min-width: 1000px) {
-  div.why-choose-us > div.row.why-choose-us-row {
-    text-align: left;
-    padding-top: 0px;
-    padding-bottom: 0px;
+@media (max-width: 768px) {
+  .background div.container.login-page .login-row {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 }
 
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6:nth-of-type(1) > div.image {
+.background div.container.login-page .login-row .left-image {
+  padding-left: 0;
+  position: relative;
+}
+
+.background div.container.login-page .login-row .left-image .logo-image {
+  top: 7%;
+  left: 8%;
+}
+
+.background div.container.login-page .login-row .left-image > div.image {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.background div.container.login-page .login-row .left-image > div.image > img {
   width: 100%;
 }
 
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6:nth-of-type(1) > div.image > img {
-  width: 100%;
+.background div.container.login-page .login-row .right-form .form-row .form-column {
+  padding: 5% 10%;
 }
 
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto {
-  padding-left: 50px;
-  padding-right: 70px;
-}
-
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto > p:nth-of-type(1) {
-  color: #ca2233;
-  font-weight: 700;
-}
-
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto > h3 {
+.background div.container.login-page .login-row .right-form .form-row .form-column h4 {
+  margin-top: 15px;
   font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
+  text-transform: uppercase;
   font-weight: 800;
-  margin-bottom: 35px;
 }
 
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto > div.image.d-block.d-lg-none {
-  width: 100%;
+.background div.container.login-page .login-row .right-form .form-row .form-column h4 b {
+  color: #ca2233;
+  font-weight: 900;
 }
 
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto > div.image.d-block.d-lg-none > img {
-  width: 80%;
+.background div.container.login-page .login-row .right-form .form-row .form-column p {
+  color: #000000;
 }
 
-@media (min-width: 600px) {
-  div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto > div.image.d-block.d-lg-none > img {
-    width: 100%;
-  }
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email {
+  margin-top: 15px;
+  border: none;
 }
 
-div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto > p:nth-of-type(2) {
-  padding-top: 50px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
 }
 
-@media (min-width: 1000px) {
-  div.why-choose-us > div.row.why-choose-us-row > div.col-lg-6.my-auto > p:nth-of-type(2) {
-    padding-top: 0px;
-  }
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon > span.glyphicon {
+  color: #ca2233;
 }
 
-div.boast {
-  background-color: #CA2233;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-div.boast > div.container.row.policy-row.text-center.mx-auto {
-  padding-bottom: 20px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password {
+  margin-top: 15px;
+  border: none;
 }
 
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy {
-  padding-top: 20px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
 }
 
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > div.image {
-  width: 86px;
-  height: 86px;
-  margin: auto;
-  border-radius: 5px;
-  margin-top: 40px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon > span.glyphicon {
+  color: #ca2233;
 }
 
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > div.image > img {
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me {
+  margin-top: 30px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox + label {
   position: relative;
-  width: 80%;
-  top: 50%;
-  left: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  cursor: pointer;
+  padding: 0;
+  color: #000000;
 }
 
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > h5 {
-  margin-top: 10px;
-  color: white;
-  font-size: 48px;
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox + label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: #bbbbbb;
+  list-style: none;
 }
 
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-lg-4.the-policy > p {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 10px;
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:hover + label:before {
+  background: #f35429;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:focus + label:before {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:checked + label:before {
+  background: #f35429;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:disabled + label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #ddd;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:checked + label:after {
+  content: '';
+  list-style: none;
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass {
+  margin-top: 30px;
+  text-align: right;
+}
+
+@media (max-width: 500px) {
+  .background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass {
+    margin-top: 0;
+  }
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass a {
+  font-weight: 600;
+  color: #ca2233;
+  text-decoration: underline;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in {
+  margin-top: 20px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 50px;
+  background-color: #ca2233;
+  border: none;
+}
+
+@media (max-width: 500px) {
+  .background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter {
+    display: block;
+  }
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter a {
   color: white;
 }
-/*# sourceMappingURL=about-us.css.map */
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in span {
+  margin-left: 50px;
+  color: #000000;
+}
+
+@media (max-width: 500px) {
+  .background div.container.login-page .login-row .right-form .form-row .form-column .get-in span {
+    display: block;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column .get-in span a {
+  margin-left: 20px;
+  color: #ca2233;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 {
+  margin-top: 30px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(1) {
+  color: #000000;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(2) {
+  margin-left: 40px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(3) {
+  margin-left: 20px;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(4) {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=login.css.map */

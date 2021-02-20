@@ -1,0 +1,84 @@
+@import "./login";
+@import "./variable";
+
+
+.background {
+    div.container.login-page {
+        .login-row {
+            @media (max-width:768px) {
+                max-width: 600px;
+                margin: 0 auto;
+                padding-top: 10px;
+                padding-bottom: 50px;
+                margin-top: 50px;
+                
+            }
+            .left-image {
+                >div.image {
+                    height: 620px;
+
+                    >img {
+                        width: 160%;
+                    }
+                }
+            }
+
+            .right-form {
+                .form-row {
+                    .form-column {
+                        padding: 5% 10%;
+
+                        .image {
+                            img {}
+                        }
+
+                        h4 {}
+
+                        div.form-group.col-md-6 {
+                            >div.input-group.first-name {
+                                @include inputform ()
+                            }
+                        }
+
+                        div.form-group.col-md-6 {
+                            >div.input-group.last-name {
+                                @include inputform ()
+                            }
+                        }
+
+                        div.form-group.col-md-6 {
+                            >div.input-group.email {
+                                @include inputform ()
+                            }
+                        }
+
+                        div.form-group.col-md-6 {
+                            >div.input-group.username {
+                                @include inputform ()
+                            }
+                        }
+
+                        div.form-group.col-md-6 {
+                            >div.input-group.password {
+                                @include inputform ()
+                            }
+                        }
+
+                        div.form-group.col-md-6 {
+                            >div.input-group.confirm-password {
+                                @include inputform ()
+                            }
+                        }
+                        .get-in {
+
+                            .enter {}
+
+                            span {}
+                        }
+                        div.sign-in-options.col-12 {}
+                    }
+                }
+            }
+        }
+    }
+}
