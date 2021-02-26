@@ -68,9 +68,8 @@
                             >select#inputGroupSelect04 {
                                 height: 70px;
                                 padding-left: 30px;
-                                option {
-                                    
-                                }
+
+                                option {}
 
 
                             }
@@ -79,6 +78,7 @@
 
                     >div.col-3.button {
                         padding: 0;
+
                         >button.btn.btn-outline-secondary {
                             height: 70px;
                             width: 100%;
@@ -315,6 +315,37 @@ div.properties-sold {
             }
         }
 
+        div.col-12.filter-btn {
+           
+            >button {
+                width: 150px;
+                margin: auto;
+                @media (max-width:500px) {
+                    display: block;
+
+                }
+
+                margin-top: 60px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                border-radius: 0;
+                padding: 15px 20px;
+                background-color: $primaryColor;
+                border: none;
+                a{
+                    color:white;
+                    text-decoration: none;
+                }
+               
+
+                &:hover {
+                    text-decoration: none;
+                    background-color: $secondaryColor;
+                }
+
+            }
+        }
+
     }
 }
 
@@ -450,11 +481,11 @@ div.omo-onile.container {
             >div.image {
                 width: 100%;
                 overflow: hidden;
-                
+
                 >img {
                     width: 100%;
 
-                   
+
                 }
             }
         }
