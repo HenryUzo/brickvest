@@ -1201,130 +1201,415 @@ iframe#youtube {
   width: 100%;
 }
 
-.banner .about-banner .banner-row .heading {
-  margin: 100px auto;
+div.view-carousel.container-fluid {
+  padding-left: 0;
 }
 
-.banner .about-banner .banner-row .heading h1 {
-  font-size: 36px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #000000;
-  text-align: center;
-  margin: 30px 0;
-  padding-bottom: 0px;
-}
-
-@media (min-width: 1000px) {
-  .banner .about-banner .banner-row .heading h1 {
-    font-size: 48px;
-    text-align: left;
+@media (max-width: 800px) {
+  div.view-carousel.container-fluid {
+    padding-right: 0;
   }
 }
 
-.banner .about-banner .banner-row .heading .image {
-  width: 100%;
-  text-align: center;
+div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > ol.carousel-indicators {
+  top: 70%;
+}
+
+div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > ol.carousel-indicators > li {
+  width: 180px;
+  height: 117px;
+  text-indent: 0;
   overflow: hidden;
+  margin-right: 20px;
+  -webkit-box-shadow: -1px 24px 56px 0px rgba(0, 0, 0, 0.836);
+  -moz-box-shadow: -1px 24px 56px 0px rgba(0, 0, 0, 0.856);
 }
 
-.banner .about-banner .banner-row .heading .image img {
-  width: 80%;
-}
-
-.banner .about-banner .banner-row .heading div.row.location-filter {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.banner .about-banner .banner-row .heading div.row.location-filter > div.col-9.dropdown > div.input-group > select#inputGroupSelect04 {
-  height: 70px;
-  padding-left: 30px;
-}
-
-.banner .about-banner .banner-row .heading div.row.location-filter > div.col-3.button {
-  padding: 0;
-}
-
-.banner .about-banner .banner-row .heading div.row.location-filter > div.col-3.button > button.btn.btn-outline-secondary {
-  height: 70px;
+div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > ol.carousel-indicators > li > img {
   width: 100%;
-  background-color: #ca2233;
-  color: white;
-  border-radius: 0;
 }
 
-.banner .about-banner .banner-row .heading div.row.location-filter > div.col-3.button > button.btn.btn-outline-secondary:hover {
-  outline: none;
-}
-
-div.properties-view.container > div.row {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-top: 40px;
-}
-
-div.properties-view.container > div.row p.topic {
-  color: #ca2233;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-bottom: 30px;
-}
-
-div.properties-view.container > div.row > div.col-lg-5 > div.image {
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-}
-
-div.properties-view.container > div.row > div.col-lg-5 > div.image > img {
-  width: 100%;
+div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > div.carousel-inner > div.carousel-item {
+  background-color: black;
+  height: 75vh;
 }
 
 @media (min-width: 600px) {
-  div.properties-view.container > div.row > div.col-lg-5 > div.image > img {
-    width: 50%;
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > div.carousel-inner > div.carousel-item {
+    height: 60vh;
   }
 }
 
 @media (min-width: 1000px) {
-  div.properties-view.container > div.row > div.col-lg-5 > div.image > img {
-    width: 100%;
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > div.carousel-inner > div.carousel-item {
+    height: 90vh;
   }
 }
 
-div.properties-view.container > div.row > div.col-lg-7.my-auto {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: auto;
+div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > div.carousel-inner > div.carousel-item > img {
+  width: auto;
+  height: 100%;
+  opacity: 0.4;
+}
+
+@media (min-width: 600px) {
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > div.carousel-inner > div.carousel-item > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > div.carousel-inner > div.carousel-item > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > a.carousel-control-prev {
+  background-color: #ca2233;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: calc(85% - 70px);
+  border-right: 1px white solid;
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > a.carousel-control-prev {
+    left: calc(91% - 70px);
+  }
+}
+
+@media (min-width: 1000px) {
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > a.carousel-control-prev {
+    top: 300px;
+  }
+}
+
+div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > a.carousel-control-next {
+  z-index: 9999;
+  background-color: #ca2233;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: calc(85%);
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > a.carousel-control-next {
+    left: calc(91%);
+  }
+}
+
+@media (min-width: 1000px) {
+  div.view-carousel.container-fluid > div.row > div.col-lg-7 > div#carouselExampleFade > a.carousel-control-next {
+    top: 300px;
+  }
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties {
+  padding: 30px;
+  padding-right: 50px;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > div.col-12.text-right.bread-crumbs {
+  margin-bottom: 20px;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > div.col-12.text-right.bread-crumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > div.col-12.text-right.bread-crumbs a span:nth-of-type(2) {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > div.col-12.heading-big {
+  padding-bottom: 40px;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > div.col-12.heading-big > h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > div.col-3.components {
   text-align: center;
 }
 
-@media (min-width: 1000px) {
-  div.properties-view.container > div.row > div.col-lg-7.my-auto {
-    padding-left: 60px;
-    text-align: left;
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > div.col-3.components > h5 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > p.col-12.details {
+  margin-top: 30px;
+  overflow: scroll;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 30px;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > p.mini-heading {
+  color: #ca2233;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties > div.row > h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties div.col-12.buttons {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties div.col-12.buttons .button-primary {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: #ca2233;
+  border: none;
+  margin-right: 20px;
+}
+
+@media (min-width: 600px) {
+  div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties div.col-12.buttons .button-primary {
+    padding: 15px 50px;
   }
 }
 
-div.properties-view.container > div.row > div.col-lg-7.my-auto > h3.hot-sale-name {
-  font-size: 30px;
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties div.col-12.buttons .button-primary:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties div.col-12.buttons .button-secondary {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: transparent;
+  color: #ca2233;
+  border: 1px #ca2233 solid;
+}
+
+@media (min-width: 600px) {
+  div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties div.col-12.buttons .button-secondary {
+    padding: 15px 50px;
+  }
+}
+
+div.view-carousel.container-fluid > div.row div.col-lg-5.view-properties div.col-12.buttons .button-secondary:hover {
+  color: white;
+  background-color: #ca2233;
+}
+
+div.container-fluid.information {
+  background-color: #2f2f2f;
+}
+
+div.container-fluid.information > div.more-info.container > h1.heading-average {
+  font-size: 20px;
+  text-align: center;
+  color: white;
   text-transform: uppercase;
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.the-property {
+  margin-bottom: 40px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.the-property > div.col-12 {
+  border-bottom: 1px #707070 solid;
+  margin-bottom: 20px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.the-property > div.col-12 > p.heading {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.the-property > div.det > div.prop {
+  margin-bottom: 20px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.the-property > div.det > div.prop span {
+  color: #B1B1B1;
   font-weight: 700;
-  padding-bottom: 10px;
 }
 
-div.properties-view.container > div.row > div.col-lg-7.my-auto > h5 {
-  font-size: 28px;
-  padding-bottom: 10px;
+div.container-fluid.information > div.more-info.container > div.row.the-property > div.det > div.prop > span.value {
+  font-weight: 400;
 }
 
-div.properties-view.container > div.row > div.col-lg-7.my-auto > p.property-details {
-  padding-bottom: 30px;
+div.container-fluid.information > div.more-info.container > div.row.the-property > div.det > div.prop > span.unit {
+  font-weight: 400;
 }
 
-div.properties-sold {
-  background-color: #303030;
+div.container-fluid.information > div.more-info.container > div.row.features {
+  margin-bottom: 40px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.features > div.col-12 {
+  border-bottom: 1px #707070 solid;
+  margin-bottom: 20px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.features > div.col-12 > p.heading {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.features > div.det > div.prop {
+  margin-bottom: 20px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.features > div.det > div.prop span {
+  color: #B1B1B1;
+  font-weight: 700;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.features > div.det > div.prop > span.value {
+  font-weight: 400;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.features > div.det > div.prop > span.unit {
+  font-weight: 400;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.schools {
+  margin-bottom: 40px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.schools > div.col-12:nth-of-type(1) {
+  border-bottom: 1px #707070 solid;
+  margin-bottom: 20px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.schools > div.col-12:nth-of-type(1) > p.heading {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.schools > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark {
+  --bs-table-bg: #2F2F2F;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.schools > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark > thead {
+  background: transparent;
+  border: none;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.schools > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark > thead > tr > th {
+  color: white;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.schools > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark > tbody > tr {
+  border-bottom: none;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.surrounding {
+  margin-bottom: 40px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.surrounding > div.col-12:nth-of-type(1) {
+  border-bottom: 1px #707070 solid;
+  margin-bottom: 20px;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.surrounding > div.col-12:nth-of-type(1) > p.heading {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.surrounding > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark {
+  --bs-table-bg: #2F2F2F;
+  background-color: transparent;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.surrounding > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark > thead {
+  background: transparent;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.surrounding > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark > thead > tr > th {
+  color: white;
+}
+
+div.container-fluid.information > div.more-info.container > div.row.surrounding > div.col-12:nth-of-type(2) table.table.table-borderless.table-dark > tbody > tr {
+  border-bottom: none;
+}
+
+div.container-fluid.information > div.more-info.container div.col-12.buttons {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+div.container-fluid.information > div.more-info.container div.col-12.buttons .button-primary {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: #ca2233;
+  border: none;
+  margin-right: 20px;
+  outline: none;
+}
+
+@media (min-width: 600px) {
+  div.container-fluid.information > div.more-info.container div.col-12.buttons .button-primary {
+    padding: 15px 50px;
+  }
+}
+
+div.container-fluid.information > div.more-info.container div.col-12.buttons .button-primary:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  outline: none;
+}
+
+div.container-fluid.information > div.more-info.container div.col-12.buttons .button-secondary {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px white solid;
+  outline: none;
+}
+
+@media (min-width: 600px) {
+  div.container-fluid.information > div.more-info.container div.col-12.buttons .button-secondary {
+    padding: 15px 50px;
+  }
+}
+
+div.container-fluid.information > div.more-info.container div.col-12.buttons .button-secondary:hover {
+  color: white;
+  background-color: #ca2233;
+  outline: none;
 }
 
 div.properties-sold .owl-carousel .owl-height {
@@ -1340,13 +1625,12 @@ div.properties-sold > div.row.text-center.container.mx-auto > div.col-12:nth-of-
   padding-bottom: 40px;
 }
 
-div.properties-sold > div.row.text-center.container.mx-auto > div.col-12:nth-of-type(1) > h3 {
-  color: white;
-}
-
 div.properties-sold > div.row.text-center.container.mx-auto div.properties.row {
   background-color: white;
   margin: auto 30px;
+  box-shadow: -1px 10px 36px -16px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: -1px 10px 36px -16px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: -1px 10px 36px -16px rgba(0, 0, 0, 0.46);
 }
 
 div.properties-sold > div.row.text-center.container.mx-auto div.properties.row:hover > div.image.col-12 {
@@ -1439,138 +1723,4 @@ div.properties-sold > div.row.text-center.container.mx-auto div.col-12.filter-bt
   text-decoration: none;
   background-color: #000000;
 }
-
-div.why-buy {
-  background-color: #ECF5FF;
-}
-
-div.why-buy > div.row {
-  padding-top: 50px;
-  padding-bottom: 70px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-@media (min-width: 1000px) {
-  div.why-buy > div.row {
-    padding-left: auto;
-    padding-right: auto;
-  }
-}
-
-div.why-buy > div.row > div.col-12.text-center > h3 {
-  padding-bottom: 50px;
-  font-weight: 700;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto {
-  background-color: white;
-  max-width: 850px;
-  box-shadow: -1px 21px 90px -29px rgba(0, 0, 0, 0.78);
-  -webkit-box-shadow: -1px 21px 90px -29px rgba(0, 0, 0, 0.78);
-  -moz-box-shadow: -1px 21px 90px -29px rgba(0, 0, 0, 0.78);
-}
-
-@media (min-width: 1000px) {
-  div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table {
-  --table-row-border-color: none;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table > thead {
-  background-color: transparent;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table > thead > tr > th {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  font-size: 18px;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table > thead > tr th:nth-of-type(1) {
-  text-align: left;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table > thead > tr th:nth-of-type(2) {
-  color: #ca2233;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table > thead > tr th:nth-of-type(3) {
-  color: #bbbbbb;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table > tbody > tr > td {
-  text-align: center;
-  padding-bottom: 40px;
-  border-bottom: none;
-}
-
-div.why-buy > div.row > div.col-12:nth-of-type(2) > div.container.mx-auto > table.table > tbody > tr td:nth-of-type(1) {
-  text-align: left;
-}
-
-div.boast {
-  background-color: #F5F5F5;
-}
-
-div.boast > div.container.row.policy-row.text-center.mx-auto {
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-md-4.the-policy > div.image {
-  width: 100%;
-  overflow: hidden;
-}
-
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-md-4.the-policy > h5 {
-  padding-top: 15px;
-  font-size: 40px;
-  color: #000000;
-  font-weight: 800;
-}
-
-div.boast > div.container.row.policy-row.text-center.mx-auto > div.col-md-4.the-policy > p {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-div.omo-onile.container > div.row {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-div.omo-onile.container > div.row > div.col-lg-5 > div.image {
-  width: 100%;
-  overflow: hidden;
-}
-
-div.omo-onile.container > div.row > div.col-lg-5 > div.image > img {
-  width: 100%;
-}
-
-div.omo-onile.container > div.row > div.col-lg-7.my-auto {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-div.omo-onile.container > div.row > div.col-lg-7.my-auto > h3.hot-sale-name {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-div.omo-onile.container > div.row > div.col-lg-7.my-auto > h3.hot-sale-name span {
-  display: block;
-  color: #ca2233;
-}
-
-div.omo-onile.container > div.row > div.col-lg-7.my-auto > p.property-details {
-  color: #000000;
-}
-/*# sourceMappingURL=brickvest-dev.css.map */
+/*# sourceMappingURL=properties-view.css.map */

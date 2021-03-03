@@ -224,7 +224,11 @@ div.properties-view.container {
 
 div.properties-sold {
     background-color: #303030;
-
+    .owl-carousel{
+        .owl-height{
+            height: 500px !important;
+        }
+    }
     >div.row.text-center.container.mx-auto {
         padding-top: 50px;
         padding-bottom: 70px;
@@ -325,7 +329,7 @@ div.properties-sold {
 
                 }
 
-                margin-top: 60px;
+                margin-top: 0;
                 margin-bottom: 20px;
                 font-size: 16px;
                 border-radius: 0;
