@@ -115,6 +115,7 @@ overflow: hidden;
 
     .banner-indicator {
         margin-bottom: 0;
+        top: 95%;
 
         @media (min-width:1000px) {
             top: 75%;
@@ -234,9 +235,10 @@ overflow: hidden;
                     @media (min-width:300px) {}
 
                     .image {
-                        width: 100%;
+                        width: 90%;
 
                         text-align: center;
+                        height: 280px;
 
                         @media (min-width:600px) {
                             height: 550px;
@@ -657,87 +659,142 @@ overflow: hidden;
 
             padding-bottom: 40px;
         }
+        .the-properties-carousel{
+            .properties-carousel-content {
 
-        .properties-carousel {
-            height: 55vh;
+                .image {
+                    position: relative;
+                    width: 80%;
+                    margin: auto;
+                    overflow: hidden;
+                    border-radius: 30px;
+                    margin-bottom: 20px;
+                    -webkit-box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
+                    -moz-box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
+                    box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
 
-            @media (min-width:1680px) {
-                height: 45vh;
-            }
 
-            .properties-carousel-indicator {
-                button {
-                    background-color: $secondaryColor;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 100%;
-                    border: none;
-                    margin: 0 5px;
+                    .price {
+                        background-color: $primaryColor;
+                        padding: 5px 20px;
+                        color: white;
+                        top: 8%;
+                        left: 5%;
+                    }
+
+                    img {
+                        width: 100%;
+
+                    }
                 }
 
-                button.active {
-                    background-color: $primaryColor;
+                h5 {
+                    width: 80%;
+                    margin: auto;
+                    font-size: 20px;
+
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin-bottom: 10px;
                 }
-            }
 
-            .properties-carousel-inner {
-                .properties-carousel-item {
-                    .row {
+                .location {
+                    width: 80%;
+                    margin: auto;
 
-                        .image {
-                            position: relative;
-                            width: 80%;
-                            margin: auto;
-                            overflow: hidden;
-                            border-radius: 30px;
-                            margin-bottom: 20px;
-                            -webkit-box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
-                            -moz-box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
-                            box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
+                    span {
+                        text-transform: uppercase;
+                        font-weight: 600;
 
-
-                            .price {
-                                background-color: $primaryColor;
-                                padding: 5px 20px;
-                                color: white;
-                                top: 8%;
-                                left: 5%;
-                            }
-
-                            img {
-                                width: 100%;
-
-                            }
-                        }
-
-                        h5 {
-                            width: 80%;
-                            margin: auto;
-                            font-size: 20px;
-
-                            text-transform: uppercase;
-                            font-weight: 700;
-                            margin-bottom: 10px;
-                        }
-
-                        .location {
-                            width: 80%;
-                            margin: auto;
-
-                            span {
-                                text-transform: uppercase;
-                                font-weight: 600;
-
-                                img {
-                                    width: 15px;
-                                    margin-right: 8px;
-                                }
-                            }
+                        img {
+                            width: 15px;
+                            margin-right: 8px;
                         }
                     }
                 }
             }
         }
+
+        // .properties-carousel {
+        //     height: 55vh;
+
+        //     @media (min-width:1680px) {
+        //         height: 45vh;
+        //     }
+
+        //     .properties-carousel-indicator {
+        //         button {
+        //             background-color: $secondaryColor;
+        //             width: 15px;
+        //             height: 15px;
+        //             border-radius: 100%;
+        //             border: none;
+        //             margin: 0 5px;
+        //         }
+
+        //         button.active {
+        //             background-color: $primaryColor;
+        //         }
+        //     }
+
+        //     .properties-carousel-inner {
+        //         .properties-carousel-item {
+        //             .row {
+
+        //                 .image {
+        //                     position: relative;
+        //                     width: 80%;
+        //                     margin: auto;
+        //                     overflow: hidden;
+        //                     border-radius: 30px;
+        //                     margin-bottom: 20px;
+        //                     -webkit-box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
+        //                     -moz-box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
+        //                     box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
+
+
+        //                     .price {
+        //                         background-color: $primaryColor;
+        //                         padding: 5px 20px;
+        //                         color: white;
+        //                         top: 8%;
+        //                         left: 5%;
+        //                     }
+
+        //                     img {
+        //                         width: 100%;
+
+        //                     }
+        //                 }
+
+        //                 h5 {
+        //                     width: 80%;
+        //                     margin: auto;
+        //                     font-size: 20px;
+
+        //                     text-transform: uppercase;
+        //                     font-weight: 700;
+        //                     margin-bottom: 10px;
+        //                 }
+
+        //                 .location {
+        //                     width: 80%;
+        //                     margin: auto;
+
+        //                     span {
+        //                         text-transform: uppercase;
+        //                         font-weight: 600;
+
+        //                         img {
+        //                             width: 15px;
+        //                             margin-right: 8px;
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 
