@@ -234,6 +234,12 @@
   }
 }
 
+@media (min-width: 1000px) {
+  .banner-carousel .banner-carousel-body .banner-item .row .text p {
+    margin: 0;
+  }
+}
+
 .banner-carousel .banner-carousel-body .banner-item .row .pics .image {
   width: 90%;
   margin: auto;
