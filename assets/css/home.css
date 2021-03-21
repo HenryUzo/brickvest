@@ -1,4 +1,4 @@
-@import url(c:\Users\Henry Tavia\Brickvest\assets\css\font\stylesheet.css);
+@import url(c:\Users\LOYAL\brickvest-main\assets\css\font\stylesheet.css);
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +30,8 @@
 .banner {
   height: 100vh;
   background: #cde2fb;
-  background: linear-gradient(67deg, #cde2fb 0%, #e7f0fd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#cde2fb), to(#ffffff));
+  background: linear-gradient(180deg, #cde2fb 0%, #ffffff 100%);
 }
 
 @media (min-width: 600px) {
@@ -119,7 +120,7 @@
 
 @media (min-width: 1000px) {
   .banner-carousel .banner-indicator {
-    top: 75%;
+    top: 95%;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -169,10 +170,6 @@
   background-color: #ca2233;
 }
 
-.banner-carousel .banner-carousel-body {
-  margin-top: 3%;
-}
-
 @media (min-width: 1679px) {
   .banner-carousel .banner-carousel-body {
     max-width: 1400px;
@@ -189,14 +186,14 @@
   color: #ca2233;
   width: 80%;
   margin: auto;
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 700;
-  word-break: break-word;
   margin-bottom: 20px;
 }
 
 .banner-carousel .banner-carousel-body .banner-item .row .text p {
   width: 90%;
+  margin: auto;
   font-size: 18px;
   word-break: break-word;
   padding-bottom: 40px;
@@ -239,13 +236,13 @@
 
 .banner-carousel .banner-carousel-body .banner-item .row .pics .image {
   width: 90%;
+  margin: auto;
   text-align: center;
-  height: 280px;
 }
 
 @media (min-width: 600px) {
   .banner-carousel .banner-carousel-body .banner-item .row .pics .image {
-    height: 550px;
+    height: 50vh;
   }
 }
 

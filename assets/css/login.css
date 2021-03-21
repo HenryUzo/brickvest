@@ -1,4 +1,4 @@
-@import url(c:\Users\Henry Tavia\Brickvest\assets\css\font\stylesheet.css);
+@import url(c:\Users\LOYAL\brickvest-main\assets\css\font\stylesheet.css);
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 * {
   margin: 0;
@@ -31,7 +31,8 @@
 .banner {
   height: 100vh;
   background: #cde2fb;
-  background: linear-gradient(67deg, #cde2fb 0%, #e7f0fd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#cde2fb), to(#ffffff));
+  background: linear-gradient(180deg, #cde2fb 0%, #ffffff 100%);
 }
 
 @media (min-width: 600px) {
@@ -115,11 +116,12 @@
 
 .banner-carousel .banner-indicator {
   margin-bottom: 0;
+  top: 95%;
 }
 
 @media (min-width: 1000px) {
   .banner-carousel .banner-indicator {
-    top: 75%;
+    top: 95%;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -169,10 +171,6 @@
   background-color: #ca2233;
 }
 
-.banner-carousel .banner-carousel-body {
-  margin-top: 3%;
-}
-
 @media (min-width: 1679px) {
   .banner-carousel .banner-carousel-body {
     max-width: 1400px;
@@ -189,14 +187,14 @@
   color: #ca2233;
   width: 80%;
   margin: auto;
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 700;
-  word-break: break-word;
   margin-bottom: 20px;
 }
 
 .banner-carousel .banner-carousel-body .banner-item .row .text p {
   width: 90%;
+  margin: auto;
   font-size: 18px;
   word-break: break-word;
   padding-bottom: 40px;
@@ -238,13 +236,14 @@
 }
 
 .banner-carousel .banner-carousel-body .banner-item .row .pics .image {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   text-align: center;
 }
 
 @media (min-width: 600px) {
   .banner-carousel .banner-carousel-body .banner-item .row .pics .image {
-    height: 550px;
+    height: 50vh;
   }
 }
 
@@ -642,30 +641,7 @@
   color: #000000;
 }
 
-.properties .properties-row .properties-carousel {
-  height: 55vh;
-}
-
-@media (min-width: 1680px) {
-  .properties .properties-row .properties-carousel {
-    height: 45vh;
-  }
-}
-
-.properties .properties-row .properties-carousel .properties-carousel-indicator button {
-  background-color: #000000;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  border: none;
-  margin: 0 5px;
-}
-
-.properties .properties-row .properties-carousel .properties-carousel-indicator button.active {
-  background-color: #ca2233;
-}
-
-.properties .properties-row .properties-carousel .properties-carousel-inner .properties-carousel-item .row .image {
+.properties .properties-row .the-properties-carousel .properties-carousel-content .image {
   position: relative;
   width: 80%;
   margin: auto;
@@ -676,7 +652,7 @@
   box-shadow: 0px 15px 25px 0px rgba(50, 50, 50, 0.51);
 }
 
-.properties .properties-row .properties-carousel .properties-carousel-inner .properties-carousel-item .row .image .price {
+.properties .properties-row .the-properties-carousel .properties-carousel-content .image .price {
   background-color: #ca2233;
   padding: 5px 20px;
   color: white;
@@ -684,11 +660,11 @@
   left: 5%;
 }
 
-.properties .properties-row .properties-carousel .properties-carousel-inner .properties-carousel-item .row .image img {
+.properties .properties-row .the-properties-carousel .properties-carousel-content .image img {
   width: 100%;
 }
 
-.properties .properties-row .properties-carousel .properties-carousel-inner .properties-carousel-item .row h5 {
+.properties .properties-row .the-properties-carousel .properties-carousel-content h5 {
   width: 80%;
   margin: auto;
   font-size: 20px;
@@ -697,17 +673,17 @@
   margin-bottom: 10px;
 }
 
-.properties .properties-row .properties-carousel .properties-carousel-inner .properties-carousel-item .row .location {
+.properties .properties-row .the-properties-carousel .properties-carousel-content .location {
   width: 80%;
   margin: auto;
 }
 
-.properties .properties-row .properties-carousel .properties-carousel-inner .properties-carousel-item .row .location span {
+.properties .properties-row .the-properties-carousel .properties-carousel-content .location span {
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.properties .properties-row .properties-carousel .properties-carousel-inner .properties-carousel-item .row .location span img {
+.properties .properties-row .the-properties-carousel .properties-carousel-content .location span img {
   width: 15px;
   margin-right: 8px;
 }
@@ -1356,8 +1332,8 @@ iframe#youtube {
   background: white;
   width: 2px;
   height: 2px;
-  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
