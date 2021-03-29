@@ -1,9 +1,16 @@
 @import "./variable";
 @import "./font/stylesheet";
+
+
 * {
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: 'Masiva';
+}
+
 
 .carousel {
     --carousel-width: 100%;
@@ -21,6 +28,67 @@
         --carousel-height: 69vh;
     }
 }
+
+
+.intro{
+    .bg-img{
+        padding-left: 0;
+        .image{
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+    .content{
+
+        
+        .button-primary {
+
+            font-size: 16px;
+            border-radius: 0;
+            padding: 15px 20px;
+            background-color: $primaryColor;
+            border: none;
+            margin-right: 20px;
+            outline: none;
+
+            @media (min-width:600px) {
+
+                padding: 15px 50px;
+            }
+            &:hover {
+                text-decoration: none;
+                color: white;
+                background-color: $secondaryColor;
+                outline: none;
+            }
+        }
+        .link{
+            a{
+                color: $primaryColor;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .banner {
     height: 100vh;
@@ -56,13 +124,13 @@
                 align-items: center;
                 margin-left: 0;
                 @media (min-width: 1000px) {
-                    margin-left: 20%;
+                    margin-left: 15%;
                 }
                 @media (min-width:1100px) {
-                    margin-left: 34%;
+                    margin-left: 24%;
                 }
                 @media (min-width:1679px) {
-                    margin-left: 48%;
+                    margin-left: 40%;
                 }
                 a {
                     color: $secondaryColor;

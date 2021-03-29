@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Masiva';
+}
+
 .carousel {
   --carousel-width: 100%;
   --carousel-height: 80vh;
@@ -78,19 +82,19 @@
 
 @media (min-width: 1000px) {
   .banner .navigation .navigation-collapse .navigation-nav {
-    margin-left: 20%;
+    margin-left: 15%;
   }
 }
 
 @media (min-width: 1100px) {
   .banner .navigation .navigation-collapse .navigation-nav {
-    margin-left: 34%;
+    margin-left: 24%;
   }
 }
 
 @media (min-width: 1679px) {
   .banner .navigation .navigation-collapse .navigation-nav {
-    margin-left: 48%;
+    margin-left: 40%;
   }
 }
 
