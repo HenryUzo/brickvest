@@ -1,0 +1,95 @@
+@import "./variable";
+@import "./font/stylesheet";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Masiva';
+}
+
+
+.co-earn{
+    .set-up-row{
+        .set-up{
+            .set-up-pill{
+                li{
+                    button{
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        outline: none;
+                        border: none;
+                        border-radius: 50px;
+                        margin: 20px;
+
+                    }
+                    button.active{
+                        background-color: $primaryColor;
+                    }
+                }
+            }
+            .search-bar{
+                margin-bottom: 40px;
+            }
+            .co-earn-content{
+                .co-earn-pane{
+                    .co-earn-pane-content{
+                        .image{
+                            width: 100%;
+                            overflow: hidden;
+                            border-radius: 10px;
+                            
+                            img{
+                                width: 100%;
+                            }
+                            .price{
+                                background-color:white ;
+                                color: $primaryColor;
+                                padding: 10px;
+                                font-size: 13px;
+                                margin: 10px;
+                            }
+                        }
+                        .details{
+                            
+                            .building-name{
+                                font-weight: 600;
+                            }
+                            .return{
+
+                            }
+                            .unit-details{
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                .amoumts-per-unit{
+                                    font-size: 14px;
+                                    .unit-amount{
+                                        color: $primaryColor;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .units-available{
+                                    font-size: 14px;
+                                    .unit-number{
+                                        color: $primaryColor;
+                                        font-weight: 600;
+                                    }
+                                }
+                               
+                            }
+                            .invest-button{
+                                color: $primaryColor;
+                                text-decoration: none;
+                                font-weight: 600;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

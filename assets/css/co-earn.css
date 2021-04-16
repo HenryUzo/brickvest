@@ -1,0 +1,78 @@
+@import url(c:\Users\LOYAL\brickvest-main\assets\css\font\stylesheet.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Masiva';
+}
+
+.co-earn .set-up-row .set-up .set-up-pill li button {
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+.co-earn .set-up-row .set-up .set-up-pill li button.active {
+  background-color: #ca2233;
+}
+
+.co-earn .set-up-row .set-up .search-bar {
+  margin-bottom: 40px;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .image img {
+  width: 100%;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .image .price {
+  background-color: white;
+  color: #ca2233;
+  padding: 10px;
+  font-size: 13px;
+  margin: 10px;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .details .building-name {
+  font-weight: 600;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .details .unit-details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .details .unit-details .amoumts-per-unit {
+  font-size: 14px;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .details .unit-details .amoumts-per-unit .unit-amount {
+  color: #ca2233;
+  font-weight: 600;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .details .unit-details .units-available {
+  font-size: 14px;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .details .unit-details .units-available .unit-number {
+  color: #ca2233;
+  font-weight: 600;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane .co-earn-pane-content .details .invest-button {
+  color: #ca2233;
+  text-decoration: none;
+  font-weight: 600;
+}
+/*# sourceMappingURL=co-earn.css.map */

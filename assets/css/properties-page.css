@@ -31,6 +31,44 @@ body {
   }
 }
 
+.intro .bg-img {
+  padding-left: 0;
+}
+
+.intro .bg-img .image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro .content .button-primary {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: #ca2233;
+  border: none;
+  margin-right: 20px;
+  outline: none;
+}
+
+@media (min-width: 600px) {
+  .intro .content .button-primary {
+    padding: 15px 50px;
+  }
+}
+
+.intro .content .button-primary:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  outline: none;
+}
+
+.intro .content .link a {
+  color: #ca2233;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .banner {
   height: 100vh;
   background: #cde2fb;
