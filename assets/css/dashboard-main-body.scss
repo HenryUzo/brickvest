@@ -1,0 +1,26 @@
+@import "./variable";
+@import "./dashboard-menu";
+@import "./font/stylesheet";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Masiva";
+}
+
+.the-dashboard-body {
+    .the-dashboard-row {
+     
+        .dashboard-main {
+            margin-top: 20px;
+            border-radius: 30px;
+            background-color: #f9f9f9;
+            margin-bottom: 50px;
+       
+        }
+    }
+}

@@ -32,88 +32,249 @@
 
 <body>
 
-
-<div class="container co-earn col-10">
-    <div class="row set-up-row">
-        <div class="col-12 set-up">
-            <ul class="nav nav-pills mb-3 set-up-pill" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">My Apartments</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Explore</button>
-                </li>
-             
-              </ul>
-
-              <nav class="navbar navbar-light bg-light search-bar">
-                <div class="container-fluid">
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </nav>
-
-
-              <div class="tab-content co-earn-content" id="pills-tabContent">
-                <div class="tab-pane fade show active co-earn-pane" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                   <div class="row">
-                    <div class=" text-left co-earn-pane-content row col-6">
-                        <div class="col-5 unit-image">
-                         <div class="image ">
-                             <span class="price position-absolute">N24,000,000</span>
-                             <img src="./assets/img/pics1.png" alt="">
-                         </div>
+    <div class="the-dashboard-body container-fluid">
+        <div class="row the-dashboard-row">
+            <div class="the-dashboard-menu col-2 ">
+                <div class="menu-fixed position-fixed">
+                    <div class="the-menu mx-auto">
+                        <div class="menu-item-logo ">
+                            <div class="logo row ">
+                                <div class="left col-6">
+                                    <div class="image"><img src="./assets/img/brickvest-admin-assets/Brickvest-Logo.svg"
+                                            alt=""></div>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="right col-4">
+                                    <div class="image"><img src="./assets/img/brickvest-admin-assets/menu.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                         <div class="col-6 details my-auto">
-                             <h4 class="building-name">Jenkins Apartment</h4>
-                             <p class="return">Rent Return on 12 months</p>
-                             <div class="unit-details row">
-                                 <div class="col-6 amoumts-per-unit">
-                                     <p><span class="unit-amount">10000</span><br>Per Unit</p>
-                                 </div>
-                                 <div class="col-6 units-available">
-                                     <p><span class="unit-number">768</span><br>Units Available</p>
-                                 </div>
-                             </div>
-                             <a href="" class="invest-button">Invest <span><img src="./assets/img/left.png" alt=""></span></a>
-                         </div>
-                     </div>
-                     <div class=" text-left co-earn-pane-content row col-6">
-                         <div class="col-5 unit-image">
-                          <div class="image ">
-                              <span class="price position-absolute">N24,000,000</span>
-                              <img src="./assets/img/pics1.png" alt="">
-                          </div>
-                         </div>
-                         
-                          <div class="col-6 details my-auto">
-                              <h4 class="building-name">Jenkins Apartment</h4>
-                              <p class="return">Rent Return on 12 months</p>
-                              <div class="unit-details row">
-                                  <div class="col-6 amoumts-per-unit">
-                                      <p><span class="unit-amount">10000</span><br>Per Unit</p>
-                                  </div>
-                                  <div class="col-6 units-available">
-                                      <p><span class="unit-number">768</span><br>Units Available</p>
-                                  </div>
-                              </div>
-                              <a href="" class="invest-button">Invest <span><img src="./assets/img/left.png" alt=""></span></a>
-                          </div>
-                      </div>
-                   </div> 
-                  
-                    
-                    
+                        <div class="menu-item menu-active">
+                            <a href="">
+                                <div class="image "><img src="./assets/img/brickvest-admin-assets/home-admin.svg"
+                                        alt="">
+                                </div><span class="label">Overview</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="">
+                                <div class="image"><img src="./assets/img/brickvest-admin-assets/Co-own.svg" alt="">
+                                </div>
+                                <span class="label">Co-Own</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="">
+                                <div class="image"><img src="./assets/img/brickvest-admin-assets/profile.svg" alt="">
+                                </div>
+                                <span class="label">Profile</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="">
+                                <div class="image"><img src="./assets/img/brickvest-admin-assets/history.svg" alt="">
+                                </div>
+                                <span class="label">History</span>
+                            </a>
+                        </div>
+                        <div class="menu-item chat">
+                            <div class="image"><img
+                                    src="./assets/img/brickvest-admin-assets/Icon material-chat-bubble.svg" alt="">
+                            </div><span class="label">Chat</span>
+                        </div>
+                        <div class="pdf-report">
+                            <div class="image"><img src="./assets/img/brickvest-admin-assets/pdf-analysis.svg" alt="">
+                            </div>
+                            <h5 class="mt-5">PDF Report</h5>
+                            <p>Download your <br> Annual Report <br> here</p>
+                            <button type="submit" href="" class="btn btn-success btn-lg  button-primary">Download PDF
+                            </button>
+                        </div>
+                        <div class="download-pdf">
+                            <a href="" class="image">
+                                <img src="./assets/img/brickvest-admin-assets/wallet.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
-               
-              </div>
+
+            </div>
+            <div class="dashboard-main col-10">
+                <div class="container-fluid main-body-one">
+                    <div class="row main-row-1">
+                        <div class="col-11 logo">
+                            <div class="image">
+                                <img src="./assets/img/brickvest-admin-assets/Brickvest-Logo.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-1 notify">
+                            <div class="image">
+                                <img src="./assets/img/brickvest-admin-assets/notification.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row main-row-2">
+                        <div class=" wallet-card">
+                            <div class="myWallet">
+                                <h5>My Wallet</h5>
+                                <div class="row wallet">
+                                    <div class=" left">
+                                        <div class="image"><img src="./assets/img/brickvest-admin-assets/wallet.svg"
+                                                alt=""></div>
+                                        <h4 class="price">N<span class="amount">120000</span></h4>
+                                        <a href="" class="withdraw"><img
+                                                src="./assets/img/brickvest-admin-assets/download.png"
+                                                alt=""><span>Withdraw</span></a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="image"><img
+                                                src="./assets/img/brickvest-admin-assets/money-PNG-e1532606569895.png"
+                                                alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                  
+
+                    </div>
+                    <div class=" co-earn ">
+                        <div class="set-up-row">
+                            <div class="row set-up">
+                                <ul class="nav nav-pills mb-3 set-up-pill" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">My Apartments</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Explore</button>
+                                    </li>
+                                 
+                                  </ul>
+                    
+                               
+                    
+                    
+                                  <div class="tab-content co-earn-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active co-earn-pane-apartment" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                      
+                                      
+                                        <div class="apartment">
+                                       
+                                            <div class="apartment-content">
+                                                <div class="apartment-table">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"></th>
+                                                                <th scope="col">Apartments</th>
+                                                                <th scope="col">Date</th>
+                                                                <th scope="col">Value of Apartment</th>
+                                                                <th scope="col">Current Value of Apartment</th>
+                                                                <th scope="col">Unit</th>
+                                                                <th scope="col">Amount Per Unit</th>
+                                                                <th scope="col">Rent Due</th>
+                
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">
+                                                                    <div class="image"><img
+                                                                            src="./assets/img/brickvest-admin-assets/thumbnail.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                </th>
+                                                                <td>Allen Building, 2A</td>
+                                                                <td>12/06/20</td>
+                                                                <td>120,000.00</td>
+                                                                <td>12.5%</td>
+                                                                <td>12</td>
+                                                                <td>20,000.00</td>
+                                                                <td class="progress">
+                
+                                                                </td>
+                
+                                                            </tr>
+                
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                           
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tab-pane fade co-earn-pane-explore" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="row">
+                                            <nav class="navbar navbar-light bg-light search-bar">
+                                                <div class="container-fluid">
+                                                  <form class="d-flex">
+                                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                    <button class="btn btn-outline-success button-primary" type="submit">Search</button>
+                                                  </form>
+                                                </div>
+                                              </nav>
+                                            <div class=" text-left co-earn-pane-content row col-6">
+                                                <div class="col-6 unit-image">
+                                                 <div class="image ">
+                                                     <span class="price position-absolute">N24,000,000</span>
+                                                     <img src="./assets/img/pics1.png" alt="">
+                                                 </div>
+                                                </div>
+                                                
+                                                 <div class="col-6 details my-auto">
+                                                     <h4 class="building-name">Jenkins Apartment</h4>
+                                                     <p class="return">Rent Return on 12 months</p>
+                                                     <div class="unit-details row">
+                                                         <div class="col-6 amoumts-per-unit">
+                                                             <p><span class="unit-amount">10000</span><br>Per Unit</p>
+                                                         </div>
+                                                         <div class="col-6 units-available">
+                                                             <p><span class="unit-number">768</span><br>Units Available</p>
+                                                         </div>
+                                                     </div>
+                                                     <a href="" class="invest-button">Invest <span><img src="./assets/img/left.png" alt=""></span></a>
+                                                 </div>
+                                             </div>
+                                             <div class=" text-left co-earn-pane-content row col-6">
+                                                 <div class="col-6 unit-image">
+                                                  <div class="image ">
+                                                      <span class="price position-absolute">N24,000,000</span>
+                                                      <img src="./assets/img/pics1.png" alt="">
+                                                  </div>
+                                                 </div>
+                                                 
+                                                  <div class="col-6 details my-auto">
+                                                      <h4 class="building-name">Jenkins Apartment</h4>
+                                                      <p class="return">Rent Return on 12 months</p>
+                                                      <div class="unit-details row">
+                                                          <div class="col-6 amoumts-per-unit">
+                                                              <p><span class="unit-amount">10000</span><br>Per Unit</p>
+                                                          </div>
+                                                          <div class="col-6 units-available">
+                                                              <p><span class="unit-number">768</span><br>Units Available</p>
+                                                          </div>
+                                                      </div>
+                                                      <a href="" class="invest-button">Invest <span><img src="./assets/img/left.png" alt=""></span></a>
+                                                  </div>
+                                              </div>
+                                           </div> 
+                                    </div>
+                                   
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+
         </div>
     </div>
-</div>
+
+
 
 
 

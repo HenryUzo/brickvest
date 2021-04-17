@@ -1,0 +1,266 @@
+@import "./variable";
+@import "./dashboard-menu";
+@import "./dashboard-main-body";
+@import "./font/stylesheet";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Masiva";
+}
+
+
+
+.main-body-one {
+    .main-row-1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .logo {
+            .image {
+                img {
+                }
+            }
+        }
+        .notify {
+            .image {
+            }
+        }
+    }
+    .main-row-2 {
+        .wallet-card {
+            flex: 0 0 auto;
+            width: 28%;
+            .myWallet {
+                h5 {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .wallet {
+                    margin-top: 20px;
+
+                    padding: 17px;
+                    border-radius: 10px;
+                    box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    .left {
+                        flex: 0 0 auto;
+                        width: 60%;
+                        .image {
+                            margin-bottom: 30px;
+                            img {
+                            }
+                        }
+                        .price {
+                            margin-bottom: 25px;
+                            .amount {
+                            }
+                        }
+                        .withdraw {
+                            text-decoration: none;
+                            img {
+                            }
+                            span {
+                                padding-left: 10px;
+                                color: $primaryColor;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .right {
+                        flex: 0 0 auto;
+                        width: 40%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        .image {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+            .myCard {
+                margin-top: 20px;
+                h5 {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .cards {
+                    margin-top: 20px;
+                    background-color: #cff5ff;
+                    padding: 17px;
+                    border-radius: 10px;
+                    box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    .details {
+                        .bank {
+                            font-size: 14px;
+                            color: $secondaryColor;
+                            font-weight: 500;
+                            margin-bottom: 30px;
+                        }
+                        .card-number {
+                            font-size: 18px;
+                            margin-bottom: 25px;
+                        }
+                        .card-holder {
+                            flex: 0 0 auto;
+                            width: 50%;
+                            .first-name {
+                            }
+                            .last-name {
+                            }
+                        }
+                        .card-company {
+                            flex: 0 0 auto;
+                            width: 50%;
+                            .image {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .apartment {
+            flex: 0 0 auto;
+            width: 65%;
+            margin-left: 30px;
+            h5 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .apartment-content {
+                border-radius: 20px;
+                box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+
+                .apartment-table {
+                    margin-top: 20px;
+                    height: 300px;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                    padding: 20px;
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    color: $primaryColor;
+                                    font-size: 14px;
+                                    
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                th {
+                                    font-size: 13px;
+                                    .image{
+                                        border-radius: 100%;
+                                        overflow: hidden;
+                                        img{
+
+                                        }
+                                    }
+                                }
+                                td {
+                                }
+                                .progress {
+                                }
+                            }
+                        }
+                    }
+                }
+                button {
+                    font-size: 14px;
+                    border-radius: 0;
+                    padding: 15px 15px;
+                    background-color: $primaryColor;
+                    border: none;
+                    margin-left: 30px;
+                    margin-top: 5px;
+                    margin-bottom: 27px;
+
+                    @media (min-width: 600px) {
+                        padding: 15px 20px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                        background-color: $secondaryColor;
+                    }
+                }
+            }
+        }
+        .more-apartment {
+            margin-top: 50px;
+            margin-bottom : 50px;
+            h5 {
+                font-size: 14px;
+                font-weight: 600;
+                
+            }
+            .the-testimonies-carousel {
+                margin-top: 25px;
+                .the-testimonies-item {
+                    margin-left: 40px;
+                    border-radius: 50px;
+                    height: 225px;
+                    position: relative;
+                    @media (min-width: 1000px) {
+                        margin-left: 0;
+                    }
+                    .image {
+                        position: relative;
+                        width: 230px;
+                        height: 100%;
+                        overflow: hidden;
+                        border-radius: 30px;
+                        .testimony-info {
+                            z-index: 4;
+                            width: 100%;
+                            height: calc(265px / 2.1);
+                            padding: 20px;
+
+                            bottom: 0;
+                            background-color: rgba(255, 255, 255, 0.774);
+                            .name {
+                                color: $primaryColor;
+                                font-size: 18px;
+                                font-weight: 900;
+                            }
+                            .text {
+                                font-size: 14px;
+                                margin-top: 10px;
+                                line-height: 15px;
+                                color: $secondaryColor;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                margin-bottom: 6px;
+                            }
+                        }
+                        img {
+                            position: relative;
+                            height: 130%;
+                            width: auto;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

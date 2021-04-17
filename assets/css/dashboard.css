@@ -508,29 +508,28 @@ body {
 }
 
 body {
-  font-family: 'Masiva';
+  font-family: "Masiva";
 }
 
-.main-row-1 {
+.main-body-one .main-row-1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.main-row-2 .wallet-card {
+.main-body-one .main-row-2 .wallet-card {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 40%;
+  width: 28%;
 }
 
-.main-row-2 .wallet-card .myWallet h5 {
+.main-body-one .main-row-2 .wallet-card .myWallet h5 {
   font-size: 14px;
   font-weight: 600;
 }
 
-.main-row-2 .wallet-card .myWallet .wallet {
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet {
   margin-top: 20px;
-  background-color: white;
   padding: 17px;
   border-radius: 10px;
   box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
@@ -538,32 +537,32 @@ body {
   -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
 }
 
-.main-row-2 .wallet-card .myWallet .wallet .left {
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 60%;
 }
 
-.main-row-2 .wallet-card .myWallet .wallet .left .image {
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .image {
   margin-bottom: 30px;
 }
 
-.main-row-2 .wallet-card .myWallet .wallet .left .price {
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .price {
   margin-bottom: 25px;
 }
 
-.main-row-2 .wallet-card .myWallet .wallet .left .withdraw {
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .withdraw {
   text-decoration: none;
 }
 
-.main-row-2 .wallet-card .myWallet .wallet .left .withdraw span {
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .withdraw span {
   padding-left: 10px;
   color: #ca2233;
   font-weight: 600;
 }
 
-.main-row-2 .wallet-card .myWallet .wallet .right {
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet .right {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -572,145 +571,188 @@ body {
   margin-bottom: auto;
 }
 
-.co-earn {
-  margin-top: 30px;
+.main-body-one .main-row-2 .wallet-card .myCard {
+  margin-top: 20px;
 }
 
-.co-earn .set-up-row .set-up {
-  background-color: white;
+.main-body-one .main-row-2 .wallet-card .myCard h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-body-one .main-row-2 .wallet-card .myCard .cards {
+  margin-top: 20px;
+  background-color: #cff5ff;
   padding: 17px;
-  padding-bottom: 30px;
   border-radius: 10px;
   box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
   -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
 }
 
-.co-earn .set-up-row .set-up .set-up-pill {
-  border-bottom: none;
+.main-body-one .main-row-2 .wallet-card .myCard .cards .details .bank {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
-.co-earn .set-up-row .set-up .set-up-pill li button {
-  padding-left: 30px;
-  padding-right: 30px;
-  outline: none;
-  border: none;
-  border-radius: 50px;
-  margin: 20px;
+.main-body-one .main-row-2 .wallet-card .myCard .cards .details .card-number {
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
-.co-earn .set-up-row .set-up .set-up-pill li button.active {
-  background-color: #ca2233;
+.main-body-one .main-row-2 .wallet-card .myCard .cards .details .card-holder {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
 }
 
-.co-earn .set-up-row .set-up .search-bar {
-  margin-bottom: 40px;
+.main-body-one .main-row-2 .wallet-card .myCard .cards .details .card-company {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table {
+.main-body-one .main-row-2 .apartment {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 65%;
+  margin-left: 30px;
+}
+
+.main-body-one .main-row-2 .apartment h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-body-one .main-row-2 .apartment .apartment-content {
+  border-radius: 20px;
+  box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+}
+
+.main-body-one .main-row-2 .apartment .apartment-content .apartment-table {
+  margin-top: 20px;
+  height: 300px;
   overflow-y: scroll;
+  padding: 20px;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table::-webkit-scrollbar {
+.main-body-one .main-row-2 .apartment .apartment-content .apartment-table::-webkit-scrollbar {
   display: none;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table {
-  --table-row-border-color: transparent;
-}
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table thead {
-  border-color: transparent;
-}
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table thead tr th {
+.main-body-one .main-row-2 .apartment .apartment-content .apartment-table table thead tr th {
   color: #ca2233;
   font-size: 14px;
-  border: none;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table tbody tr th {
-  border-left: none;
+.main-body-one .main-row-2 .apartment .apartment-content .apartment-table table tbody tr th {
   font-size: 13px;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table tbody tr th .image {
+.main-body-one .main-row-2 .apartment .apartment-content .apartment-table table tbody tr th .image {
   border-radius: 100%;
   overflow: hidden;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table tbody tr td {
-  border-left: none;
-}
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table tbody tr .progress {
-  border-right: none;
-}
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .button-primary {
+.main-body-one .main-row-2 .apartment .apartment-content button {
   font-size: 14px;
   border-radius: 0;
   padding: 15px 15px;
   background-color: #ca2233;
   border: none;
-  color: white;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: 600px) {
-  .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .button-primary {
+  .main-body-one .main-row-2 .apartment .apartment-content button {
     padding: 15px 20px;
   }
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .button-primary:hover {
+.main-body-one .main-row-2 .apartment .apartment-content button:hover {
   text-decoration: none;
   color: white;
   background-color: #000000;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .image {
-  width: 100%;
+.main-body-one .main-row-2 .more-apartment {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-body-one .main-row-2 .more-apartment h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel {
+  margin-top: 25px;
+}
+
+.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item {
+  margin-left: 40px;
+  border-radius: 50px;
+  height: 225px;
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item {
+    margin-left: 0;
+  }
+}
+
+.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image {
+  position: relative;
+  width: 230px;
+  height: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .image img {
+.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image .testimony-info {
+  z-index: 4;
   width: 100%;
+  height: calc(265px / 2.1);
+  padding: 20px;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.774);
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .image .price {
-  background-color: white;
+.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image .testimony-info .name {
   color: #ca2233;
-  padding: 10px;
-  font-size: 13px;
-  margin: 10px;
+  font-size: 18px;
+  font-weight: 900;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .details .building-name {
-  font-weight: 600;
-}
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .details .unit-details .amoumts-per-unit {
+.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image .testimony-info .text {
   font-size: 14px;
+  margin-top: 10px;
+  line-height: 15px;
+  color: #000000;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 6px;
 }
 
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .details .unit-details .amoumts-per-unit .unit-amount {
-  color: #ca2233;
-  font-weight: 600;
+.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image img {
+  position: relative;
+  height: 130%;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .details .unit-details .units-available {
-  font-size: 14px;
-}
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .details .unit-details .units-available .unit-number {
-  color: #ca2233;
-  font-weight: 600;
-}
-
-.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .co-earn-pane-content .details .invest-button {
-  color: #ca2233;
-  text-decoration: none;
-  font-weight: 600;
-}
-/*# sourceMappingURL=co-earn.css.map */
+/*# sourceMappingURL=dashboard.css.map */

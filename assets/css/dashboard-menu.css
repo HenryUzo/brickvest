@@ -1,0 +1,243 @@
+@import url(c:\Users\tech\brickvest\assets\css\font\stylesheet.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Masiva";
+}
+
+.the-dashboard-menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 8%;
+  -webkit-transition-property: opacity, width;
+  transition-property: opacity, width;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.the-dashboard-menu .menu-fixed {
+  -webkit-transition-property: opacity, width;
+  transition-property: opacity, width;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu {
+  height: 94vh;
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: -3px 0px 22px -3px rgba(0, 0, 0, 0.192);
+  -webkit-box-shadow: -3px 0px 22px -3px rgba(0, 0, 0, 0.192);
+  -moz-box-shadow: -3px 0px 22px -3px rgba(0, 0, 0, 0.192);
+}
+
+.the-dashboard-menu .menu-fixed .the-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item-logo .logo {
+  margin-top: 20px;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item-logo .logo .left {
+  display: none;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item-logo .logo .left .image {
+  width: 100%;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item-logo .logo .left .image img {
+  width: 100%;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item-logo .logo .left p {
+  font-size: 13px;
+  color: #ca2233;
+  font-weight: 500;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item {
+  margin-top: 30px;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item .image {
+  display: inline-block;
+  width: 40px;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-item span {
+  display: none;
+  color: #000000;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .menu-active span {
+  color: #ca2233;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .chat {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .pdf-report {
+  display: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .pdf-report .image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .pdf-report .image img {
+  width: 100%;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .pdf-report button {
+  font-size: 12px;
+  border-radius: 0;
+  padding: 10px 10px;
+  background-color: #ca2233;
+  border: none;
+  margin-right: 20px;
+}
+
+@media (min-width: 600px) {
+  .the-dashboard-menu .menu-fixed .the-menu .pdf-report button {
+    padding: 15px 10px;
+  }
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .pdf-report button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+}
+
+.the-dashboard-menu .menu-fixed .the-menu .download-pdf {
+  margin-bottom: 30px;
+}
+
+.the-dashboard-menu:hover {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 16.6666666667%;
+  -webkit-transition-property: opacity, width;
+  transition-property: opacity, width;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.the-dashboard-menu:hover .menu-fixed {
+  -webkit-transition-property: opacity, width;
+  transition-property: opacity, width;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu {
+  -webkit-transition-property: opacity, width;
+  transition-property: opacity, width;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item-logo .logo {
+  margin-top: 20px;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item-logo .logo .left {
+  display: block;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item-logo .logo .left .image {
+  width: 100%;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item-logo .logo .left .image img {
+  width: 100%;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item-logo .logo .left p {
+  font-size: 13px;
+  color: #ca2233;
+  font-weight: 500;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item {
+  margin-top: 30px;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item .image {
+  display: inline-block;
+  width: 40px;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-item span {
+  display: inline-block;
+  color: #000000;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .menu-active span {
+  color: #ca2233;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .chat {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .pdf-report {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .pdf-report .image {
+  width: 100%;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .pdf-report .image img {
+  width: 100%;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .pdf-report button {
+  font-size: 12px;
+  border-radius: 0;
+  padding: 10px 10px;
+  background-color: #ca2233;
+  border: none;
+  margin-right: 20px;
+}
+
+@media (min-width: 600px) {
+  .the-dashboard-menu:hover .menu-fixed .the-menu .pdf-report button {
+    padding: 15px 10px;
+  }
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .pdf-report button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+}
+
+.the-dashboard-menu:hover .menu-fixed .the-menu .download-pdf {
+  display: none;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=dashboard-menu.css.map */

@@ -1,0 +1,217 @@
+@import "./variable";
+
+@import "./font/stylesheet";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Masiva";
+}
+
+.the-dashboard-menu {
+    flex: 0 0 auto;
+    width: 8%;
+    transition-property: opacity, width;
+    transition-duration: 0.5s;
+
+    .menu-fixed {
+        transition-property: opacity, width;
+        transition-duration: 0.5s;
+        .the-menu {
+            height: 94vh;
+            width: 100%;
+            margin-top: 20px;
+
+            padding-left: 30px;
+            padding-right: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            overflow-y: scroll;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: -3px 0px 22px -3px rgba(0, 0, 0, 0.192);
+            -webkit-box-shadow: -3px 0px 22px -3px rgba(0, 0, 0, 0.192);
+            -moz-box-shadow: -3px 0px 22px -3px rgba(0, 0, 0, 0.192);
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .menu-item-logo {
+                .logo {
+                    margin-top: 20px;
+                    .left {
+                        display: none;
+                        .image {
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        p {
+                            font-size: 13px;
+                            color: $primaryColor;
+                            font-weight: 500;
+                        }
+                    }
+                    .right {
+                    }
+                }
+            }
+            .menu-item {
+                margin-top: 30px;
+                .image {
+                    display: inline-block;
+                    width: 40px;
+                    img {
+                    }
+                }
+                span {
+                    display: none;
+                    color: $secondaryColor;
+                }
+            }
+            .menu-active {
+                span {
+                    color: $primaryColor;
+                }
+            }
+            .chat {
+                margin-top: 60px;
+                margin-bottom: 40px;
+            }
+
+            .pdf-report {
+                display: none;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                .image {
+                    width: 100%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h5 {
+                }
+                p {
+                }
+                button {
+                    font-size: 12px;
+                    border-radius: 0;
+                    padding: 10px 10px;
+                    background-color: $primaryColor;
+                    border: none;
+                    margin-right: 20px;
+
+                    @media (min-width: 600px) {
+                        padding: 15px 10px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                        background-color: $secondaryColor;
+                    }
+                }
+            }
+            .download-pdf {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &:hover {
+        flex: 0 0 auto;
+        width: 16.6666666667%;
+        transition-property: opacity, width;
+        transition-duration: 0.5s;
+        .menu-fixed {
+            transition-property: opacity, width;
+            transition-duration: 0.5s;
+            .the-menu {
+                transition-property: opacity, width;
+                transition-duration: 0.5s;
+                .menu-item-logo {
+                    .logo {
+                        margin-top: 20px;
+                        .left {
+                            display: block;
+                            .image {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            p {
+                                font-size: 13px;
+                                color: $primaryColor;
+                                font-weight: 500;
+                            }
+                        }
+                        .right {
+                        }
+                    }
+                }
+                .menu-item {
+                    margin-top: 30px;
+                    .image {
+                        display: inline-block;
+                        width: 40px;
+                        img {
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        color: $secondaryColor;
+                    }
+                }
+                .menu-active {
+                    span {
+                        color: $primaryColor;
+                    }
+                }
+                .chat {
+                    margin-top: 60px;
+                    margin-bottom: 40px;
+                }
+
+                .pdf-report {
+                    display: block;
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+                    .image {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    h5 {
+                    }
+                    p {
+                    }
+                    button {
+                        font-size: 12px;
+                        border-radius: 0;
+                        padding: 10px 10px;
+                        background-color: $primaryColor;
+                        border: none;
+                        margin-right: 20px;
+
+                        @media (min-width: 600px) {
+                            padding: 15px 10px;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                            color: white;
+                            background-color: $secondaryColor;
+                        }
+                    }
+                }
+                .download-pdf {
+                    display: none;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

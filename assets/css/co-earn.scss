@@ -1,6 +1,7 @@
 @import "./variable";
 @import "./font/stylesheet";
-
+@import "./dashboard-menu";
+@import "./dashboard-main-body";
 
 * {
     margin: 0;
@@ -11,11 +12,94 @@ body{
     font-family: 'Masiva';
 }
 
+.main-row-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .logo {
+        .image {
+            img {
+            }
+        }
+    }
+    .notify {
+        .image {
+        }
+    }
+}
+.main-row-2 {
+    .wallet-card {
+        flex: 0 0 auto;
+        width: 40%;
+        .myWallet {
+            
+            h5 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .wallet {
+                margin-top: 20px;
+                background-color: white;
+                padding: 17px;
+                border-radius: 10px;
+                box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                .left {
+                    flex: 0 0 auto;
+                    width: 60%;
+                    .image {
+                        margin-bottom: 30px;
+                        img {
+                        }
+                    }
+                    .price {
+                        margin-bottom: 25px;
+                        .amount {
+                        }
+                    }
+                    .withdraw {
+                        text-decoration: none;
+                        img {
+                        }
+                        span {
+                            padding-left: 10px;
+                            color: $primaryColor;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .right {
+                    flex: 0 0 auto;
+                    width: 40%;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    .image {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+ 
 
+}
 .co-earn{
+    
+    margin-top: 30px;
+    
     .set-up-row{
         .set-up{
+            background-color: white;
+            padding: 17px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+            -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+            -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
             .set-up-pill{
+                border-bottom: none;
                 li{
                     button{
                         padding-left: 30px;
@@ -35,7 +119,81 @@ body{
                 margin-bottom: 40px;
             }
             .co-earn-content{
-                .co-earn-pane{
+                .co-earn-pane-apartment{
+                    .apartment {
+                   
+                  
+                        .apartment-content {
+          
+            
+                            .apartment-table {
+                               
+                              
+                                overflow-y: scroll;
+                                &::-webkit-scrollbar {
+                                    display: none;
+                                }
+                               
+                                table {
+                                    --table-row-border-color: transparent;
+                                    thead {
+                                        border-color: transparent;
+                                       
+                                        tr {
+                                            th {
+                                                color: $primaryColor;
+                                                font-size: 14px;
+                                                border: none;
+                                                
+                                            }
+                                        }
+                                    }
+                                    tbody {
+                                       
+                                        tr {
+                                            th {
+                                                border-left: none;
+                                                font-size: 13px;
+                                                .image{
+                                                    border-radius: 100%;
+                                                    overflow: hidden;
+                                                    img{
+            
+                                                    }
+                                                }
+                                            }
+                                            td {
+                                                border-left: none;
+                                            }
+                                            .progress {
+                                                border-right: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                      
+                        }
+                    }
+                }
+                .co-earn-pane-explore{
+                    .button-primary{
+                        font-size: 14px;
+                    border-radius: 0;
+                    padding: 15px 15px;
+                    background-color: $primaryColor;
+                    border: none;
+                  color: white;
+
+                    @media (min-width: 600px) {
+                        padding: 15px 20px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                        background-color: $secondaryColor;
+                    }
+                    }
                     .co-earn-pane-content{
                         .image{
                             width: 100%;
@@ -62,8 +220,7 @@ body{
 
                             }
                             .unit-details{
-                                margin-top: 20px;
-                                margin-bottom: 20px;
+                                
                                 .amoumts-per-unit{
                                     font-size: 14px;
                                     .unit-amount{

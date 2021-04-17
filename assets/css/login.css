@@ -1,4 +1,4 @@
-@import url(c:\Users\LOYAL\brickvest-main\assets\css\font\stylesheet.css);
+@import url(c:\Users\tech\brickvest\assets\css\font\stylesheet.css);
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 * {
   margin: 0;
@@ -1380,8 +1380,8 @@ iframe#youtube {
   background: white;
   width: 2px;
   height: 2px;
-  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
