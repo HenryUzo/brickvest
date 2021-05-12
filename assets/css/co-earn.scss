@@ -292,7 +292,10 @@ body {
                         color: black;
                         font-size: 24px;
                         font-weight: 600;
-                        margin-bottom: 30px;
+                        margin-bottom: 20px;
+                        @media (max-width: 500px) {
+                           margin-bottom: 0;
+                          }
                     }
                     .price {
                         padding-right: 60px;
@@ -306,6 +309,19 @@ body {
                         }
                         margin-bottom: 30px;
                     }
+                    .price-mobile {
+                        padding-right: 60px;
+                        font-size: 16px;
+                       
+
+                        .amount {
+                            font-weight: 900;
+                            color: $primaryColor;
+                            font-size: 24px;
+                        }
+                        margin-bottom: 30px;
+                    }
+
                     .info-col {
                         margin-bottom: 20px;
                         .info {
@@ -332,11 +348,26 @@ body {
                         font-size: 24px;
                         font-weight: 600;
                         margin-bottom: 20px;
+                        @media (max-width: 500px) {
+                            margin-bottom: 0;
+                           }
                     }
                     .price {
                         padding-right: 60px;
                         font-size: 20px;
                         text-align: right;
+
+                        .amount {
+                            font-weight: 900;
+                            color: $primaryColor;
+                            font-size: 24px;
+                        }
+                        margin-bottom: 30px;
+                    }
+                    .price-mobile {
+                        padding-right: 60px;
+                        font-size: 16px;
+                       
 
                         .amount {
                             font-weight: 900;
@@ -361,6 +392,9 @@ body {
                                     border: none;
                                     border-radius: 0;
                                     box-shadow: none;
+                                    @media (max-width: 500px) {
+                                        width: 300px;
+                                    }
                                 }
                                 select {
                                     height: 60px;
@@ -442,6 +476,9 @@ body {
                         h5 {
                             margin-top: 10px;
                             margin-bottom: 20px;
+                            @media (max-width: 500px) {
+                               font-size: 16px;
+                              }
                         }
                         p {
                         }
