@@ -1453,6 +1453,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 500px) {
+  .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .heading {
+    margin-bottom: 0;
+  }
+}
+
 .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .price {
   padding-right: 60px;
   font-size: 20px;
@@ -1461,6 +1467,18 @@ body {
 }
 
 .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .price .amount {
+  font-weight: 900;
+  color: #ca2233;
+  font-size: 24px;
+}
+
+.the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .price-mobile {
+  padding-right: 60px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .price-mobile .amount {
   font-weight: 900;
   color: #ca2233;
   font-size: 24px;
@@ -1500,12 +1518,6 @@ body {
           box-shadow: none;
 }
 
-@media (max-width: 500px) {
-  .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .info-col .g-3 .col-md-6 select {
-    width: 300px;
-  }
-}
-
 .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .confirmation-process h5 {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -1537,6 +1549,12 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (max-width: 500px) {
+  .the-modal .the-modal-dialog .the-modal-content .the-modal-footer {
+    margin: 0px 10px 20px 10px;
+  }
 }
 
 .the-modal .the-modal-dialog .the-modal-content .the-modal-footer .button-primary {
