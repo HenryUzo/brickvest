@@ -1343,8 +1343,20 @@ body {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .the-modal .the-modal-dialog .the-modal-content .the-modal-header {
+    height: 100px;
+  }
+}
+
 .the-modal .the-modal-dialog .the-modal-content .the-modal-body {
   margin: 30px 50px 0px 50px;
+}
+
+@media (max-width: 500px) {
+  .the-modal .the-modal-dialog .the-modal-content .the-modal-body {
+    margin: 30px 10px 0px 10px;
+  }
 }
 
 .the-modal .the-modal-dialog .the-modal-content .the-modal-body .ist-body-row .heading {
@@ -1473,6 +1485,12 @@ body {
           box-shadow: none;
 }
 
+@media (max-width: 500px) {
+  .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .info-col .g-3 .col-md-6 input {
+    width: 300px;
+  }
+}
+
 .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .info-col .g-3 .col-md-6 select {
   height: 60px;
   background-color: #e4e4e4;
@@ -1480,6 +1498,12 @@ body {
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+@media (max-width: 500px) {
+  .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .info-col .g-3 .col-md-6 select {
+    width: 300px;
+  }
 }
 
 .the-modal .the-modal-dialog .the-modal-content .the-modal-body .trd-body-row .confirmation-process h5 {

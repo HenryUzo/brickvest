@@ -16,52 +16,46 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     .logo {
-        @media (max-width:999px) {
-
-        display: none;
+        @media (max-width: 999px) {
+            display: none;
         }
-        @media (min-width:1000px) {
-       display: flex;
+        @media (min-width: 1000px) {
+            display: flex;
         }
     }
     .notify {
-        @media (max-width:999px) {
-
+        @media (max-width: 999px) {
             display: none;
-            }
-            @media (min-width:1000px) {
-           display: flex;
-            }
+        }
+        @media (min-width: 1000px) {
+            display: flex;
+        }
     }
 }
-
 
 .main-row-2 {
     .wallet-card {
         flex: 0 0 auto;
         width: 40%;
-        @media (max-width:999px) {
-
+        @media (max-width: 999px) {
             flex: 0 0 auto;
             width: 50%;
-            
         }
-        @media (max-width:500px) {
+        @media (max-width: 500px) {
             flex: 0 0 auto;
-        width: 100%; 
-        margin-top: 0px;
+            width: 100%;
+            margin-top: 0px;
         }
         .myWallet {
             h5 {
                 font-size: 14px;
                 font-weight: 600;
-                @media (max-width:999px) {
-
-                   margin-top: 30px;
-                    }
-                    @media (min-width:1000px) {
-                   margin-top: auto;
-                    }
+                @media (max-width: 999px) {
+                    margin-top: 30px;
+                }
+                @media (min-width: 1000px) {
+                    margin-top: auto;
+                }
             }
             .wallet {
                 margin-top: 20px;
@@ -131,9 +125,9 @@ body {
                         border: none;
                         border-radius: 50px;
                         margin: 20px;
-                        @media (max-width:500px) {
-                       font-size: 14px;
-                       margin: 0 0 0 4px;
+                        @media (max-width: 500px) {
+                            font-size: 14px;
+                            margin: 0 0 0 4px;
                         }
                     }
                     button.active {
@@ -284,10 +278,16 @@ body {
                         width: 100%;
                     }
                 }
+                @media (max-width: 500px) {
+                  height: 100px;
+                }
             }
             .the-modal-body {
                 margin: 30px 50px 0px 50px;
-                .ist-body-row  {
+                @media (max-width: 500px) {
+                    margin: 30px 10px 0px 10px;
+                  }
+                .ist-body-row {
                     .heading {
                         color: black;
                         font-size: 24px;
@@ -309,7 +309,6 @@ body {
                     .info-col {
                         margin-bottom: 20px;
                         .info {
-                            
                             .title {
                                 font-size: 13px;
                                 font-weight: 500;
@@ -327,7 +326,7 @@ body {
                         }
                     }
                 }
-                .snd-body-row  {
+                .snd-body-row {
                     .heading {
                         color: black;
                         font-size: 24px;
@@ -346,7 +345,7 @@ body {
                         }
                         margin-bottom: 30px;
                     }
-                   
+
                     .info-col {
                         margin-bottom: 20px;
                         .heading {
@@ -362,26 +361,19 @@ body {
                                     border: none;
                                     border-radius: 0;
                                     box-shadow: none;
-                
                                 }
-                                select{
+                                select {
                                     height: 60px;
                                     background-color: rgb(228, 228, 228);
                                     border: none;
                                     border-radius: 0;
                                     box-shadow: none;
-                                  
                                 }
                             }
-                
-                         
-                
-                           
                         }
                     }
-                    
                 }
-                .trd-body-row  {
+                .trd-body-row {
                     .heading {
                         color: black;
                         font-size: 24px;
@@ -400,7 +392,7 @@ body {
                         }
                         margin-bottom: 30px;
                     }
-                   
+
                     .info-col {
                         margin-bottom: 20px;
                         .heading {
@@ -416,32 +408,31 @@ body {
                                     border: none;
                                     border-radius: 0;
                                     box-shadow: none;
-                
+                                    @media (max-width: 500px) {
+                                        width: 300px;
+                                    }
                                 }
-                                select{
+                                select {
                                     height: 60px;
                                     background-color: rgb(228, 228, 228);
                                     border: none;
                                     border-radius: 0;
                                     box-shadow: none;
-                                  
+                                    @media (max-width: 500px) {
+                                        width: 300px;
+                                    }
                                 }
                             }
-                
-                         
-                
-                           
                         }
                     }
-                    .confirmation-process{
-                        h5{
+                    .confirmation-process {
+                        h5 {
                             margin-top: 10px;
                             margin-bottom: 20px;
                         }
-                        p{
-
+                        p {
                         }
-                        .g-3{
+                        .g-3 {
                             margin-top: 20px;
                             margin-bottom: 30px;
                             .col-md-6 {
@@ -451,17 +442,14 @@ body {
                                     border: none;
                                     border-radius: 0;
                                     box-shadow: none;
-                
                                 }
                             }
                         }
-                        .verify{
-                            input{
+                        .verify {
+                            input {
                                 background-color: $primaryColor;
                                 width: 30px;
                                 height: 30px;
-                              
-
                             }
                         }
                     }
