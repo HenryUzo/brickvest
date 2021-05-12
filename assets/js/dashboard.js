@@ -7,14 +7,14 @@ var owl = $('#owl-carousel-1');
         autoHeight: true,
         autoplayTimeout: 7000,
         smartSpeed: 800,
-        margin: 100,
+        margin: 30,
         loop: true,
         responsive: {
           0: {
             items: 1
           },
           600: {
-            items: 2
+            items: 3
           },
           1300: {
             items: 4
@@ -25,3 +25,21 @@ var owl = $('#owl-carousel-1');
         }
         }
       })
+
+
+      // open mobile menu
+$('.js-toggle-menu').click(function(e){
+  e.preventDefault();
+  $('.mobile-header-nav').slideToggle();
+  $(this).toggleClass('open');
+});
+
+
+(function(){
+  var burger = document.querySelector('.burger-container'),
+      header = document.querySelector('.header');
+  
+  burger.onclick = function() {
+      header.classList.toggle('menu-opened');
+  }
+}());

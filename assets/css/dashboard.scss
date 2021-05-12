@@ -20,33 +20,74 @@ body {
         margin-top: 20px;
         margin-bottom: 20px;
         .logo {
-            .image {
-                img {
+            @media (max-width:999px) {
+
+                display: none;
                 }
-            }
+                @media (min-width:1000px) {
+               display: flex;
+                }
         }
         .notify {
-            .image {
-            }
+            @media (max-width:999px) {
+
+                display: none;
+                }
+                @media (min-width:1000px) {
+               display: flex;
+                }
         }
     }
     .main-row-2 {
         .wallet-card {
             flex: 0 0 auto;
             width: 28%;
+            margin: 0;
+            padding: 0;
+            @media (max-width:999px) {
+                flex: 0 0 auto;
+                width: 100%; 
+            }
+             @media (max-width:500px) {
+                flex: 0 0 auto;
+                width: 100%; 
+            }
+         
             .myWallet {
+                @media (max-width:999px) {
+                    flex: 0 0 auto;
+                width: 50%; 
+                
+                }
+                @media (max-width:500px) {
+                    flex: 0 0 auto;
+                    width: 100%; 
+                }
                 h5 {
                     font-size: 14px;
                     font-weight: 600;
+                      @media (max-width:999px) {
+
+                        margin-top: 30px;
+                         }
+                         @media (min-width:1000px) {
+                        margin-top: auto;
+                         }
                 }
                 .wallet {
+                    @media (max-width:999px) {
+                        margin:20px 10px 0 0;
+                         
+                         }
                     margin-top: 20px;
-
+               
                     padding: 17px;
                     border-radius: 10px;
                     box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
                     -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
                     -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                   
+                   
                     .left {
                         flex: 0 0 auto;
                         width: 60%;
@@ -84,12 +125,38 @@ body {
                 }
             }
             .myCard {
+                @media (max-width:999px) {
+                    flex: 0 0 auto;
+                width: 50%; 
+                margin-top: 0px;
+                }
+                @media (max-width:500px) {
+                    flex: 0 0 auto;
+                    width: 100%; 
+                    margin: 30px 0 0 0;
+                }
+                
                 margin-top: 20px;
                 h5 {
                     font-size: 14px;
                     font-weight: 600;
+                    @media (max-width:999px) {
+
+                        margin-top: 30px;
+                         }
+                         @media (max-width:500px) {
+
+                            margin-top: auto;
+                             } 
+                         @media (min-width:1000px) {
+                        margin-top: auto;
+                         }
                 }
                 .cards {
+                    @media (max-width:999px) {
+                        margin:20px 10px 0 0;
+                         
+                         }
                     margin-top: 20px;
                     background-color: #cff5ff;
                     padding: 17px;
@@ -132,6 +199,12 @@ body {
             flex: 0 0 auto;
             width: 65%;
             margin-left: 30px;
+            @media (max-width:999px) {
+                flex: 0 0 auto;
+            width: 100%;
+                margin:30px 0 0 0;
+                 
+                 }
             h5 {
                 font-size: 14px;
                 font-weight: 600;
@@ -141,16 +214,22 @@ body {
                 box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
                 -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
                 -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-
+                padding: 0 20px 0 20px;
                 .apartment-table {
                     margin-top: 20px;
                     height: 300px;
                     overflow-y: scroll;
+                    @media (max-width:999px) {
+                        height: auto;   
+                    }
                     &::-webkit-scrollbar {
                         display: none;
                     }
-                    padding: 20px;
+                    padding: 20px 0 20px 0;
                     table {
+                        @media (max-width:500px) {
+                           
+                        }
                         thead {
                             tr {
                                 th {

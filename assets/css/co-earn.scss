@@ -8,33 +8,60 @@
     padding: 0;
 }
 
-body{
-    font-family: 'Masiva';
+body {
+    font-family: "Masiva";
 }
 
 .main-row-1 {
     margin-top: 20px;
     margin-bottom: 20px;
     .logo {
-        .image {
-            img {
-            }
+        @media (max-width:999px) {
+
+        display: none;
+        }
+        @media (min-width:1000px) {
+       display: flex;
         }
     }
     .notify {
-        .image {
-        }
+        @media (max-width:999px) {
+
+            display: none;
+            }
+            @media (min-width:1000px) {
+           display: flex;
+            }
     }
 }
+
+
 .main-row-2 {
     .wallet-card {
         flex: 0 0 auto;
         width: 40%;
-        .myWallet {
+        @media (max-width:999px) {
+
+            flex: 0 0 auto;
+            width: 50%;
             
+        }
+        @media (max-width:500px) {
+            flex: 0 0 auto;
+        width: 100%; 
+        margin-top: 0px;
+        }
+        .myWallet {
             h5 {
                 font-size: 14px;
                 font-weight: 600;
+                @media (max-width:999px) {
+
+                   margin-top: 30px;
+                    }
+                    @media (min-width:1000px) {
+                   margin-top: auto;
+                    }
             }
             .wallet {
                 margin-top: 20px;
@@ -80,17 +107,13 @@ body{
                 }
             }
         }
-    
     }
- 
-
 }
-.co-earn{
-    
+.co-earn {
     margin-top: 30px;
-    
-    .set-up-row{
-        .set-up{
+
+    .set-up-row {
+        .set-up {
             background-color: white;
             padding: 17px;
             padding-bottom: 30px;
@@ -98,67 +121,61 @@ body{
             box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
             -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
             -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-            .set-up-pill{
+            .set-up-pill {
                 border-bottom: none;
-                li{
-                    button{
+                li {
+                    button {
                         padding-left: 30px;
                         padding-right: 30px;
                         outline: none;
                         border: none;
                         border-radius: 50px;
                         margin: 20px;
-
+                        @media (max-width:500px) {
+                       font-size: 14px;
+                       margin: 0 0 0 4px;
+                        }
                     }
-                    button.active{
+                    button.active {
                         background-color: $primaryColor;
                     }
                 }
             }
-            .search-bar{
+            .search-bar {
                 margin-bottom: 40px;
             }
-            .co-earn-content{
-                .co-earn-pane-apartment{
+            .co-earn-content {
+                .co-earn-pane-apartment {
                     .apartment {
-                   
-                  
                         .apartment-content {
-          
-            
                             .apartment-table {
-                               
-                              
                                 overflow-y: scroll;
                                 &::-webkit-scrollbar {
                                     display: none;
                                 }
-                               
+
                                 table {
                                     --table-row-border-color: transparent;
                                     thead {
                                         border-color: transparent;
-                                       
+
                                         tr {
                                             th {
                                                 color: $primaryColor;
                                                 font-size: 14px;
                                                 border: none;
-                                                
                                             }
                                         }
                                     }
                                     tbody {
-                                       
                                         tr {
                                             th {
                                                 border-left: none;
                                                 font-size: 13px;
-                                                .image{
+                                                .image {
                                                     border-radius: 100%;
                                                     overflow: hidden;
-                                                    img{
-            
+                                                    img {
                                                     }
                                                 }
                                             }
@@ -172,78 +189,321 @@ body{
                                     }
                                 }
                             }
-                      
                         }
                     }
                 }
-                .co-earn-pane-explore{
-                    .button-primary{
+                .co-earn-pane-explore {
+                    .button-primary {
                         font-size: 14px;
-                    border-radius: 0;
-                    padding: 15px 15px;
-                    background-color: $primaryColor;
-                    border: none;
-                  color: white;
-
-                    @media (min-width: 600px) {
-                        padding: 15px 20px;
-                    }
-                    &:hover {
-                        text-decoration: none;
+                        border-radius: 0;
+                        padding: 15px 15px;
+                        background-color: $primaryColor;
+                        border: none;
                         color: white;
-                        background-color: $secondaryColor;
+
+                        @media (min-width: 600px) {
+                            padding: 15px 20px;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                            color: white;
+                            background-color: $secondaryColor;
+                        }
                     }
-                    }
-                    .co-earn-pane-content{
-                        .image{
+                    .co-earn-pane-content {
+                        @media (max-width: 500px) {
+                            margin: 0 0 30px 0;
+                        }
+                        .image {
                             width: 100%;
                             overflow: hidden;
                             border-radius: 10px;
-                            
-                            img{
+                            @media (max-width: 500px) {
+                                margin: 0 0 20px 0;
+                            }
+                            img {
                                 width: 100%;
                             }
-                            .price{
-                                background-color:white ;
+                            .price {
+                                background-color: white;
                                 color: $primaryColor;
                                 padding: 10px;
                                 font-size: 13px;
                                 margin: 10px;
                             }
                         }
-                        .details{
-                            
-                            .building-name{
+                        .details {
+                            .building-name {
                                 font-weight: 600;
                             }
-                            .return{
-
+                            .return {
                             }
-                            .unit-details{
-                                
-                                .amoumts-per-unit{
+                            .unit-details {
+                                .amoumts-per-unit {
                                     font-size: 14px;
-                                    .unit-amount{
+                                    .unit-amount {
                                         color: $primaryColor;
                                         font-weight: 600;
                                     }
                                 }
-                                .units-available{
+                                .units-available {
                                     font-size: 14px;
-                                    .unit-number{
+                                    .unit-number {
                                         color: $primaryColor;
                                         font-weight: 600;
                                     }
                                 }
-                               
                             }
-                            .invest-button{
+                            .invest-button {
                                 color: $primaryColor;
                                 text-decoration: none;
                                 font-weight: 600;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.the-modal {
+    padding: 0;
+    .the-modal-dialog {
+        max-width: 900px;
+        .the-modal-content {
+            border-radius: 0px;
+            .the-modal-header {
+                padding: 0;
+                border-radius: 0px;
+                .image {
+                    width: 100%;
+                    height: 200px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .the-modal-body {
+                margin: 30px 50px 0px 50px;
+                .ist-body-row  {
+                    .heading {
+                        color: black;
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                    }
+                    .price {
+                        padding-right: 60px;
+                        font-size: 20px;
+                        text-align: right;
+
+                        .amount {
+                            font-weight: 900;
+                            color: $primaryColor;
+                            font-size: 24px;
+                        }
+                        margin-bottom: 30px;
+                    }
+                    .info-col {
+                        margin-bottom: 20px;
+                        .info {
+                            
+                            .title {
+                                font-size: 13px;
+                                font-weight: 500;
+                                margin-bottom: 0;
+                            }
+                            .value {
+                                margin-bottom: 1.5rem;
+                            }
+                        }
+                    }
+                    .more-info {
+                        .title {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .snd-body-row  {
+                    .heading {
+                        color: black;
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+                    .price {
+                        padding-right: 60px;
+                        font-size: 20px;
+                        text-align: right;
+
+                        .amount {
+                            font-weight: 900;
+                            color: $primaryColor;
+                            font-size: 24px;
+                        }
+                        margin-bottom: 30px;
+                    }
+                   
+                    .info-col {
+                        margin-bottom: 20px;
+                        .heading {
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+                        }
+                        .g-3 {
+                            .col-md-6 {
+                                input {
+                                    height: 60px;
+                                    background-color: rgb(228, 228, 228);
+                                    border: none;
+                                    border-radius: 0;
+                                    box-shadow: none;
+                
+                                }
+                                select{
+                                    height: 60px;
+                                    background-color: rgb(228, 228, 228);
+                                    border: none;
+                                    border-radius: 0;
+                                    box-shadow: none;
+                                  
+                                }
+                            }
+                
+                         
+                
+                           
+                        }
+                    }
+                    
+                }
+                .trd-body-row  {
+                    .heading {
+                        color: black;
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+                    .price {
+                        padding-right: 60px;
+                        font-size: 20px;
+                        text-align: right;
+
+                        .amount {
+                            font-weight: 900;
+                            color: $primaryColor;
+                            font-size: 24px;
+                        }
+                        margin-bottom: 30px;
+                    }
+                   
+                    .info-col {
+                        margin-bottom: 20px;
+                        .heading {
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+                        }
+                        .g-3 {
+                            .col-md-6 {
+                                input {
+                                    height: 60px;
+                                    background-color: rgb(228, 228, 228);
+                                    border: none;
+                                    border-radius: 0;
+                                    box-shadow: none;
+                
+                                }
+                                select{
+                                    height: 60px;
+                                    background-color: rgb(228, 228, 228);
+                                    border: none;
+                                    border-radius: 0;
+                                    box-shadow: none;
+                                  
+                                }
+                            }
+                
+                         
+                
+                           
+                        }
+                    }
+                    .confirmation-process{
+                        h5{
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                        }
+                        p{
 
                         }
+                        .g-3{
+                            margin-top: 20px;
+                            margin-bottom: 30px;
+                            .col-md-6 {
+                                input {
+                                    height: 60px;
+                                    background-color: rgb(228, 228, 228);
+                                    border: none;
+                                    border-radius: 0;
+                                    box-shadow: none;
+                
+                                }
+                            }
+                        }
+                        .verify{
+                            input{
+                                background-color: $primaryColor;
+                                width: 30px;
+                                height: 30px;
+                              
+
+                            }
+                        }
+                    }
+                }
+            }
+            .the-modal-footer {
+                margin: 0px 50px 20px 50px;
+                border: none;
+                justify-content: flex-start;
+                .button-primary {
+                    font-size: 14px;
+                    border-radius: 0;
+                    padding: 15px 25px;
+                    background-color: $primaryColor;
+                    border: 2px $primaryColor solid;
+                    border: none;
+                    color: white;
+
+                    @media (min-width: 600px) {
+                        padding: 15px 30px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                        background-color: $secondaryColor;
+                    }
+                }
+                .button-secondary {
+                    font-size: 14px;
+                    border-radius: 0;
+                    padding: 15px 25px;
+                    background-color: transparent;
+                    border: 2px $primaryColor solid;
+                    color: $primaryColor;
+
+                    @media (min-width: 600px) {
+                        padding: 15px 30px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                        background-color: $secondaryColor;
                     }
                 }
             }
