@@ -2120,4 +2120,9 @@ body {
     margin-left: 0px;
   }
 }
+
+.closing-modal .the-modal-content {
+  max-width: 700px;
+  margin: auto;
+}
 /*# sourceMappingURL=co-earn.css.map */

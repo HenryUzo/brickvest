@@ -357,7 +357,7 @@
                                                             </div>
                                                         </div>
                                                         <a href="" class="invest-button" data-bs-toggle="modal"
-                                                            data-bs-target="#exampleModalSoldOut">Post Offer
+                                                            data-bs-target="#exampleModalToggle">Post Offer
                                                             <span><img src="./assets/img/left.png" alt="" /></span></a>
                                                     </div>
                                                 </div>
@@ -377,8 +377,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade the-modal-sold" id="exampleModalSoldOut" tabindex="-1"
-        aria-labelledby="exampleModalSoldOutLabel" aria-hidden="true">
+    <div class="modal fade the-modal-sold" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable the-modal-dialog">
             <div class="modal-content the-modal-content">
                 <div class="modal-header the-modal-header">
@@ -437,7 +436,55 @@
                         </div>
                     </div>
 
-                    <!-- <div class="row the-modal-body-row snd-body-row">
+
+
+
+
+                </div>
+                <div class="modal-footer the-modal-footer">
+                    <div class="buttons-1 ">
+                        <button type="button" class="btn btn-primary button-primary"
+                        data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Invest</button>
+                        <button type="button" class="btn btn-secondary button-secondary">About
+                            Opportunity</button>
+                        <button type="button" class="btn-close close-button m" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- <div class="buttons-2 ">
+                        <button type="button" class="btn btn-primary  button-primary">Post Offer</button>
+                        <button type="button" class="btn btn-secondary button-secondary">About
+                            Opportunity</button>
+                        <button type="button" class="btn-close close-button mt-md-0 mt-4 " data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div> -->
+                    <!-- <div class="buttons-3 ">
+                        <button type="button" class="btn btn-primary  button-primary">Confirm</button>
+                        <button type="button" class="btn btn-secondary button-secondary">About
+                            Opportunity</button>
+                        <button type="button" class="btn-close close-button ml-5" data-bs-dismiss="modal"
+                            aria-label="Close"> </button><span>Cancel</span>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade the-modal-sold" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable the-modal-dialog">
+            <div class="modal-content the-modal-content">
+                <div class="modal-header the-modal-header">
+                    <div class="image">
+                        <img src="./assets/img/brickvest-admin-assets/co-earn-modal.png" alt="">
+                        <span class="sold-out position-absolute">Sold out</span>
+                    </div>
+
+                </div>
+                <div class="modal-body the-modal-body">
+                   
+
+                    <div class="row the-modal-body-row snd-body-row">
                         <div class="col-12 mx-auto mx-md-0 row">
                             <div class="col-md-6 heading">
                                 <p>
@@ -495,40 +542,10 @@
 
                             </form>
                         </div>
-                        <div class="confirmation-process">
-                            <h5>Confirmation</h5>
-                            <p>To confirm the transaction, Enter the Account Password</p>
-                            <form class="row g-3">
-                                <div class="col-md-6 mb-5 input-style ">
-                                    <div class=" form-floating ">
-                                        <input type="number" class="form-control" id="floatingInput"
-                                            placeholder="name@example.com" aria-label="Amount (to the nearest dollar)">
-                                        <label for="floatingInput">Unit Current Value</label>
-                                    </div>
-
-                                </div>
-                            </form>
-
-                            <div class=" verify">
-                                <div class="form-check row">
-                                    <input class="form-check-input col-md-1 check-box-confirm" type="checkbox" value=""
-                                        id="flexCheckDefault">
-                                    <label class="form-check-label col-md-10" for="flexCheckDefault">
-                                        <span>I Hereby Confirm that I want to buy <span class="unit-number">2</span>
-                                            Units
-                                            for the total amount of <span class="est-amount">20000</span> Naira. I
-                                            accept to
-                                            be charged instantly for this purchase.</span>
-                                    </label>
-                                </div>
+                    
 
 
-                            </div>
-
-                        </div>
-
-
-                    </div> -->
+                    </div>
 
 
 
@@ -543,7 +560,7 @@
                             aria-label="Close"></button>
                     </div> -->
                     <div class="buttons-2 ">
-                        <button type="button" class="btn btn-primary  button-primary">Post Offer</button>
+                        <button type="button" class="btn btn-primary  button-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Post Offer</button>
                         <button type="button" class="btn btn-secondary button-secondary">About
                             Opportunity</button>
                         <button type="button" class="btn-close close-button mt-md-0 mt-4 " data-bs-dismiss="modal"
@@ -562,7 +579,179 @@
         </div>
     </div>
 
-    <!-- Modal -->
+ <!-- Modal -->
+ <div class="modal fade the-modal-sold" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable the-modal-dialog">
+        <div class="modal-content the-modal-content">
+            <div class="modal-header the-modal-header">
+                <div class="image">
+                    <img src="./assets/img/brickvest-admin-assets/co-earn-modal.png" alt="">
+                    <span class="sold-out position-absolute">Sold out</span>
+                </div>
+
+            </div>
+            <div class="modal-body the-modal-body">
+               
+
+                <div class="row the-modal-body-row snd-body-row">
+                    <div class="col-12 mx-auto mx-md-0 row">
+                        <div class="col-md-6 heading">
+                            <p>
+                                Jenkings Apartment
+                            </p>
+
+                        </div>
+                        <div class="col-6 price d-none d-md-block">
+                            <span class="amount">10,000 </span><br>per Unit
+                        </div>
+                        <div class="price-mobile d-block d-md-none">
+                            <span class="amount">10,000 </span>per Unit
+                        </div>
+                    </div>
+                    <div class="col-12 mx-auto row info-col">
+                        <h4 class="heading text-center">
+                            Invest
+                        </h4>
+                        <form class="row mx-auto g-3  modal-form">
+
+                            <div class="col-md-6 mb-5   input-style row">
+                                <div class=" pr-0 form-floating col-10">
+                                    <input type="number" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com" aria-label="Amount (to the nearest dollar)">
+                                    <label for="floatingInput">Unit Current Value</label>
+                                </div>
+                                <span class="my-auto  col-2 p-0 ">NGN</span>
+                            </div>
+                            <div class="col-md-6 mb-5  input-style row">
+                                <div class=" pr-0 form-floating col-10">
+                                    <input type="number" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com" aria-label="Amount (to the nearest dollar)">
+                                    <label for="floatingInput">Proposed Value</label>
+                                </div>
+                                <span class="my-auto  col-2 p-0 ">NGN</span>
+                            </div>
+                            <div class="col-md-6 mb-5  input-style row">
+                                <div class=" pr-0 form-floating col-10">
+                                    <input type="number" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com" aria-label="Amount (to the nearest dollar)">
+                                    <label for="floatingInput">No. of Units</label>
+                                </div>
+                                <span class="my-auto  col-2 p-0 ">Units</span>
+                            </div>
+                            <div class="col-md-6 mb-5  input-style row">
+                                <div class=" pr-0 form-floating col-10">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com" aria-label="Amount (to the nearest dollar)">
+                                    <label for="floatingInput">Offer Duration</label>
+                                </div>
+                                <span class="my-auto  col-2 p-0 ">Days</span>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                    <div class="confirmation-process">
+                        <h5>Confirmation</h5>
+                        <p>To confirm the transaction, Enter the Account Password</p>
+                        <form class="row g-3">
+                            <div class="col-md-6 mb-5 input-style ">
+                                <div class=" form-floating ">
+                                    <input type="number" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com" aria-label="Amount (to the nearest dollar)">
+                                    <label for="floatingInput">Unit Current Value</label>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class=" verify">
+                            <div class="form-check row">
+                                <input class="form-check-input col-md-1 check-box-confirm" type="checkbox" value=""
+                                    id="flexCheckDefault">
+                                <label class="form-check-label col-md-10" for="flexCheckDefault">
+                                    <span>I Hereby Confirm that I want to buy <span class="unit-number">2</span>
+                                        Units
+                                        for the total amount of <span class="est-amount">20000</span> Naira. I
+                                        accept to
+                                        be charged instantly for this purchase.</span>
+                                </label>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <div class="modal-footer the-modal-footer">
+                <!-- <div class="buttons-1 ">
+                    <button type="button" class="btn btn-primary  button-primary">Invest</button>
+                    <button type="button" class="btn btn-secondary button-secondary">About
+                        Opportunity</button>
+                    <button type="button" class="btn-close close-button m" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div> -->
+                <div class="buttons-2 ">
+                    <button type="button" class="btn btn-primary  button-primary"  data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Post Offer</button>
+                    <button type="button" class="btn btn-secondary button-secondary">About
+                        Opportunity</button>
+                    <button type="button" class="btn-close close-button mt-md-0 mt-4 " data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <!-- <div class="buttons-3 ">
+                    <button type="button" class="btn btn-primary  button-primary">Confirm</button>
+                    <button type="button" class="btn btn-secondary button-secondary">About
+                        Opportunity</button>
+                    <button type="button" class="btn-close close-button ml-5" data-bs-dismiss="modal"
+                        aria-label="Close"> </button><span>Cancel</span>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal closing-modal fade the-modal-sold " id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable the-modal-dialog text-center">
+        <div class="modal-content the-modal-content">
+           
+            <div class="modal-body the-modal-body">
+               
+                <div class="success row">
+                    <div class="col-12 mb-5">
+                        <h3>Post-Purchase Unit</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="image">
+                            <img src="./assets/img/brickvest-admin-assets/sucess-icon.png" alt="">
+                            <p>Success</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer the-modal-footer justify-content-center">
+            
+                <div class="buttons-2 ">
+                    <button type="button" class="btn btn-primary  button-primary " data-bs-dismiss="modal" aria-label="Close">Post Offer</button>
+                 
+                </div>
+       
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Modal available -->
     <div class="modal fade the-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable the-modal-dialog">
@@ -572,7 +761,7 @@
 
                 </div>
                 <div class="modal-body the-modal-body">
-                    <div class="row the-modal-body-row ist-body-row">
+                    <!-- <div class="row the-modal-body-row ist-body-row">
                         <div class="col-12 row">
                             <div class="col-md-6 heading">
                                 Jenkings Apartment
@@ -618,9 +807,9 @@
                                 human happiness.</p>
 
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- <div class="row the-modal-body-row snd-body-row">
+                    <div class="row the-modal-body-row snd-body-row">
                         <div class="col-12 row">
                             <div class="col-md-6 heading">
                                 Jenkings Apartment
@@ -666,10 +855,10 @@
                                     </div>
                                 </div>
 
-                               
+
 
                             </form>
-                          
+
                         </div>
                         <div class="confirmation-process">
                             <h5>Confirmation</h5>
@@ -703,16 +892,16 @@
 
                         </div>
 
-                    </div> -->
+                    </div>
 
- 
+
                 </div>
                 <div class="modal-footer the-modal-footer">
                     <div class="buttons-1">
                         <button type="button" class="btn btn-primary  button-primary">Invest</button>
                         <button type="button" class="btn btn-secondary button-secondary">About
                             Opportunity</button>
-                            <button type="button" class="btn-close close-button mt-md-0 mt-4 " data-bs-dismiss="modal"
+                        <button type="button" class="btn-close close-button mt-md-0 mt-4 " data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <!-- <div class="buttons-2">
@@ -734,6 +923,13 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
 
 
 
