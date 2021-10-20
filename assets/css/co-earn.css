@@ -266,7 +266,7 @@ body {
 
 .mobile-menu .header .burger-container #burger {
   width: 18px;
-  height: 8px;
+  height: 18px;
   position: relative;
   display: block;
   margin: -4px auto 0;
@@ -770,7 +770,7 @@ body {
 
 .mobile-menu .header .burger-container #burger {
   width: 18px;
-  height: 8px;
+  height: 18px;
   position: relative;
   display: block;
   margin: -4px auto 0;
@@ -1019,11 +1019,28 @@ body {
   font-family: "Masiva";
 }
 
-.the-dashboard-body .the-dashboard-row .dashboard-main {
-  margin-top: 20px;
-  border-radius: 30px;
-  background-color: #f9f9f9;
-  margin-bottom: 50px;
+.the-dashboard-body .mobile-menu {
+  height: 100vh;
+}
+
+@media (max-width: 999px) {
+  .the-dashboard-body .the-dashboard-row .dashboard-main {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .the-dashboard-body .the-dashboard-row .dashboard-main {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+    height: 94vh;
+    overflow: hidden;
+  }
 }
 
 * {
@@ -1051,6 +1068,13 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-left: 50px;
+  }
+  .main-row-1 .logo .image {
+    width: 100px;
+  }
+  .main-row-1 .logo .image img {
+    width: 100%;
   }
 }
 
@@ -1072,7 +1096,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 40%;
+  width: 30%;
 }
 
 @media (max-width: 999px) {
@@ -1095,13 +1119,16 @@ body {
 }
 
 .main-row-2 .wallet-card .myWallet h5 {
-  font-size: 14px;
+  font-size: 18px;
+  color: #919191;
   font-weight: 600;
+  margin-left: 30px;
 }
 
 @media (max-width: 999px) {
   .main-row-2 .wallet-card .myWallet h5 {
     margin-top: 30px;
+    font-size: 15px;
   }
 }
 
@@ -1132,6 +1159,16 @@ body {
   margin-bottom: 30px;
 }
 
+.main-row-2 .wallet-card .myWallet .wallet .left h6 {
+  font-size: 12px;
+  color: #919191;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
 .main-row-2 .wallet-card .myWallet .wallet .left .price {
   margin-bottom: 25px;
 }
@@ -1153,6 +1190,14 @@ body {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .right .image {
+  height: 100px;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .right .image img {
+  height: 100%;
 }
 
 .co-earn {
@@ -1197,8 +1242,21 @@ body {
   margin-bottom: 40px;
 }
 
+@media (min-width: 1000px) {
+  .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment {
+    max-height: 45vh;
+    overflow-y: scroll;
+  }
+}
+
 .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table {
   overflow-y: scroll;
+}
+
+@media (max-width: 699px) {
+  .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table {
+    display: none;
+  }
 }
 
 .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table::-webkit-scrollbar {
@@ -1227,6 +1285,8 @@ body {
 .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table tbody tr th .image {
   border-radius: 100%;
   overflow: hidden;
+  height: 4vh;
+  width: 4vh;
 }
 
 .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table tbody tr td {
@@ -1235,6 +1295,49 @@ body {
 
 .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-table table tbody tr .progress {
   border-right: none;
+}
+
+@media (min-width: 700px) {
+  .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list {
+    display: none;
+  }
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list h6 {
+  color: #686868;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list .the-list {
+  padding-right: 0;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list .the-list .d-image .image {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list .the-list .d-image .image img {
+  width: 100%;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list .the-list .building {
+  position: relative;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list .the-list .building p {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: 600;
+}
+
+.co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-apartment .apartment .apartment-content .apartment-list .the-list .view button {
+  border: 1px transparent solid;
+  padding-top: 4px;
+  background-color: transparent;
 }
 
 .co-earn .set-up-row .set-up .co-earn-content .co-earn-pane-explore .button-primary {
@@ -1369,7 +1472,7 @@ body {
 
 @media (max-width: 576px) {
   .the-modal .the-modal-dialog {
-    margin: .5rem;
+    margin: 0.5rem;
   }
 }
 
@@ -1795,7 +1898,7 @@ body {
 
 @media (max-width: 576px) {
   .the-modal-sold .the-modal-dialog {
-    margin: .5rem;
+    margin: 0.5rem;
   }
 }
 
@@ -1885,9 +1988,9 @@ body {
 }
 
 .the-modal-sold .the-modal-dialog .the-modal-content .the-modal-body .ist-body-row .price {
-  padding-right: 60px;
   font-size: 20px;
   text-align: right;
+  float: right;
   margin-bottom: 30px;
 }
 
@@ -2124,5 +2227,74 @@ body {
 .closing-modal .the-modal-content {
   max-width: 700px;
   margin: auto;
+}
+
+#apartmentList .modal-content .modal-header {
+  background-color: #ca2233;
+  position: relative;
+  padding: 0;
+  height: 20vh;
+  overflow: hidden;
+}
+
+#apartmentList .modal-content .modal-header .image {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+#apartmentList .modal-content .modal-header .image img {
+  width: 100%;
+}
+
+#apartmentList .modal-content .modal-header .heading {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#apartmentList .modal-content .modal-header .heading h5 {
+  color: white;
+}
+
+#apartmentList .modal-content .modal-body .category .title {
+  color: #ca2233;
+  font-size: 12px;
+}
+
+#apartmentList .modal-content .modal-body .category .result {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#apartmentList .modal-content .modal-footer {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#apartmentList .modal-content .modal-footer button {
+  font-size: 13px;
+  border-radius: 0;
+  padding: 15px 25px;
+  background-color: #ca2233;
+  border: 2px #ca2233 solid;
+  border: none;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  #apartmentList .modal-content .modal-footer button {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+}
+
+#apartmentList .modal-content .modal-footer button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
 }
 /*# sourceMappingURL=co-earn.css.map */

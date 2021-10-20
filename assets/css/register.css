@@ -1247,6 +1247,10 @@ iframe#youtube {
   width: 100%;
 }
 
+.background div.container.login-page .login-row .left-image > div.image > img:hover {
+  width: 120%;
+}
+
 .background div.container.login-page .login-row .right-form .form-row .form-column {
   padding: 5% 10%;
 }

@@ -1041,393 +1041,193 @@ body {
   font-family: "Masiva";
 }
 
-.main-body-one .main-row-1 {
+.main-row-1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 @media (max-width: 999px) {
-  .main-body-one .main-row-1 .logo {
+  .main-row-1 .logo {
     display: none;
   }
 }
 
 @media (min-width: 1000px) {
-  .main-body-one .main-row-1 .logo {
+  .main-row-1 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 50px;
+  }
+  .main-row-1 .logo .image {
+    width: 100px;
+  }
+  .main-row-1 .logo .image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 999px) {
+  .main-row-1 .notify {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-row-1 .notify {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-@media (max-width: 999px) {
-  .main-body-one .main-row-1 .notify {
-    display: none;
-  }
-}
-
-@media (min-width: 1000px) {
-  .main-body-one .main-row-1 .notify {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.main-body-one .main-row-2 .wallet-card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 28%;
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .wallet-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .main-body-one .main-row-2 .wallet-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-  }
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .wallet-card .myWallet {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 50%;
-  }
-}
-
-@media (max-width: 500px) {
-  .main-body-one .main-row-2 .wallet-card .myWallet {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-  }
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet h5 {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .wallet-card .myWallet h5 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .main-body-one .main-row-2 .wallet-card .myWallet h5 {
-    margin-top: auto;
-  }
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet .wallet {
-  margin-top: 20px;
-  padding: 17px;
-  border-radius: 10px;
-  box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .wallet-card .myWallet .wallet {
-    margin: 20px 10px 0 0;
-  }
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 60%;
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .image {
-  margin-bottom: 30px;
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .price {
-  margin-bottom: 25px;
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .withdraw {
-  text-decoration: none;
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet .wallet .left .withdraw span {
-  padding-left: 10px;
-  color: #ca2233;
-  font-weight: 600;
-}
-
-.main-body-one .main-row-2 .wallet-card .myWallet .wallet .right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 40%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.main-body-one .main-row-2 .wallet-card .myCard {
-  margin-top: 20px;
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .wallet-card .myCard {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 50%;
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 500px) {
-  .main-body-one .main-row-2 .wallet-card .myCard {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-    margin: 30px 0 0 0;
-  }
-}
-
-.main-body-one .main-row-2 .wallet-card .myCard h5 {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .wallet-card .myCard h5 {
-    margin-top: 30px;
-  }
-}
-
-@media (max-width: 500px) {
-  .main-body-one .main-row-2 .wallet-card .myCard h5 {
-    margin-top: auto;
-  }
-}
-
-@media (min-width: 1000px) {
-  .main-body-one .main-row-2 .wallet-card .myCard h5 {
-    margin-top: auto;
-  }
-}
-
-.main-body-one .main-row-2 .wallet-card .myCard .cards {
-  margin-top: 20px;
-  background-color: #cff5ff;
-  padding: 17px;
-  border-radius: 10px;
-  box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .wallet-card .myCard .cards {
-    margin: 20px 10px 0 0;
-  }
-}
-
-.main-body-one .main-row-2 .wallet-card .myCard .cards .details .bank {
-  font-size: 14px;
-  color: #000000;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
-.main-body-one .main-row-2 .wallet-card .myCard .cards .details .card-number {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.main-body-one .main-row-2 .wallet-card .myCard .cards .details .card-holder {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 50%;
-}
-
-.main-body-one .main-row-2 .wallet-card .myCard .cards .details .card-company {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 50%;
-}
-
-.main-body-one .main-row-2 .apartment {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 65%;
-  margin-left: 30px;
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .apartment {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-    margin: 30px 0 0 0;
-  }
-}
-
-.main-body-one .main-row-2 .apartment h5 {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content {
-  border-radius: 20px;
-  box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  padding: 0 20px 0 20px;
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content .apartment-table {
-  margin-top: 20px;
-  height: 300px;
-  overflow-y: scroll;
-  padding: 20px 0 20px 0;
-}
-
-@media (max-width: 999px) {
-  .main-body-one .main-row-2 .apartment .apartment-content .apartment-table {
-    height: auto;
-  }
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content .apartment-table::-webkit-scrollbar {
-  display: none;
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content .apartment-table table thead tr th {
-  color: #ca2233;
-  font-size: 14px;
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content .apartment-table table tbody tr th {
-  font-size: 13px;
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content .apartment-table table tbody tr th .image {
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content button {
-  font-size: 14px;
-  border-radius: 0;
-  padding: 15px 15px;
-  background-color: #ca2233;
-  border: none;
-  margin-left: 30px;
-  margin-top: 5px;
-  margin-bottom: 27px;
-}
-
-@media (min-width: 600px) {
-  .main-body-one .main-row-2 .apartment .apartment-content button {
-    padding: 15px 20px;
-  }
-}
-
-.main-body-one .main-row-2 .apartment .apartment-content button:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #000000;
-}
-
-.main-body-one .main-row-2 .more-apartment {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.main-body-one .main-row-2 .more-apartment h5 {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel {
-  margin-top: 25px;
-}
-
-.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item {
-  margin-left: 40px;
-  border-radius: 50px;
-  height: 225px;
-  position: relative;
-}
-
-@media (min-width: 1000px) {
-  .main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item {
-    margin-left: 0;
-  }
-}
-
-.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image {
-  position: relative;
-  width: 230px;
-  height: 100%;
-  overflow: hidden;
+.profile {
+  background-color: #ebebeb;
+  padding: 40px;
   border-radius: 30px;
+  height: 84vh;
+  overflow-y: scroll;
+  margin-bottom: 30px;
 }
 
-.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image .testimony-info {
-  z-index: 4;
-  width: 100%;
-  height: calc(265px / 2.1);
-  padding: 20px;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.774);
-}
-
-.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image .testimony-info .name {
-  color: #ca2233;
-  font-size: 18px;
-  font-weight: 900;
-}
-
-.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image .testimony-info .text {
-  font-size: 14px;
-  margin-top: 10px;
-  line-height: 15px;
-  color: #000000;
+.profile .profile-header .display-image .d-image {
+  width: 70px;
+  height: 70px;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  margin-bottom: 6px;
+  border-radius: 100%;
+  display: inline-block;
 }
 
-.main-body-one .main-row-2 .more-apartment .the-testimonies-carousel .the-testimonies-item .image img {
+.profile .profile-header .display-image .d-image img {
   position: relative;
-  height: 130%;
-  width: auto;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 120%;
 }
-/*# sourceMappingURL=dashboard.css.map */
+
+.profile .profile-header .photo-text {
+  position: relative;
+  padding-left: 0;
+}
+
+.profile .profile-header .photo-text .content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.profile .profile-header .photo-text .content img {
+  padding-right: 5px;
+}
+
+.profile .profile-header .photo-text .content a {
+  text-decoration: none;
+  color: #ca2233;
+  font-weight: 600;
+}
+
+.profile .profile-header .photo-text .content a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.profile .profile-header .settings {
+  position: relative;
+  padding-left: 0;
+}
+
+.profile .profile-header .settings .content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.profile .profile-header .settings .content img {
+  padding-right: 5px;
+}
+
+.profile .profile-header .settings .content a {
+  text-decoration: none;
+  color: #686868;
+  font-weight: 400;
+}
+
+.profile .profile-header .settings .content a:hover {
+  color: #ca2233;
+  text-decoration: underline;
+}
+
+.profile .profile-body {
+  margin-top: 40px;
+}
+
+.profile .profile-body h4 {
+  margin-bottom: 30px;
+}
+
+.profile .profile-body .details-theme {
+  margin-bottom: 20px;
+}
+
+.profile .profile-body .details-theme h6 {
+  font-weight: 500;
+  color: #686868;
+  margin-bottom: 40px;
+}
+
+.profile .profile-body .details-theme form .input-style {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 31.5%;
+  background-color: #f2f2f2;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.profile .profile-body .details-theme form .input-style span {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.profile .profile-body .details-theme form .input-style .form-content input {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.profile .profile-body .details-theme form :nth-child(3) {
+  margin-right: 0;
+}
+
+.profile .profile-body .details-theme form :nth-child(6) {
+  margin-right: 0;
+}
+
+.profile .button-primary {
+  font-size: 13px;
+  border-radius: 0;
+  padding: 15px 25px;
+  background-color: #ca2233;
+  border: 2px #ca2233 solid;
+  border: none;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .profile .button-primary {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+}
+
+.profile .button-primary:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+}
+/*# sourceMappingURL=profile.css.map */

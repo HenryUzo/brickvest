@@ -513,10 +513,27 @@ body {
   font-family: "Masiva";
 }
 
-.the-dashboard-body .the-dashboard-row .dashboard-main {
-  margin-top: 20px;
-  border-radius: 30px;
-  background-color: #f9f9f9;
-  margin-bottom: 50px;
+.the-dashboard-body .mobile-menu {
+  height: 100vh;
+}
+
+@media (max-width: 999px) {
+  .the-dashboard-body .the-dashboard-row .dashboard-main {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .the-dashboard-body .the-dashboard-row .dashboard-main {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+    height: 94vh;
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=dashboard-main-body.css.map */
