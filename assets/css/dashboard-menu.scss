@@ -226,7 +226,7 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
 $menuItems: 7;
 
-.mobile-menu {
+.mobile-menu { 
     display: block;
     background: #f1f1f1;
     .header {
@@ -247,7 +247,7 @@ $menuItems: 7;
         .burger-container {
             position: relative;
             display: inline-block;
-            height: 50px;
+            height: 70px;
             width: 50px;
             cursor: pointer;
             transform: rotate(0deg);
@@ -286,7 +286,7 @@ $menuItems: 7;
             display: inline-block;
             position: absolute;
             text-align: center;
-            left: 40%;
+            left: 43%;
             top: 20px;
             img {
             }

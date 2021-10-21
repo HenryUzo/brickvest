@@ -250,7 +250,7 @@ body {
 .mobile-menu .header .burger-container {
   position: relative;
   display: inline-block;
-  height: 50px;
+  height: 70px;
   width: 50px;
   cursor: pointer;
   -webkit-transform: rotate(0deg);
@@ -304,7 +304,7 @@ body {
   display: inline-block;
   position: absolute;
   text-align: center;
-  left: 40%;
+  left: 43%;
   top: 20px;
 }
 
@@ -754,7 +754,7 @@ body {
 .mobile-menu .header .burger-container {
   position: relative;
   display: inline-block;
-  height: 50px;
+  height: 70px;
   width: 50px;
   cursor: pointer;
   -webkit-transform: rotate(0deg);
@@ -808,7 +808,7 @@ body {
   display: inline-block;
   position: absolute;
   text-align: center;
-  left: 40%;
+  left: 43%;
   top: 20px;
 }
 
@@ -1025,6 +1025,7 @@ body {
 
 @media (max-width: 999px) {
   .the-dashboard-body .the-dashboard-row .dashboard-main {
+    width: 100%;
     margin-top: 20px;
     border-radius: 30px;
     background-color: #f9f9f9;

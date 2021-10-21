@@ -1053,6 +1053,10 @@ body {
   font-family: "Masiva";
 }
 
+.dashboard-main {
+  padding: 0;
+}
+
 .main-row-1 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1096,31 +1100,13 @@ body {
 .profile {
   background-color: #ebebeb;
   padding: 40px;
-  padding-bottom: 10px;
   border-radius: 30px;
-  margin-bottom: 10px;
+  height: 84vh;
+  overflow-y: scroll;
+  margin-bottom: 30px;
 }
 
-.profile .profile-header .display-image {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  position: relative;
-}
-
-@media (min-width: 1000px) {
-  .profile .profile-header .display-image {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 7%;
-  }
-}
-
-.profile .profile-header .display-image .image {
+.profile .profile-header .display-image .d-image {
   width: 70px;
   height: 70px;
   overflow: hidden;
@@ -1128,17 +1114,7 @@ body {
   display: inline-block;
 }
 
-@media (min-width: 1000px) {
-  .profile .profile-header .display-image .image {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
-
-.profile .profile-header .display-image .image img {
+.profile .profile-header .display-image .d-image img {
   position: relative;
   top: 50%;
   left: 50%;
@@ -1152,39 +1128,11 @@ body {
   padding-left: 0;
 }
 
-@media (max-width: 999px) {
-  .profile .profile-header .photo-text {
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .profile .profile-header .photo-text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 24.66666667%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .profile .profile-header .photo-text .content {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
-
-@media (min-width: 1700px) {
-  .profile .profile-header .photo-text .content {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
+.profile .profile-header .photo-text .content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .profile .profile-header .photo-text .content img {
@@ -1202,55 +1150,17 @@ body {
   color: #000000;
 }
 
-@media (max-width: 999px) {
-  .profile .profile-header .update-profile {
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .profile .profile-header .update-profile {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 40%;
-  }
-}
-
-.profile .profile-header .update-profile h4 {
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.profile .profile-header .update-profile h4 b {
-  font-weight: 700;
-}
-
 .profile .profile-header .settings {
   position: relative;
   padding-left: 0;
 }
 
-@media (min-width: 1000px) {
-  .profile .profile-header .settings {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 20.3333%;
-    float: right;
-    text-align: right;
-  }
-}
-
-@media (min-width: 1000px) {
-  .profile .profile-header .settings .content {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
+.profile .profile-header .settings .content {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .profile .profile-header .settings .content img {
@@ -1276,6 +1186,49 @@ body {
   margin-bottom: 30px;
 }
 
+.profile .profile-body .details-theme {
+  margin-bottom: 20px;
+}
+
+.profile .profile-body .details-theme h6 {
+  font-weight: 500;
+  color: #686868;
+  margin-bottom: 40px;
+}
+
+.profile .profile-body .details-theme form .input-style {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 1200px) {
+  .profile .profile-body .details-theme form .input-style {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 31.5%;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.profile .profile-body .details-theme form .input-style span {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.profile .profile-body .details-theme form .input-style .form-content input {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.profile .profile-body .details-theme form :nth-child(3) {
+  margin-right: 0;
+}
+
+.profile .profile-body .details-theme form :nth-child(6) {
+  margin-right: 0;
+}
+
 .profile .button-primary {
   font-size: 13px;
   border-radius: 0;
@@ -1298,411 +1251,4 @@ body {
   color: white;
   background-color: #000000;
 }
-
-@media (min-width: 1000px) {
-  .scroll {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 58vh;
-  }
-}
-
-@media (min-width: 1200px) {
-  .scroll {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 66vh;
-  }
-}
-
-@media (max-width: 500px) {
-  .scroll .widget .main-row-2 .cards {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-    margin-top: 0px;
-  }
-}
-
-@media (min-width: 501px) {
-  .scroll .widget .main-row-2 .cards {
-    margin-right: 45px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 40%;
-  }
-}
-
-@media (min-width: 1500px) {
-  .scroll .widget .main-row-2 .cards {
-    margin-right: 45px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 25%;
-  }
-}
-
-@media (min-width: 1700px) {
-  .scroll .widget .main-row-2 .cards {
-    margin-right: 45px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 20%;
-  }
-}
-
-.scroll .widget .main-row-2 .cards .card-detail h5 {
-  font-size: 18px;
-  color: #919191;
-  font-weight: 600;
-  margin-left: 30px;
-}
-
-@media (max-width: 999px) {
-  .scroll .widget .main-row-2 .cards .card-detail h5 {
-    margin-top: 30px;
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .scroll .widget .main-row-2 .cards .card-detail h5 {
-    margin-top: auto;
-  }
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info {
-  margin-top: 20px;
-  background-color: white;
-  padding: 17px;
-  border-radius: 15px;
-  box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 60%;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .left .image {
-  margin-bottom: 30px;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .left h6 {
-  font-size: 12px;
-  color: #919191;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .left h4 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .left .price {
-  margin-bottom: 25px;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .left .withdraw {
-  text-decoration: none;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .left .withdraw span {
-  padding-left: 10px;
-  color: #ca2233;
-  font-weight: 600;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 40%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .right .image {
-  height: 100px;
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .details-info .right .image img {
-  width: 100%;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-@media (min-width: 600px) {
-  .scroll .widget .main-row-2 .cards .card-detail .details-info .right .image img {
-    width: 100%;
-  }
-}
-
-.scroll .widget .main-row-2 .cards .card-detail .profit {
-  background-color: #cff5ff;
-}
-
-@media (min-width: 600px) {
-  .scroll .widget .main-row-2 .cards .card-detail .wallet {
-    margin-left: 10px;
-  }
-}
-
-.scroll .widget .main-row-2 .atm-card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 100%;
-  margin-top: 0px;
-  background-color: #f2f2f2;
-  margin-top: 30px;
-  padding-bottom: 30px;
-  border-radius: 20px;
-}
-
-@media (min-width: 600px) {
-  .scroll .widget .main-row-2 .atm-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-    background-color: #f2f2f2;
-    margin-top: 30px;
-    border-radius: 20px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .scroll .widget .main-row-2 .atm-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-    padding: 20px 30px;
-    background-color: #f2f2f2;
-  }
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM {
-  margin: auto;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM h5 {
-  margin-left: 0;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM {
-  background-color: #ffe3b9;
-  margin-left: 0px;
-}
-
-@media (min-width: 600px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 44%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 30%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 40%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 25%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1700px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 20%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM .bank {
-  font-size: 10pt;
-  font-weight: 500;
-  padding: 10px 10px 10px 10px;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM .sixteen-dgt {
-  font-size: 18px;
-  letter-spacing: 2px;
-  padding: 20px 10px 30px 10px;
-  font-weight: 500;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info .name {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-@media (min-width: 1000px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .bank {
-    font-size: 12pt;
-    font-weight: 500;
-    padding: 20px 10px 10px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .sixteen-dgt {
-    font-size: 22px;
-    letter-spacing: 4px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info {
-    padding: 10px 10px 20px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info .name {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-}
-
-@media (min-width: 1200px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .bank {
-    font-size: 12pt;
-    font-weight: 500;
-    padding: 20px 10px 10px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .sixteen-dgt {
-    font-size: 24px;
-    letter-spacing: 4px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info {
-    padding: 20px 10px 20px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info .name {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-}
-
-.scroll .widget .main-row-2 .atm-card .add {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.scroll .widget .main-row-2 .atm-card .add .add-card {
-  color: #ca2233;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.scroll .widget .main-row-2 .atm-card .add .add-card img {
-  padding-left: 15px;
-}
-
-#addCard .modal-content .modal-header {
-  background-color: #ca2233;
-  position: relative;
-  height: 8vh;
-  overflow: hidden;
-}
-
-#addCard .modal-content .modal-header h5 {
-  padding-left: 30px;
-  color: white;
-}
-
-#addCard .modal-content .modal-body form .input-style span {
-  background-color: #f2f2f2;
-  border: none;
-}
-
-#addCard .modal-content .modal-body form .input-style span img {
-  width: 100%;
-}
-
-#addCard .modal-content .modal-body form .input-style input {
-  background-color: #f2f2f2;
-  border: none;
-}
-
-#addCard .modal-content .modal-body form .date span img {
-  width: 50%;
-}
-
-#addCard .modal-content .modal-body form .ccv span img {
-  width: 50%;
-}
-
-#addCard .modal-content .modal-footer {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 40px;
-}
-
-#addCard .modal-content .modal-footer button {
-  font-size: 13px;
-  border-radius: 0;
-  padding: 15px 25px;
-  background-color: #ca2233;
-  border: 2px #ca2233 solid;
-  border: none;
-  color: white;
-}
-
-@media (min-width: 600px) {
-  #addCard .modal-content .modal-footer button {
-    padding: 15px 30px;
-    font-size: 14px;
-  }
-}
-
-#addCard .modal-content .modal-footer button:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #000000;
-}
-/*# sourceMappingURL=profile.css.map */
+/*# sourceMappingURL=profile-update.css.map */

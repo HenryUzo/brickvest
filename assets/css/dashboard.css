@@ -250,7 +250,7 @@ body {
 .mobile-menu .header .burger-container {
   position: relative;
   display: inline-block;
-  height: 50px;
+  height: 70px;
   width: 50px;
   cursor: pointer;
   -webkit-transform: rotate(0deg);
@@ -266,7 +266,7 @@ body {
 
 .mobile-menu .header .burger-container #burger {
   width: 18px;
-  height: 8px;
+  height: 18px;
   position: relative;
   display: block;
   margin: -4px auto 0;
@@ -304,7 +304,7 @@ body {
   display: inline-block;
   position: absolute;
   text-align: center;
-  left: 40%;
+  left: 43%;
   top: 20px;
 }
 
@@ -754,7 +754,7 @@ body {
 .mobile-menu .header .burger-container {
   position: relative;
   display: inline-block;
-  height: 50px;
+  height: 70px;
   width: 50px;
   cursor: pointer;
   -webkit-transform: rotate(0deg);
@@ -770,7 +770,7 @@ body {
 
 .mobile-menu .header .burger-container #burger {
   width: 18px;
-  height: 8px;
+  height: 18px;
   position: relative;
   display: block;
   margin: -4px auto 0;
@@ -808,7 +808,7 @@ body {
   display: inline-block;
   position: absolute;
   text-align: center;
-  left: 40%;
+  left: 43%;
   top: 20px;
 }
 
@@ -1023,13 +1023,25 @@ body {
   height: 100vh;
 }
 
-.the-dashboard-body .the-dashboard-row .dashboard-main {
-  margin-top: 20px;
-  border-radius: 30px;
-  background-color: #f9f9f9;
-  padding-bottom: 50px;
-  height: 94vh;
-  overflow: hidden;
+@media (max-width: 999px) {
+  .the-dashboard-body .the-dashboard-row .dashboard-main {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .the-dashboard-body .the-dashboard-row .dashboard-main {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+    height: 94vh;
+    overflow: hidden;
+  }
 }
 
 * {

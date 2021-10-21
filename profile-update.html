@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" />
+
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/172203/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css" />
+    <link rel="stylesheet" href="./assets/css/font/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/profile-update.css" />
+
+    <title>Brickvest</title>
+</head>
+
+<body>
+    <div class="the-dashboard-body ">
+        <div class="mobile-menu container-fluid">
+            <div class="header">
+                <div class="burger-container">
+                    <div id="burger">
+                        <div class="bar topBar"></div>
+                        <div class="bar midBar"></div>
+                        <div class="bar btmBar"></div>
+                    </div>
+                </div>
+                <div class="mobile-logo">
+                    <img src="./assets/img/brickvest-admin-assets/Brickvest-Logo.svg" alt="" />
+                </div>
+
+                <div class="notify-me">
+                    <img src="./assets/img/brickvest-admin-assets/notification.png" alt="" />
+                </div>
+
+                <div class="icon icon-apple"></div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="dashboard.html">Overview</a></li>
+                    <li class="menu-item"><a href="co-earn.html">Co-Own</a></li>
+                    <li class="menu-item"><a href="profile.html">Profile</a></li>
+                    <li class="menu-item"><a href="#">History</a></li>
+                    <li class="menu-item"><a href="#">Annual Report</a></li>
+                </ul>
+                <div class="shop icon icon-bag"></div>
+            </div>
+            <div class="row the-dashboard-row">
+                <div class="the-dashboard-menu col-2">
+                    <div class="menu-fixed position-fixed">
+                        <div class="the-menu mx-auto">
+                            <div class="menu-item-logo">
+                                <div class="logo row">
+                                    <div class="left col-6">
+                                        <div class="image">
+                                            <img src="./assets/img/brickvest-admin-assets/Brickvest-Logo.svg" alt="" />
+                                        </div>
+                                        <p>Dashboard</p>
+                                    </div>
+                                    <div class="right col-4">
+                                        <div class="image">
+                                            <img src="./assets/img/brickvest-admin-assets/menu.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-active">
+                                <a href="/dashboard.html">
+                                    <div class="image">
+                                        <img src="./assets/img/brickvest-admin-assets/home-admin.svg" alt="" />
+                                    </div>
+                                    <span class="label">Overview</span>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="co-earn.html">
+                                    <div class="image">
+                                        <img src="./assets/img/brickvest-admin-assets/Co-own.svg" alt="" />
+                                    </div>
+                                    <span class="label">Co-Own</span>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <div class="image">
+                                        <img src="./assets/img/brickvest-admin-assets/profile.svg" alt="" />
+                                    </div>
+                                    <span class="label">Profile</span>
+                                </a>
+                            </div>
+                            <div class="menu-item">
+                                <a href="">
+                                    <div class="image">
+                                        <img src="./assets/img/brickvest-admin-assets/history.svg" alt="" />
+                                    </div>
+                                    <span class="label">History</span>
+                                </a>
+                            </div>
+                            <div class="menu-item chat">
+                                <div class="image">
+                                    <img src="./assets/img/brickvest-admin-assets/Icon material-chat-bubble.svg"
+                                        alt="" />
+                                </div>
+                                <span class="label">Chat</span>
+                            </div>
+                            <div class="pdf-report">
+                                <div class="image">
+                                    <img src="./assets/img/brickvest-admin-assets/pdf-analysis.svg" alt="" />
+                                </div>
+                                <h5 class="mt-5">PDF Report</h5>
+                                <p>
+                                    Download your <br /> Annual Report <br /> here
+                                </p>
+                                <button type="submit" href="" class="btn btn-success btn-lg button-primary">
+                                    Download PDF
+                                </button>
+                            </div>
+                            <div class="download-pdf">
+                                <a href="" class="image">
+                                    <img src="./assets/img/brickvest-admin-assets/download-icon.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="mobile-menu d-lg-none">
+    
+                    <div class="content">
+    
+                        <nav role="navigation">
+                            <div id="menuToggle">
+                                <input type="checkbox" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Info</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div> -->
+
+
+                <div class="dashboard-main col-lg-10">
+                    <div class="container-fluid main-body-one">
+                        <div class="row main-row-1">
+                            <div class="col-11 logo">
+                                <div class="image">
+                                    <img src="./assets/img/brickvest-admin-assets/Brickvest-Logo.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-1 notify">
+                                <div class="image">
+                                    <img src="./assets/img/brickvest-admin-assets/notification.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Profile -->
+                        <div class="profile">
+                            <div class="profile-header row">
+                                <div class="col-1 display-image text-center">
+
+                                    <div class="d-image">
+                                        <img src="./assets/img/brickvest-admin-assets/Rectangle 222.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="col-2 photo-text">
+
+                                    <div class="content"><img src="./assets/img/brickvest-admin-assets/photo-icon.png" alt=""><a
+                                            href="#">Change
+                                            Photo</a> </div>
+                                </div>
+                                <div class="col-9 settings d-block text-right">
+                                  <div class="content">
+                                    <img src="./assets/img/brickvest-admin-assets/cog.png" alt="">
+                                    <a class="d-block" href="#">Account Settings</a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="profile-body">
+                                <h4>Update Profile </h4>
+                                <div class="personal-details details-theme">
+                                    <h6>Personal Details</h6>
+                                    <form class="row mx-auto g-3  modal-form">
+
+                                        <div class="py-2  input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2  input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2  input-style row ">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <div class="Contact-details details-theme">
+                                    <h6>Contact Details</h6>
+                                    <form class="row mx-auto g-3  modal-form">
+
+                                        <div class="py-2 input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2 input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2 input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="   input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2   input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2   input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2   input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2   input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+                                <div class="account-details details-theme">
+                                    <h6>Account Details</h6>
+                                    <form class="row mx-auto g-3  modal-form">
+
+                                        <div class="py-2 input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2 input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="py-2 input-style row">
+                                            <span class="input-group-text col-1" id="addon-wrapping"><img
+                                                    src="./assets/img/brickvest-admin-assets/user-form.svg"
+                                                    alt=""></span>
+                                            <div class="form-content pr-0 form-floating col-10">
+
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <label for="floatingInput">Unit Current Value</label>
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+
+                         
+
+                            </div>
+                            <a href="/profile.html" class="btn btn-primary  button-primary">Update Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="./assets/js/vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./assets/js/vendors/highlight.js"></script>
+    <script src="./assets/js/vendors/owlcarousel/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+
+    <script src="./assets/js/co-earn.js"></script>
+</body>
+
+</html>
