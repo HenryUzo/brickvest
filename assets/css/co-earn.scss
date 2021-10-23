@@ -14,6 +14,7 @@ body {
     font-family: "Masiva";
 }
 
+
 .main-row-1 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -42,10 +43,11 @@ body {
     }
 }
 
+
+
 .main-row-2 {
     .wallet-card {
-        flex: 0 0 auto;
-        width: 30%;
+       
         @media (max-width: 999px) {
             flex: 0 0 auto;
             width: 50%;
@@ -55,6 +57,15 @@ body {
             width: 100%;
             margin-top: 0px;
         }
+        @media (min-width: 1000px) {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+        @media (min-width: 1200px) {
+            flex: 0 0 auto;
+            width: 30%;
+        }
+        
         .myWallet {
             h5 {
                 font-size: 18px;
@@ -128,7 +139,20 @@ body {
     }
 }
 .co-earn {
-    margin-top: 30px;
+
+    @media (min-width: 1000px) {
+        margin-top: 30px;
+        max-height: 45vh;
+        overflow: hidden;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-top: 30px;
+        max-height: 57vh;
+        overflow: hidden;
+    }
+
+   
 
     .set-up-row {
         .set-up {

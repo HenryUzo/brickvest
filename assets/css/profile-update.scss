@@ -14,7 +14,7 @@ body {
     font-family: "Masiva";
 }
 
-.dashboard-main{
+.dashboard-main {
     padding: 0;
 }
 
@@ -48,19 +48,38 @@ body {
 
 .profile {
     background-color: #ebebeb;
-    padding: 40px;
+    padding: 10px;
     border-radius: 30px;
     height: 84vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     margin-bottom: 30px;
     .profile-header {
+        padding: 0px 20px 0px 20px;
         .display-image {
+            flex: 0 0 auto;
+            width: 30%;
+            padding: 0;
+
+            @media (min-width: 600px) {
+                flex: 0 0 auto;
+                width: 12%;
+            }
+            @media (min-width: 1200px) {
+                flex: 0 0 auto;
+                width: 6%;
+            }
+            @media (min-width: 1400px) {
+                flex: 0 0 auto;
+                width: 6%;
+            }
             .d-image {
                 width: 70px;
                 height: 70px;
                 overflow: hidden;
                 border-radius: 100%;
                 display: inline-block;
+
                 img {
                     position: relative;
                     top: 50%;
@@ -71,6 +90,8 @@ body {
             }
         }
         .photo-text {
+            flex: 0 0 auto;
+            width: 55%;
             position: relative;
             padding-left: 0;
             .content {
@@ -92,30 +113,32 @@ body {
             }
         }
         .settings {
+            flex: 0 0 auto;
+            width: 100%;
             position: relative;
-            padding-left: 0;
+            padding: 0px 10px 70px 10px;
+
             .content {
                 position: absolute;
                 top: 50%;
-                right: 0;
+
                 transform: translateY(-50%);
+                text-decoration: none;
+                color: $tertiaryColor;
+                font-weight: 400;
+                &:hover {
+                    color: $primaryColor;
+                    text-decoration: underline;
+                }
                 img {
                     padding-right: 5px;
-                }
-                a {
-                    text-decoration: none;
-                    color: $tertiaryColor;
-                    font-weight: 400;
-                    &:hover {
-                        color: $primaryColor;
-                        text-decoration: underline;
-                    }
                 }
             }
         }
     }
     .profile-body {
         margin-top: 40px;
+        padding-left: 20px;
         h4 {
             margin-bottom: 30px;
         }
@@ -127,9 +150,16 @@ body {
                 margin-bottom: 40px;
             }
             form {
+                
                 .input-style {
-                    background-color: #f2f2f2;
-
+                    background-color: hsl(0, 0%, 95%);
+                    margin-bottom: 20px;
+                    @media (min-width: 600px) {
+                        flex: 0 0 auto;
+                        width: 46%;
+                        margin-right: 30px;
+                        margin-bottom: 30px;
+                    }
                     @media (min-width: 1200px) {
                         flex: 0 0 auto;
                         width: 31.5%;
@@ -166,6 +196,7 @@ body {
         border: 2px $primaryColor solid;
         border: none;
         color: white;
+        margin-left: 20px;
 
         @media (min-width: 600px) {
             padding: 15px 30px;

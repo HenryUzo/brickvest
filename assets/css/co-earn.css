@@ -1093,13 +1093,6 @@ body {
   }
 }
 
-.main-row-2 .wallet-card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 30%;
-}
-
 @media (max-width: 999px) {
   .main-row-2 .wallet-card {
     -webkit-box-flex: 0;
@@ -1116,6 +1109,24 @@ body {
             flex: 0 0 auto;
     width: 100%;
     margin-top: 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-row-2 .wallet-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-row-2 .wallet-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 30%;
   }
 }
 
@@ -1201,8 +1212,20 @@ body {
   height: 100%;
 }
 
-.co-earn {
-  margin-top: 30px;
+@media (min-width: 1000px) {
+  .co-earn {
+    margin-top: 30px;
+    max-height: 45vh;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .co-earn {
+    margin-top: 30px;
+    max-height: 57vh;
+    overflow: hidden;
+  }
 }
 
 .co-earn .set-up-row .set-up {
