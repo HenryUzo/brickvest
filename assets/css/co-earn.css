@@ -1113,6 +1113,125 @@ body {
   }
 }
 
+@media (max-width: 999px) {
+  .main-row-2 .wallet-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-row-2 .wallet-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-row-2 .wallet-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-row-2 .wallet-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 30%;
+  }
+}
+
+.main-row-2 .wallet-card .myWallet h5 {
+  font-size: 18px;
+  color: #919191;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+@media (max-width: 999px) {
+  .main-row-2 .wallet-card .myWallet h5 {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-row-2 .wallet-card .myWallet h5 {
+    margin-top: auto;
+  }
+}
+
+.main-row-2 .wallet-card .myWallet .wallet {
+  margin-top: 20px;
+  background-color: white;
+  padding: 17px;
+  border-radius: 10px;
+  box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 60%;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left .image {
+  margin-bottom: 30px;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left h6 {
+  font-size: 12px;
+  color: #919191;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left .price {
+  margin-bottom: 25px;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left .withdraw {
+  text-decoration: none;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .left .withdraw span {
+  padding-left: 10px;
+  color: #ca2233;
+  font-weight: 600;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .right .image {
+  height: 100px;
+}
+
+.main-row-2 .wallet-card .myWallet .wallet .right .image img {
+  height: 100%;
+}
+
 @media (min-width: 1000px) {
   .co-earn {
     margin-top: 30px;
