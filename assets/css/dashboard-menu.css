@@ -16,6 +16,7 @@ body {
 
 @media (min-width: 1000px) {
   .the-dashboard-menu {
+    z-index: 10000;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -214,6 +215,15 @@ body {
   .the-dashboard-menu:hover .menu-fixed .the-menu .download-pdf {
     display: none;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .the-dashboard-menu {
+    width: 6%;
+  }
+  .the-dashboard-menu:hover {
+    width: 14%;
   }
 }
 

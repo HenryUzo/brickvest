@@ -11,13 +11,26 @@
 body {
     font-family: "Masiva";
 }
-.dashboard-main{
-    @media (min-width: 1000px) {
-      
-        overflow-y: scroll !important;
-       
+
+@media (min-width: 1000px) {
+    .the-dashboard-menu {
+        width: 6%;
+        &:hover {
+            width: 14%;
+            @include hoverHide;
+        }
     }
 }
+
+.dashboard-main {
+    @media (min-width: 1000px) {
+        overflow-y: scroll !important;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .main-body-one {
     @media (max-width: 599px) {
         padding: 0;
@@ -311,7 +324,7 @@ body {
                         }
                     }
                 }
-                button {
+                .button-primary {
                     font-size: 14px;
                     border-radius: 0;
                     padding: 15px 15px;
@@ -389,6 +402,148 @@ body {
                             transform: translate(-50%, -50%);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.dashboard-profile {
+    display: none;
+    @media (min-width: 1000px) {
+        display: flex;
+    }
+    overflow: hidden;
+
+    .iconery {
+        width: 100%;
+        margin-top: 20px;
+        .profile-header {
+            .display-image {
+                .image {
+                    width: 50px;
+                    height: 50px;
+                    overflow: hidden;
+                    border-radius: 100%;
+                    display: inline-block;
+                    img {
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 120%;
+                    }
+                }
+            }
+
+            .update-profile {
+                h4 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    b {
+                        font-weight: 700;
+                    }
+                    margin-bottom: 10px;
+                }
+                .button-primary {
+                    font-size: 13px;
+                    border-radius: 0;
+                    padding: 15px 25px;
+                    background-color: $primaryColor;
+                    border: 2px $primaryColor solid;
+                    border: none;
+                    color: white;
+
+                    @media (min-width: 600px) {
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                        background-color: $secondaryColor;
+                    }
+                }
+            }
+            .settings {
+                margin-top: 20px;
+                .content {
+                    a {
+                        text-decoration: none;
+                        color: $tertiaryColor;
+                        font-weight: 400;
+                        &:hover {
+                            color: $primaryColor;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#apartmentList {
+    .modal-content {
+        .modal-header {
+            background-color: $primaryColor;
+            position: relative;
+            padding: 0;
+            height: 20vh;
+            overflow: hidden;
+            .image {
+                width: 100%;
+                mix-blend-mode: multiply;
+                img {
+                    width: 100%;
+                }
+            }
+            .heading {
+                position: absolute;
+                width: 80%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                h5 {
+                    color: white;
+                }
+                button {
+                }
+            }
+        }
+        .modal-body {
+            .category {
+                .title {
+                    color: $primaryColor;
+                    font-size: 12px;
+                }
+                .result {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .modal-footer {
+            justify-content: flex-start;
+            button {
+                font-size: 13px;
+                border-radius: 0;
+                padding: 15px 25px;
+                background-color: $primaryColor;
+                border: 2px $primaryColor solid;
+                border: none;
+                color: white;
+
+                @media (min-width: 600px) {
+                    padding: 15px 30px;
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: white;
+                    background-color: $secondaryColor;
                 }
             }
         }

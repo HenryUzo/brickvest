@@ -1,40 +1,42 @@
-$primaryColor:#ca2233;
-$secondaryColor:#000000;
-$tertiaryColor:#686868;
+$primaryColor: #ca2233;
+$secondaryColor: #000000;
+$tertiaryColor: #686868;
 
+@mixin hoverHide() {
+    .dashboard-profile {
+        display: none;
+    }
+}
 
-
-@mixin inputform () {
+@mixin inputform() {
     margin-top: 15px;
     border: none;
 
-
-    >span.input-group-addon {
+    > span.input-group-addon {
         height: 50px;
         background-color: rgb(228, 228, 228);
         border-radius: 0;
         border: none;
 
-        >span.glyphicon {
+        > span.glyphicon {
             color: $primaryColor;
         }
     }
 
-    >input.form-control {
+    > input.form-control {
         height: 50px;
         background-color: rgb(228, 228, 228);
         border: none;
         border-radius: 0;
         box-shadow: none;
     }
-
 }
 
-@mixin formInput (){
+@mixin formInput() {
     margin-top: 15px;
     width: 100%;
-    border: 1px solid #CCC;
-padding: 15px 25px;
-height: 60px;
+    border: 1px solid #ccc;
+    padding: 15px 25px;
+    height: 60px;
     border-radius: 0;
 }

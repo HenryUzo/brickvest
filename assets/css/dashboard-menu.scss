@@ -17,11 +17,12 @@ body {
 }
 @media (min-width: 1000px) {
     .the-dashboard-menu {
+        z-index: 10000;
         flex: 0 0 auto;
         width: 8%;
         transition-property: opacity, width;
         transition-duration: 0.5s;
-
+        
         .menu-fixed {
             transition-property: opacity, width;
             transition-duration: 0.5s;
@@ -220,6 +221,14 @@ body {
             }
         }
     }
+}
+@media (min-width: 1200px) {
+  .the-dashboard-menu{
+      width: 6%;
+      &:hover{
+        width: 14%;
+      }
+  }
 }
 
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);

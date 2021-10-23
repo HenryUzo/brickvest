@@ -1530,42 +1530,6 @@ body {
   }
 }
 
-@media (min-width: 1400px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 40%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 25%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1700px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 20%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
 .scroll .widget .main-row-2 .atm-card .myATM .ATM .bank {
   font-size: 10pt;
   font-weight: 500;
