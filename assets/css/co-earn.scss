@@ -46,97 +46,97 @@ body {
 
 
 .main-row-2 {
-    .wallet-card {
+    // .wallet-card {
        
-        @media (max-width: 999px) {
-            flex: 0 0 auto;
-            width: 50%;
-        }
-        @media (max-width: 500px) {
-            flex: 0 0 auto;
-            width: 100%;
-            margin-top: 0px;
-        }
-        @media (min-width: 1000px) {
-            flex: 0 0 auto;
-            width: 50%;
-        }
-        @media (min-width: 1200px) {
-            flex: 0 0 auto;
-            width: 30%;
-        }
+    //     @media (max-width: 999px) {
+    //         flex: 0 0 auto;
+    //         width: 50%;
+    //     }
+    //     @media (max-width: 500px) {
+    //         flex: 0 0 auto;
+    //         width: 100%;
+    //         margin-top: 0px;
+    //     }
+    //     @media (min-width: 1000px) {
+    //         flex: 0 0 auto;
+    //         width: 50%;
+    //     }
+    //     @media (min-width: 1200px) {
+    //         flex: 0 0 auto;
+    //         width: 30%;
+    //     }
         
-        .myWallet {
-            h5 {
-                font-size: 18px;
-                color: #919191;
-                font-weight: 600;
-                margin-left: 30px;
-                @media (max-width: 999px) {
-                    margin-top: 30px;
-                    font-size: 15px;
-                }
-                @media (min-width: 1000px) {
-                    margin-top: auto;
-                }
-            }
-            .wallet {
-                margin-top: 20px;
-                background-color: white;
-                padding: 17px;
-                border-radius: 10px;
-                box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-                -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-                -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
-                @media (min-width: 1000px) {
-                }
-                .left {
-                    flex: 0 0 auto;
-                    width: 60%;
-                    .image {
-                        margin-bottom: 30px;
-                        img {
-                        }
-                    }
-                    h6 {
-                        font-size: 12px;
-                        color: #919191;
-                    }
-                    h4 {
-                        font-size: 26px;
-                        font-weight: 700;
-                    }
-                    .price {
-                        margin-bottom: 25px;
-                        .amount {
-                        }
-                    }
-                    .withdraw {
-                        text-decoration: none;
-                        img {
-                        }
-                        span {
-                            padding-left: 10px;
-                            color: $primaryColor;
-                            font-weight: 600;
-                        }
-                    }
-                }
-                .right {
-                    flex: 0 0 auto;
-                    width: 40%;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                    .image {
-                        height: 100px;
-                        img {
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    //     .myWallet {
+    //         h5 {
+    //             font-size: 18px;
+    //             color: #919191;
+    //             font-weight: 600;
+    //             margin-left: 30px;
+    //             @media (max-width: 999px) {
+    //                 margin-top: 30px;
+    //                 font-size: 15px;
+    //             }
+    //             @media (min-width: 1000px) {
+    //                 margin-top: auto;
+    //             }
+    //         }
+    //         .wallet {
+    //             margin-top: 20px;
+    //             background-color: white;
+    //             padding: 17px;
+    //             border-radius: 10px;
+    //             box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+    //             -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+    //             -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+    //             @media (min-width: 1000px) {
+    //             }
+    //             .left {
+    //                 flex: 0 0 auto;
+    //                 width: 60%;
+    //                 .image {
+    //                     margin-bottom: 30px;
+    //                     img {
+    //                     }
+    //                 }
+    //                 h6 {
+    //                     font-size: 12px;
+    //                     color: #919191;
+    //                 }
+    //                 h4 {
+    //                     font-size: 26px;
+    //                     font-weight: 700;
+    //                 }
+    //                 .price {
+    //                     margin-bottom: 25px;
+    //                     .amount {
+    //                     }
+    //                 }
+    //                 .withdraw {
+    //                     text-decoration: none;
+    //                     img {
+    //                     }
+    //                     span {
+    //                         padding-left: 10px;
+    //                         color: $primaryColor;
+    //                         font-weight: 600;
+    //                     }
+    //                 }
+    //             }
+    //             .right {
+    //                 flex: 0 0 auto;
+    //                 width: 40%;
+    //                 margin-top: auto;
+    //                 margin-bottom: auto;
+    //                 .image {
+    //                     height: 100px;
+    //                     img {
+    //                         height: 100%;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 .co-earn {
 
