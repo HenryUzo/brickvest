@@ -8,6 +8,28 @@ $tertiaryColor: #686868;
     }
 }
 
+@mixin button() {
+ 
+        font-size: 14px;
+        border-radius: 0;
+        padding: 15px 15px;
+        background-color: $primaryColor;
+        border: none;
+
+        margin-top: 5px;
+        margin-bottom: 27px;
+
+        @media (min-width: 600px) {
+            padding: 15px 20px;
+        }
+        &:hover {
+            text-decoration: none;
+            color: white;
+            background-color: $secondaryColor;
+        
+    }
+}
+
 @mixin inputform() {
     margin-top: 15px;
     border: none;

@@ -17,7 +17,13 @@ body {
         width: 6%;
         &:hover {
             width: 14%;
-            @include hoverHide;
+        }
+        &:hover ~ .dashboard-profile {
+            display: none;
+        }
+        &:hover ~ .dashboard-main {
+            width: 84%;
+            margin-left: 10px;
         }
     }
 }
@@ -25,6 +31,15 @@ body {
 .dashboard-main {
     @media (min-width: 1000px) {
         overflow-y: scroll !important;
+        flex: 0 0 auto;
+        width: 85%;
+        margin-left: 45px;
+    }
+    @media (min-width: 1200px) {
+        overflow-y: scroll !important;
+        flex: 0 0 auto;
+        width: 65%;
+        margin-left: 0px;
     }
     &::-webkit-scrollbar {
         display: none;
@@ -325,23 +340,7 @@ body {
                     }
                 }
                 .button-primary {
-                    font-size: 14px;
-                    border-radius: 0;
-                    padding: 15px 15px;
-                    background-color: $primaryColor;
-                    border: none;
-
-                    margin-top: 5px;
-                    margin-bottom: 27px;
-
-                    @media (min-width: 600px) {
-                        padding: 15px 20px;
-                    }
-                    &:hover {
-                        text-decoration: none;
-                        color: white;
-                        background-color: $secondaryColor;
-                    }
+                    @include button;
                 }
             }
         }
@@ -410,8 +409,13 @@ body {
 
 .dashboard-profile {
     display: none;
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
         display: flex;
+        flex: 0 0 auto;
+        width: 27%;
+        padding: 20px 0 0 40px;
+        margin: 20px 0 0 20px;
+        border-radius: 30px;
     }
     overflow: hidden;
 
@@ -421,10 +425,11 @@ body {
         .profile-header {
             .display-image {
                 .image {
-                    width: 50px;
-                    height: 50px;
+                    width: 70px;
+                    height: 70px;
                     overflow: hidden;
                     border-radius: 100%;
+                    border: 3px $primaryColor solid;
                     display: inline-block;
                     img {
                         position: relative;
@@ -435,48 +440,166 @@ body {
                     }
                 }
             }
+            .info {
+                margin-top: 20px;
+                .details {
+                    p {
+                        font-size: 17px;
+                        font-weight: 600;
+                        margin-bottom: 7px;
 
-            .update-profile {
-                h4 {
-                    font-size: 16px;
-                    font-weight: 500;
-                    b {
-                        font-weight: 700;
+                        .lastname {
+                            font-size: 25px;
+                            display: block;
+                        }
                     }
-                    margin-bottom: 10px;
-                }
-                .button-primary {
-                    font-size: 13px;
-                    border-radius: 0;
-                    padding: 15px 25px;
-                    background-color: $primaryColor;
-                    border: 2px $primaryColor solid;
-                    border: none;
-                    color: white;
-
-                    @media (min-width: 600px) {
-                        padding: 5px 10px;
-                        font-size: 14px;
-                    }
-
-                    &:hover {
+                    a {
+                        color: $primaryColor;
+                        font-weight: 600;
                         text-decoration: none;
-                        color: white;
-                        background-color: $secondaryColor;
+                    }
+                }
+                .update {
+                    .button-primary {
+                        @include button;
+                        width: 100%;
                     }
                 }
             }
-            .settings {
-                margin-top: 20px;
-                .content {
-                    a {
-                        text-decoration: none;
-                        color: $tertiaryColor;
-                        font-weight: 400;
-                        &:hover {
-                            color: $primaryColor;
-                            text-decoration: underline;
+            .p-card {
+                .cards {
+                    @media (min-width: 501px) {
+                      
+                        flex: 0 0 auto;
+                        width: 100%;
+                    }
+         
+                    .card-detail {
+                        h5 {
+                            font-size: 18px;
+                            color: #919191;
+                            font-weight: 600;
+                            margin-left: 30px;
+                            @media (max-width: 999px) {
+                                margin-top: 30px;
+                                font-size: 15px;
+                            }
+                            @media (min-width: 1000px) {
+                                margin-top: auto;
+                            }
                         }
+                        .details-info {
+                            margin-top: 20px;
+                            background-color: white;
+                            padding:10px 17px;
+                            border-radius: 15px;
+                            box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                            -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                            -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                            @media (min-width: 1000px) {
+                            }
+                            .left {
+                                flex: 0 0 auto;
+                                width: 60%;
+                                .image {
+                                    margin-bottom: 30px;
+                                    img {
+                                    }
+                                }
+                                h6 {
+                                    font-size: 12px;
+                                    color: #919191;
+                                }
+                                h4 {
+                                    font-size: 26px;
+                                    font-weight: 700;
+                                }
+                                .price {
+                                    margin-bottom: 25px;
+                                    .amount {
+                                    }
+                                }
+                                .withdraw {
+                                    text-decoration: none;
+                                    img {
+                                    }
+                                    span {
+                                        padding-left: 10px;
+                                        color: $primaryColor;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            .right {
+                                flex: 0 0 auto;
+                                width: 40%;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                                .image {
+                                    height: 100px;
+
+                                    img {
+                                        width: 100%;
+                                        position: relative;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate(-50%, -50%);
+                                        @media (min-width: 600px) {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .profit {
+                            background-color: #cff5ff;
+                        }
+                        .wallet {
+                            @media (min-width: 600px) {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .transaction{
+            margin-top: 30px;
+            padding:20px 20px;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+            h6{
+                font-weight: 700;
+                color: #919191;
+                font-size: 18px;
+            }
+            .daily{
+                .date{
+                    font-weight: 600;
+                    color: #919191;
+                }
+                .recent{
+                    .reason{
+                        h6{
+                            color: $secondaryColor;
+                            font-weight: 600;
+
+                        }
+                    }
+                    .amount{
+                        color: $secondaryColor;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .view{
+                a{
+                    text-decoration: none;
+                    color: $primaryColor;
+                    font-weight: 700;
+                    img{
+                        margin-left: 6px;
                     }
                 }
             }

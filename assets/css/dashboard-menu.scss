@@ -237,7 +237,10 @@ $menuItems: 7;
 
 .mobile-menu { 
     display: block;
-    background: #f1f1f1;
+   
+    @media (max-width:999px) {
+        background: #f1f1f1;
+    }
     .header {
         position: fixed;
         display: block;

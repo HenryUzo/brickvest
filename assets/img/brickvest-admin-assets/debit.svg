@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="debit" transform="translate(-1057 -463)">
+    <rect id="Rectangle_176" data-name="Rectangle 176" width="47" height="47" rx="11" transform="translate(1057 463)" fill="#ffc2c2"/>
+    <g id="expenses" transform="translate(1072.745 479)">
+      <path id="Path_193" data-name="Path 193" d="M10.5,27a1.5,1.5,0,0,1-1.061-2.561l15-15a1.5,1.5,0,0,1,2.121,2.121l-15,15A1.5,1.5,0,0,1,10.5,27Z" transform="translate(-10.5 -10.5)" fill="#ff4e4e"/>
+      <path id="Path_194" data-name="Path 194" d="M25.5,27A1.5,1.5,0,0,1,24,25.5V12H10.5a1.5,1.5,0,0,1,0-3h15A1.5,1.5,0,0,1,27,10.5v15A1.5,1.5,0,0,1,25.5,27Z" transform="translate(-10.5 -10.5)" fill="#ff4e4e"/>
+    </g>
+  </g>
+</svg>
