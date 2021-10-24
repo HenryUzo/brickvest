@@ -419,10 +419,11 @@ body {
         height: 94vh;
         overflow: hidden;
         overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
-    &::-webkit-scrollbar {
-        display: none;
-    }
+ 
    
 
     .iconery {
