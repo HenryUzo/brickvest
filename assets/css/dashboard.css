@@ -1590,7 +1590,6 @@ body {
 
 .dashboard-profile {
   display: none;
-  overflow: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -1609,6 +1608,10 @@ body {
     overflow: hidden;
     overflow-y: scroll;
   }
+}
+
+.dashboard-profile::-webkit-scrollbar {
+  display: none;
 }
 
 .dashboard-profile .iconery {

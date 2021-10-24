@@ -420,7 +420,10 @@ body {
         overflow: hidden;
         overflow-y: scroll;
     }
-    overflow: hidden;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+   
 
     .iconery {
         width: 100%;
