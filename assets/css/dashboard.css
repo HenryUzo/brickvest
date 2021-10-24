@@ -1069,6 +1069,8 @@ body {
     border-radius: 30px;
     background-color: #f9f9f9;
     padding-bottom: 50px;
+    height: 94vh;
+    overflow: hidden;
   }
 }
 
@@ -1603,6 +1605,9 @@ body {
     padding: 20px 0 0 40px;
     margin: 20px 0 0 20px;
     border-radius: 30px;
+    height: 94vh;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }
 
