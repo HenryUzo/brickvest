@@ -29,6 +29,7 @@ body {
 }
 
 .dashboard-main {
+    overflow-y: scroll !important;
     @media (min-width: 1000px) {
         overflow-y: scroll !important;
         flex: 0 0 auto;
@@ -146,8 +147,10 @@ body {
                         width: 40%;
                         margin-top: auto;
                         margin-bottom: auto;
+                        overflow: hidden;
                         .image {
                             img {
+                                width: 100%;
                             }
                         }
                     }

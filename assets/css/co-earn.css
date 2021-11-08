@@ -232,7 +232,12 @@ body {
 
 .mobile-menu {
   display: block;
-  background: #f1f1f1;
+}
+
+@media (max-width: 999px) {
+  .mobile-menu {
+    background: #f1f1f1;
+  }
 }
 
 .mobile-menu .header {
@@ -746,7 +751,12 @@ body {
 
 .mobile-menu {
   display: block;
-  background: #f1f1f1;
+}
+
+@media (max-width: 999px) {
+  .mobile-menu {
+    background: #f1f1f1;
+  }
 }
 
 .mobile-menu .header {
@@ -1137,7 +1147,7 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -2340,5 +2350,11 @@ body {
   text-decoration: none;
   color: white;
   background-color: #000000;
+}
+
+@media (min-width: 1000px) {
+  .dashboard-main {
+    overflow-y: scroll !important;
+  }
 }
 /*# sourceMappingURL=co-earn.css.map */

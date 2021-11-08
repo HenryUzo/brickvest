@@ -1099,6 +1099,10 @@ body {
   }
 }
 
+.dashboard-main {
+  overflow-y: scroll !important;
+}
+
 @media (min-width: 1000px) {
   .dashboard-main {
     overflow-y: scroll !important;
@@ -1273,6 +1277,11 @@ body {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
+  overflow: hidden;
+}
+
+.main-body-one .main-row-2 .wallet-card .myWallet .wallet .right .image img {
+  width: 100%;
 }
 
 .main-body-one .main-row-2 .wallet-card .myCard {

@@ -14,7 +14,6 @@ body {
     font-family: "Masiva";
 }
 
-
 .main-row-1 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -43,11 +42,8 @@ body {
     }
 }
 
-
-
 .main-row-2 {
     .wallet-card {
-       
         @media (max-width: 999px) {
             flex: 0 0 auto;
             width: 50%;
@@ -59,13 +55,13 @@ body {
         }
         @media (min-width: 1000px) {
             flex: 0 0 auto;
-            width: 50%;
+            width: 40%;
         }
         @media (min-width: 1200px) {
             flex: 0 0 auto;
             width: 30%;
         }
-        
+
         .myWallet {
             h5 {
                 font-size: 18px;
@@ -139,20 +135,17 @@ body {
     }
 }
 .co-earn {
-
     @media (min-width: 1000px) {
         margin-top: 30px;
         max-height: 45vh;
         overflow: hidden;
     }
-    
+
     @media (min-width: 1200px) {
         margin-top: 30px;
         max-height: 87vh;
         overflow: hidden;
     }
-
-   
 
     .set-up-row {
         .set-up {
@@ -245,7 +238,7 @@ body {
                             }
                             .apartment-list {
                                 @media (min-width: 700px) {
-                                   display: none;
+                                    display: none;
                                 }
                                 h6 {
                                     color: $tertiaryColor;
@@ -279,12 +272,10 @@ body {
                                             border: 1px transparent solid;
                                             padding-top: 4px;
                                             background-color: transparent;
-                                            img{
-                                             
+                                            img {
                                             }
                                         }
                                     }
-                                
                                 }
                             }
                         }
@@ -1056,51 +1047,49 @@ body {
     }
 }
 
-#apartmentList{
-    .modal-content{
-        .modal-header{
+#apartmentList {
+    .modal-content {
+        .modal-header {
             background-color: $primaryColor;
             position: relative;
             padding: 0;
             height: 20vh;
             overflow: hidden;
-            .image{
+            .image {
                 width: 100%;
                 mix-blend-mode: multiply;
-               img{
-                   width: 100%;
-               }
+                img {
+                    width: 100%;
+                }
             }
-        .heading{
-            position: absolute;
-            width: 80%;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            h5{
-                color: white;
-            }
-            button{
-                
+            .heading {
+                position: absolute;
+                width: 80%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                h5 {
+                    color: white;
+                }
+                button {
+                }
             }
         }
-        }
-        .modal-body{
-            .category{
-                .title{
+        .modal-body {
+            .category {
+                .title {
                     color: $primaryColor;
                     font-size: 12px;
                 }
-                .result{
+                .result {
                     font-size: 17px;
                     font-weight: 600;
-
                 }
             }
         }
-        .modal-footer{
+        .modal-footer {
             justify-content: flex-start;
-            button{
+            button {
                 font-size: 13px;
                 border-radius: 0;
                 padding: 15px 25px;
@@ -1108,12 +1097,12 @@ body {
                 border: 2px $primaryColor solid;
                 border: none;
                 color: white;
-        
+
                 @media (min-width: 600px) {
                     padding: 15px 30px;
                     font-size: 14px;
                 }
-              
+
                 &:hover {
                     text-decoration: none;
                     color: white;
@@ -1121,5 +1110,11 @@ body {
                 }
             }
         }
+    }
+}
+
+.dashboard-main {
+    @media (min-width: 1000px) {
+        overflow-y: scroll !important;
     }
 }
