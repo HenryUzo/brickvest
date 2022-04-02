@@ -1,0 +1,678 @@
+@import "./variable";
+@import "./dashboard-menu";
+@import "./dashboard-main-body";
+@import "./font/stylesheet";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Masiva";
+}
+
+@media (min-width: 1000px) {
+    .the-dashboard-menu {
+        width: 6%;
+        &:hover {
+            width: 14%;
+        }
+        &:hover ~ .dashboard-profile {
+            display: none;
+        }
+        &:hover ~ .dashboard-main {
+            width: 84%;
+            margin-left: 10px;
+        }
+    }
+}
+
+.dashboard-main {
+    overflow-y: scroll !important;
+    @media (min-width: 1000px) {
+        overflow-y: scroll !important;
+        flex: 0 0 auto;
+        width: 85%;
+        margin-left: 45px;
+    }
+    @media (min-width: 1200px) {
+        overflow-y: scroll !important;
+        flex: 0 0 auto;
+        width: 65%;
+        margin-left: 0px;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.main-body-one {
+    @media (max-width: 599px) {
+        padding: 0;
+    }
+
+    .main-row-1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .logo {
+            @media (max-width: 999px) {
+                display: none;
+            }
+            @media (min-width: 1000px) {
+                display: flex;
+            }
+        }
+        .notify {
+            @media (max-width: 999px) {
+                display: none;
+            }
+            @media (min-width: 1000px) {
+                display: flex;
+            }
+        }
+    }
+    .main-row-2 {
+        .co-earn {
+            @media (min-width: 1000px) {
+                margin-top: 30px;
+                max-height: 45vh;
+                overflow: hidden;
+            }
+
+            @media (min-width: 1200px) {
+                margin-top: 30px;
+                max-height: 87vh;
+                overflow: hidden;
+            }
+
+            .set-up-row {
+                .set-up {
+                    background-color: white;
+                    padding: 17px;
+                    padding-bottom: 30px;
+                    border-radius: 10px;
+                    box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                    .set-up-pill {
+                        border-bottom: none;
+                        li {
+                            button {
+                                padding-left: 30px;
+                                padding-right: 30px;
+                                outline: none;
+                                border: none;
+                                border-radius: 50px;
+                                margin: 20px;
+                                @media (max-width: 500px) {
+                                    font-size: 14px;
+                                    margin: 0 0 0 4px;
+                                }
+                            }
+                            button.active {
+                                background-color: $primaryColor;
+                            }
+                        }
+                    }
+                    .search-bar {
+                        margin-bottom: 40px;
+                    }
+                    .co-earn-content {
+                        .co-earn-pane-apartment {
+                            .apartment {
+                                @media (max-width: 999px) {
+                                }
+                                @media (min-width: 1000px) {
+                                    max-height: 45vh;
+                                    overflow-y: scroll;
+                                }
+
+                                .apartment-content {
+                                    .apartment-table {
+                                        @media (max-width: 699px) {
+                                            display: none;
+                                        }
+                                        // overflow-y: scroll;
+                                        // &::-webkit-scrollbar {
+                                        //     display: none;
+                                        // }
+
+                                        table {
+                                            --table-row-border-color: transparent;
+                                            thead {
+                                                border-color: transparent;
+
+                                                tr {
+                                                    th {
+                                                        color: $primaryColor;
+                                                        font-size: 14px;
+                                                        border: none;
+                                                    }
+                                                }
+                                            }
+                                            tbody {
+                                                tr {
+                                                    th {
+                                                        border-left: none;
+                                                        font-size: 13px;
+                                                        .image {
+                                                            border-radius: 100%;
+                                                            overflow: hidden;
+                                                            height: 4vh;
+                                                            width: 4vh;
+                                                            img {
+                                                            }
+                                                        }
+                                                    }
+                                                    td {
+                                                        border-left: none;
+                                                    }
+                                                    .progress {
+                                                        border-right: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .apartment-list {
+                                        @media (min-width: 700px) {
+                                            display: none;
+                                        }
+                                        h6 {
+                                            color: $tertiaryColor;
+                                        }
+                                        .the-list {
+                                            padding-right: 0;
+                                            .d-image {
+                                                .image {
+                                                    height: 40px;
+                                                    width: 40px;
+                                                    border-radius: 100%;
+
+                                                    overflow: hidden;
+                                                    img {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+
+                                            .building {
+                                                position: relative;
+                                                p {
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                            .view {
+                                                button {
+                                                    border: 1px transparent solid;
+                                                    padding-top: 4px;
+                                                    background-color: transparent;
+                                                    img {
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .co-earn-pane-explore {
+                            .explore {
+                                @media (max-width: 500px) {
+                                    max-height: 70vh;
+                                    overflow-y: scroll;
+                                }
+
+                                @media (min-width: 512px) {
+                                    max-height: 50vh;
+                                    overflow-y: scroll;
+                                }
+                            }
+                            .button-primary {
+                                font-size: 14px;
+                                border-radius: 0;
+                                padding: 15px 15px;
+                                background-color: $primaryColor;
+                                border: none;
+                                color: white;
+
+                                @media (min-width: 600px) {
+                                    padding: 15px 20px;
+                                }
+                                &:hover {
+                                    text-decoration: none;
+                                    color: white;
+                                    background-color: $secondaryColor;
+                                }
+                            }
+                            .co-earn-pane-content {
+                                @media (max-width: 500px) {
+                                    margin: 0 0 30px 0;
+                                }
+                                .sold-out-image {
+                                    background-color: $tertiaryColor;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    border-radius: 10px;
+                                    position: relative;
+                                    @media (max-width: 500px) {
+                                        margin: 0 0 20px 0;
+                                    }
+                                    img {
+                                        width: 100%;
+                                        mix-blend-mode: multiply;
+                                    }
+                                    .price {
+                                        border: 2px white solid;
+                                        color: white;
+                                        padding: 10px;
+                                        font-size: 13px;
+
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+                                .image {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    border-radius: 10px;
+                                    position: relative;
+                                    @media (max-width: 500px) {
+                                        margin: 0 0 20px 0;
+                                    }
+                                    img {
+                                        width: 100%;
+                                    }
+                                    .price {
+                                        background-color: white;
+                                        color: $primaryColor;
+                                        padding: 10px;
+                                        font-size: 13px;
+                                        margin: 10px;
+                                    }
+                                }
+                                .details {
+                                    .building-name {
+                                        font-weight: 600;
+                                    }
+                                    .return {
+                                    }
+                                    .unit-details {
+                                        .amoumts-per-unit {
+                                            font-size: 14px;
+                                            .unit-amount {
+                                                color: $primaryColor;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                        .units-available {
+                                            font-size: 14px;
+                                            .unit-number {
+                                                color: $primaryColor;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                    .invest-button {
+                                        color: $primaryColor;
+                                        text-decoration: none;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .more-apartment {
+            margin-top: 50px;
+
+            h5 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .profile-body {
+                margin-top: 40px;
+                padding-left: 20px;
+                h4 {
+                    margin-bottom: 30px;
+                }
+                .details-theme {
+                    margin-bottom: 20px;
+                    h6 {
+                        font-weight: 500;
+                        color: $tertiaryColor;
+                        margin-bottom: 40px;
+                    }
+                    form {
+                        .input-style {
+                            background-color: hsl(0, 0%, 95%);
+                            margin-bottom: 20px;
+                            @media (min-width: 600px) {
+                                flex: 0 0 auto;
+                                width: 50%;
+                                margin-right: 30px;
+                                margin-bottom: 30px;
+                            }
+                            @media (min-width: 1200px) {
+                                flex: 0 0 auto;
+                                width: 47%;
+                                margin-right: 30px;
+                                margin-bottom: 30px;
+                            }
+                            span {
+                                background-color: #f2f2f2;
+                                border: none;
+                                img {
+                                }
+                            }
+                            .form-content {
+                                input {
+                                    background-color: #f2f2f2;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                    form :nth-child(3) {
+                        margin-right: 0;
+                    }
+                    form :nth-child(6) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dashboard-profile {
+    display: none;
+    @media (min-width: 1200px) {
+        display: flex;
+        flex: 0 0 auto;
+        width: 27%;
+        padding: 20px 0 0 40px;
+        margin: 20px 0 0 20px;
+        border-radius: 30px;
+        height: 94vh;
+        overflow: hidden;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .iconery {
+        width: 100%;
+        margin-top: 20px;
+        .profile-header {
+            .display-image {
+                .image {
+                    width: 70px;
+                    height: 70px;
+                    overflow: hidden;
+                    border-radius: 100%;
+                    border: 3px $primaryColor solid;
+                    display: inline-block;
+                    img {
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 120%;
+                    }
+                }
+            }
+            .info {
+                margin-top: 20px;
+                .details {
+                    p {
+                        font-size: 17px;
+                        font-weight: 600;
+                        margin-bottom: 7px;
+
+                        .lastname {
+                            font-size: 25px;
+                            display: block;
+                        }
+                    }
+                    a {
+                        color: $primaryColor;
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                }
+                .update {
+                    .button-primary {
+                        @include button;
+                        width: 100%;
+                    }
+                }
+            }
+            .p-card {
+                .cards {
+                    @media (min-width: 501px) {
+                        flex: 0 0 auto;
+                        width: 100%;
+                    }
+
+                    .card-detail {
+                        h5 {
+                            font-size: 18px;
+                            color: #919191;
+                            font-weight: 600;
+                            margin-left: 30px;
+                            @media (max-width: 999px) {
+                                margin-top: 30px;
+                                font-size: 15px;
+                            }
+                            @media (min-width: 1000px) {
+                                margin-top: auto;
+                            }
+                        }
+                        .details-info {
+                            margin-top: 20px;
+                            background-color: white;
+                            padding: 10px 17px;
+                            border-radius: 15px;
+                            box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                            -webkit-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                            -moz-box-shadow: -1px 13px 30px -5px rgba(0, 0, 0, 0.36);
+                            @media (min-width: 1000px) {
+                            }
+                            .left {
+                                flex: 0 0 auto;
+                                width: 60%;
+                                .image {
+                                    margin-bottom: 30px;
+                                    img {
+                                    }
+                                }
+                                h6 {
+                                    font-size: 16px;
+                                    color: #919191;
+                                }
+                                h4 {
+                                    font-size: 26px;
+                                    font-weight: 700;
+                                }
+                                .price {
+                                    margin-bottom: 25px;
+                                    .amount {
+                                    }
+                                }
+                                .withdraw {
+                                    text-decoration: none;
+                                    img {
+                                    }
+                                    span {
+                                        padding-left: 10px;
+                                        color: $primaryColor;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            .right {
+                                flex: 0 0 auto;
+                                width: 40%;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                                .image {
+                                    height: 100px;
+
+                                    img {
+                                        width: 100%;
+                                        position: relative;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate(-50%, -50%);
+                                        @media (min-width: 600px) {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .profit {
+                            background-color: #cff5ff;
+                        }
+                        .wallet {
+                            @media (min-width: 600px) {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#apartmentList {
+    .modal-content {
+        .modal-header {
+            background-color: $primaryColor;
+            position: relative;
+            padding: 0;
+            height: 20vh;
+            overflow: hidden;
+            .image {
+                width: 100%;
+                mix-blend-mode: multiply;
+                img {
+                    width: 100%;
+                }
+            }
+            .heading {
+                position: absolute;
+                width: 80%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                h5 {
+                    color: white;
+                }
+                button {
+                }
+            }
+        }
+        .modal-body {
+            .category {
+                .title {
+                    color: $primaryColor;
+                    font-size: 12px;
+                }
+                .result {
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .modal-footer {
+            justify-content: flex-start;
+            button {
+                font-size: 13px;
+                border-radius: 0;
+                padding: 15px 25px;
+                background-color: $primaryColor;
+                border: 2px $primaryColor solid;
+                border: none;
+                color: white;
+
+                @media (min-width: 600px) {
+                    padding: 15px 30px;
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: white;
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
+
+.change-password {
+    form {
+        .input-style {
+            background-color: hsl(0, 0%, 95%);
+            margin-bottom: 20px;
+
+            flex: 0 0 auto;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 30px;
+
+            span {
+                background-color: #f2f2f2;
+                border: none;
+                img {
+                }
+            }
+            .form-content {
+                input {
+                    background-color: #f2f2f2;
+                    border: none;
+                }
+            }
+        }
+    }
+    .modal-footer {
+        justify-content: flex-start;
+        button {
+            font-size: 13px;
+            border-radius: 0;
+            padding: 15px 25px;
+            background-color: $primaryColor;
+            border: 2px $primaryColor solid;
+            border: none;
+            color: white;
+
+            @media (min-width: 600px) {
+                padding: 15px 30px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: white;
+                background-color: $secondaryColor;
+            }
+        }
+        .secondarybtn{
+            background-color: $secondaryColor;
+            border: 2px $primaryColor solid;
+        }
+    }
+}
