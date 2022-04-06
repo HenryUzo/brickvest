@@ -331,65 +331,7 @@ body {
                 }
             }
         }
-        .more-apartment {
-            margin-top: 50px;
 
-            h5 {
-                font-size: 14px;
-                font-weight: 600;
-            }
-            .profile-body {
-                margin-top: 40px;
-                padding-left: 20px;
-                h4 {
-                    margin-bottom: 30px;
-                }
-                .details-theme {
-                    margin-bottom: 20px;
-                    h6 {
-                        font-weight: 500;
-                        color: $tertiaryColor;
-                        margin-bottom: 40px;
-                    }
-                    form {
-                        .input-style {
-                            background-color: hsl(0, 0%, 95%);
-                            margin-bottom: 20px;
-                            @media (min-width: 600px) {
-                                flex: 0 0 auto;
-                                width: 50%;
-                                margin-right: 30px;
-                                margin-bottom: 30px;
-                            }
-                            @media (min-width: 1200px) {
-                                flex: 0 0 auto;
-                                width: 47%;
-                                margin-right: 30px;
-                                margin-bottom: 30px;
-                            }
-                            span {
-                                background-color: #f2f2f2;
-                                border: none;
-                                img {
-                                }
-                            }
-                            .form-content {
-                                input {
-                                    background-color: #f2f2f2;
-                                    border: none;
-                                }
-                            }
-                        }
-                    }
-                    form :nth-child(3) {
-                        margin-right: 0;
-                    }
-                    form :nth-child(6) {
-                        margin-right: 0;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -407,6 +349,53 @@ body {
         overflow-y: scroll;
         &::-webkit-scrollbar {
             display: none;
+        }
+    }
+    .more-details {
+        margin-top: 40px;
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .profile-body {
+            margin-top: 40px;
+        
+            h4 {
+                margin-bottom: 30px;
+            }
+            .details-theme {
+                margin-bottom: 20px;
+                h6 {
+                    font-weight: 500;
+                    color: $tertiaryColor;
+                    margin-bottom: 40px;
+                }
+                form {
+                    .input-style {
+                        background-color: hsl(0, 0%, 95%);
+                        margin-bottom: 20px;
+                     
+                        span {
+                            background-color: #f2f2f2;
+                            border: none;
+                            img {
+                            }
+                        }
+                        .form-content {
+                            input {
+                                background-color: #f2f2f2;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+                form :nth-child(3) {
+                    margin-right: 0;
+                }
+                form :nth-child(6) {
+                    margin-right: 0;
+                }
+            }
         }
     }
 
@@ -553,7 +542,6 @@ body {
                 }
             }
         }
-
     }
 }
 
@@ -1336,7 +1324,7 @@ body {
                 background-color: $secondaryColor;
             }
         }
-        .secondarybtn{
+        .secondarybtn {
             background-color: $secondaryColor;
             border: 2px $primaryColor solid;
         }
