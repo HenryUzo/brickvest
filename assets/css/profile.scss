@@ -98,31 +98,19 @@ body {
             }
             position: relative;
             padding-left: 0;
-            .content {
-                @media (min-width: 1000px) {
-                    position: absolute;
-                    top: 50%;
-                    left: 20%;
-                    transform: translateY(-50%);
+            label{
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                color: $primaryColor;
+                font-weight: 500;
+                font-size: 15px;
+                &:hover{
+                    color: black;
                 }
-                @media (min-width: 1700px) {
-                    position: absolute;
-                    top: 50%;
-                    left: 0%;
-                    transform: translateY(-50%);
-                }
-                img {
-                    padding-right: 5px;
-                }
-                a {
-                    text-decoration: none;
-                    color: $primaryColor;
-                    font-weight: 600;
-                    &:hover {
-                        text-decoration: underline;
-                        color: $secondaryColor;
-                    }
-                }
+            }
+            input{
+                display: none;
             }
         }
         .update-profile {
@@ -206,12 +194,12 @@ body {
 }
 .scroll{
     @media (min-width: 1000px) {
-        overflow-y: scroll;
+   
         overflow-x: hidden;
         height: 58vh;
     }
     @media (min-width: 1200px) {
-        overflow-y: scroll;
+       
         overflow-x: hidden;
         height: 66vh;
     }
@@ -232,6 +220,7 @@ body {
                     margin-right: 45px;
                     flex: 0 0 auto;
                     width: 40%;
+                    margin-left: 20px;
                 }
                 @media (min-width: 1500px) {
                     margin-right: 45px;
@@ -243,6 +232,7 @@ body {
                     flex: 0 0 auto;
                     width: 20%;
                 }
+                
                 .card-detail {
                     h5 {
                         font-size: 18px;
@@ -330,222 +320,222 @@ body {
                     }
                 }
             }
-            .atm-card {
+            // .atm-card {
               
-                    flex: 0 0 auto;
-                    width: 100%;
-                    margin-top: 0px;
+            //         flex: 0 0 auto;
+            //         width: 100%;
+            //         margin-top: 0px;
     
-                    background-color: #f2f2f2;
-                    margin-top: 30px;
-                    padding-bottom: 30px;
-                    border-radius: 20px;
+            //         background-color: #f2f2f2;
+            //         margin-top: 30px;
+            //         padding-bottom: 30px;
+            //         border-radius: 20px;
                 
-                @media (min-width: 600px) {
-                    flex: 0 0 auto;
-                    width: 100%;
-                    background-color: #f2f2f2;
-                    margin-top: 30px;
-                    border-radius: 20px;
-                }
-                @media (min-width: 1000px) {
-                    flex: 0 0 auto;
-                    width: 100%;
-                    padding: 20px 30px;
-                    background-color: #f2f2f2;
-                }
-                .myATM {
-                   margin:auto;
-                    h5 {
-                        margin-left: 0;
-                    }
-                    .ATM {
-                        background-color: #ffe3b9;
-                        margin-left: 0px;
-                        @media (min-width: 600px) {
-                            flex: 0 0 auto;
-                            width: 44%;
-                            padding: 10px 10px;
-                            margin-left: 10px;
-                            margin-right: 30px;
-                        }
+            //     @media (min-width: 600px) {
+            //         flex: 0 0 auto;
+            //         width: 100%;
+            //         background-color: #f2f2f2;
+            //         margin-top: 30px;
+            //         border-radius: 20px;
+            //     }
+            //     @media (min-width: 1000px) {
+            //         flex: 0 0 auto;
+            //         width: 100%;
+            //         padding: 20px 30px;
+            //         background-color: #f2f2f2;
+            //     }
+            //     .myATM {
+            //        margin:auto;
+            //         h5 {
+            //             margin-left: 0;
+            //         }
+            //         .ATM {
+            //             background-color: #ffe3b9;
+            //             margin-left: 0px;
+            //             @media (min-width: 600px) {
+            //                 flex: 0 0 auto;
+            //                 width: 44%;
+            //                 padding: 10px 10px;
+            //                 margin-left: 10px;
+            //                 margin-right: 30px;
+            //             }
                      
-                        @media (min-width: 1200px) {
-                            flex: 0 0 auto;
-                            width: 30%;
-                            padding: 10px 10px;
-                            margin-left: 10px;
-                            margin-right: 30px;
-                        }
-                        // @media (min-width: 1400px) {
-                        //     flex: 0 0 auto;
-                        //     width: 40%;
-                        //     padding: 10px 10px;
-                        //     margin-left: 10px;
-                        //     margin-right: 30px;
-                        // }
-                        // @media (min-width: 1500px) {
-                        //     flex: 0 0 auto;
-                        //     width: 25%;
-                        //     padding: 10px 10px;
-                        //     margin-left: 10px;
-                        //     margin-right: 30px;
-                        // }
-                        // @media (min-width: 1700px) {
-                        //     flex: 0 0 auto;
-                        //     width: 20%;
-                        //     padding: 10px 10px;
-                        //     margin-left: 10px;
-                        //     margin-right: 30px;
-                        // }
-                        .bank {
-                            font-size: 10pt;
-                            font-weight: 500;
-                            padding: 10px 10px 10px 10px;
-                        }
-                        .sixteen-dgt {
-                            font-size: 18px;
-                            letter-spacing: 2px;
-                            padding: 20px 10px 30px 10px;
-                            font-weight: 500;
-                        }
-                        .holder-info {
-                            .name {
-                                font-size: 16px;
-                                text-transform: uppercase;
-                                font-weight: 600;
-                            }
-                        }
+            //             @media (min-width: 1200px) {
+            //                 flex: 0 0 auto;
+            //                 width: 30%;
+            //                 padding: 10px 10px;
+            //                 margin-left: 10px;
+            //                 margin-right: 30px;
+            //             }
+            //             // @media (min-width: 1400px) {
+            //             //     flex: 0 0 auto;
+            //             //     width: 40%;
+            //             //     padding: 10px 10px;
+            //             //     margin-left: 10px;
+            //             //     margin-right: 30px;
+            //             // }
+            //             // @media (min-width: 1500px) {
+            //             //     flex: 0 0 auto;
+            //             //     width: 25%;
+            //             //     padding: 10px 10px;
+            //             //     margin-left: 10px;
+            //             //     margin-right: 30px;
+            //             // }
+            //             // @media (min-width: 1700px) {
+            //             //     flex: 0 0 auto;
+            //             //     width: 20%;
+            //             //     padding: 10px 10px;
+            //             //     margin-left: 10px;
+            //             //     margin-right: 30px;
+            //             // }
+            //             .bank {
+            //                 font-size: 10pt;
+            //                 font-weight: 500;
+            //                 padding: 10px 10px 10px 10px;
+            //             }
+            //             .sixteen-dgt {
+            //                 font-size: 18px;
+            //                 letter-spacing: 2px;
+            //                 padding: 20px 10px 30px 10px;
+            //                 font-weight: 500;
+            //             }
+            //             .holder-info {
+            //                 .name {
+            //                     font-size: 16px;
+            //                     text-transform: uppercase;
+            //                     font-weight: 600;
+            //                 }
+            //             }
     
-                        @media (min-width: 1000px) {
-                            .bank {
-                                font-size: 12pt;
-                                font-weight: 500;
-                                padding: 20px 10px 10px 10px;
-                            }
-                            .sixteen-dgt {
-                                font-size: 22px;
-                                letter-spacing: 4px;
-                            }
-                            .holder-info {
-                                padding: 10px 10px 20px 10px;
-                                .name {
-                                    font-size: 20px;
-                                    text-transform: uppercase;
-                                    font-weight: 600;
-                                }
-                            }
-                        }
+            //             @media (min-width: 1000px) {
+            //                 .bank {
+            //                     font-size: 12pt;
+            //                     font-weight: 500;
+            //                     padding: 20px 10px 10px 10px;
+            //                 }
+            //                 .sixteen-dgt {
+            //                     font-size: 22px;
+            //                     letter-spacing: 4px;
+            //                 }
+            //                 .holder-info {
+            //                     padding: 10px 10px 20px 10px;
+            //                     .name {
+            //                         font-size: 20px;
+            //                         text-transform: uppercase;
+            //                         font-weight: 600;
+            //                     }
+            //                 }
+            //             }
     
-                        @media (min-width: 1200px) {
-                            .bank {
-                                font-size: 12pt;
-                                font-weight: 500;
-                                padding: 20px 10px 10px 10px;
-                            }
-                            .sixteen-dgt {
-                                font-size: 24px;
-                                letter-spacing: 4px;
-                            }
-                            .holder-info {
-                                padding: 20px 10px 20px 10px;
-                                .name {
-                                    font-size: 20px;
-                                    text-transform: uppercase;
-                                    font-weight: 600;
-                                }
-                            }
-                        }
-                    }
-                }
-                .add {
-                    margin-top: 25px;
-                    margin-bottom: 25px;
-                    .add-card {
-                        img {
-                            padding-left: 15px;
-                        }
-                        color: $primaryColor;
-                        text-decoration: none;
-                        font-weight: 600;
-                        font-size: 16px;
+            //             @media (min-width: 1200px) {
+            //                 .bank {
+            //                     font-size: 12pt;
+            //                     font-weight: 500;
+            //                     padding: 20px 10px 10px 10px;
+            //                 }
+            //                 .sixteen-dgt {
+            //                     font-size: 24px;
+            //                     letter-spacing: 4px;
+            //                 }
+            //                 .holder-info {
+            //                     padding: 20px 10px 20px 10px;
+            //                     .name {
+            //                         font-size: 20px;
+            //                         text-transform: uppercase;
+            //                         font-weight: 600;
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     .add {
+            //         margin-top: 25px;
+            //         margin-bottom: 25px;
+            //         .add-card {
+            //             img {
+            //                 padding-left: 15px;
+            //             }
+            //             color: $primaryColor;
+            //             text-decoration: none;
+            //             font-weight: 600;
+            //             font-size: 16px;
     
-                        cursor: pointer;
-                    }
-                }
-            }
+            //             cursor: pointer;
+            //         }
+            //     }
+            // }
         }
     }
 }
 
 
-#addCard {
-    .modal-content {
-        .modal-header {
-            background-color: $primaryColor;
-            position: relative;
+// #addCard {
+//     .modal-content {
+//         .modal-header {
+//             background-color: $primaryColor;
+//             position: relative;
 
-            height: 8vh;
-            overflow: hidden;
-            h5 {
-                padding-left: 30px;
-                color: white;
-            }
-        }
-        .modal-body {
-            form {
-                .input-style {
-                    span {
-                        background-color: #f2f2f2;
-                        border: none;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    input {
-                        background-color: #f2f2f2;
-                        border: none;
-                    }
-                }
-                .date {
-                    span {
-                        img {
-                            width: 50%;
-                        }
-                    }
-                }
-                .ccv {
-                    span {
-                        img {
-                            width: 50%;
-                        }
-                    }
-                }
-            }
-        }
-        .modal-footer {
-            justify-content: flex-start;
-            padding-left: 40px;
-            button {
-                font-size: 13px;
-                border-radius: 0;
-                padding: 15px 25px;
-                background-color: $primaryColor;
-                border: 2px $primaryColor solid;
-                border: none;
-                color: white;
+//             height: 8vh;
+//             overflow: hidden;
+//             h5 {
+//                 padding-left: 30px;
+//                 color: white;
+//             }
+//         }
+//         .modal-body {
+//             form {
+//                 .input-style {
+//                     span {
+//                         background-color: #f2f2f2;
+//                         border: none;
+//                         img {
+//                             width: 100%;
+//                         }
+//                     }
+//                     input {
+//                         background-color: #f2f2f2;
+//                         border: none;
+//                     }
+//                 }
+//                 .date {
+//                     span {
+//                         img {
+//                             width: 50%;
+//                         }
+//                     }
+//                 }
+//                 .ccv {
+//                     span {
+//                         img {
+//                             width: 50%;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         .modal-footer {
+//             justify-content: flex-start;
+//             padding-left: 40px;
+//             button {
+//                 font-size: 13px;
+//                 border-radius: 0;
+//                 padding: 15px 25px;
+//                 background-color: $primaryColor;
+//                 border: 2px $primaryColor solid;
+//                 border: none;
+//                 color: white;
 
-                @media (min-width: 600px) {
-                    padding: 15px 30px;
-                    font-size: 14px;
-                }
+//                 @media (min-width: 600px) {
+//                     padding: 15px 30px;
+//                     font-size: 14px;
+//                 }
 
-                &:hover {
-                    text-decoration: none;
-                    color: white;
-                    background-color: $secondaryColor;
-                }
-            }
-        }
-    }
-}
+//                 &:hover {
+//                     text-decoration: none;
+//                     color: white;
+//                     background-color: $secondaryColor;
+//                 }
+//             }
+//         }
+//     }
+// }

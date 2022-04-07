@@ -118,6 +118,7 @@ body {
                     .search-bar {
                         margin-bottom: 40px;
                     }
+                 
                     .co-earn-content {
                         .co-earn-pane-apartment {
                             .apartment {
@@ -232,6 +233,14 @@ body {
                                     overflow-y: scroll;
                                 }
                             }
+
+                            .update {
+                                .button-primary {
+                                    @include button;
+                                    width: 100%;
+                                }
+                            }
+
                             .button-primary {
                                 font-size: 14px;
                                 border-radius: 0;
@@ -331,7 +340,6 @@ body {
                 }
             }
         }
-
     }
 }
 
@@ -351,53 +359,53 @@ body {
             display: none;
         }
     }
-    .more-details {
-        margin-top: 40px;
-        h5 {
-            font-size: 18px;
-            font-weight: 600;
-        }
-        .profile-body {
-            margin-top: 40px;
-        
-            h4 {
-                margin-bottom: 30px;
-            }
-            .details-theme {
-                margin-bottom: 20px;
-                h6 {
-                    font-weight: 500;
-                    color: $tertiaryColor;
-                    margin-bottom: 40px;
-                }
-                form {
-                    .input-style {
-                        background-color: hsl(0, 0%, 95%);
-                        margin-bottom: 20px;
-                     
-                        span {
-                            background-color: #f2f2f2;
-                            border: none;
-                            img {
-                            }
-                        }
-                        .form-content {
-                            input {
-                                background-color: #f2f2f2;
-                                border: none;
-                            }
-                        }
-                    }
-                }
-                form :nth-child(3) {
-                    margin-right: 0;
-                }
-                form :nth-child(6) {
-                    margin-right: 0;
-                }
-            }
-        }
-    }
+    // .more-details {
+    //     margin-top: 40px;
+    //     h5 {
+    //         font-size: 18px;
+    //         font-weight: 600;
+    //     }
+    //     .profile-body {
+    //         margin-top: 40px;
+
+    //         h4 {
+    //             margin-bottom: 30px;
+    //         }
+    //         .details-theme {
+    //             margin-bottom: 20px;
+    //             h6 {
+    //                 font-weight: 500;
+    //                 color: $tertiaryColor;
+    //                 margin-bottom: 40px;
+    //             }
+    //             form {
+    //                 .input-style {
+    //                     background-color: hsl(0, 0%, 95%);
+    //                     margin-bottom: 20px;
+
+    //                     span {
+    //                         background-color: #f2f2f2;
+    //                         border: none;
+    //                         img {
+    //                         }
+    //                     }
+    //                     .form-content {
+    //                         input {
+    //                             background-color: #f2f2f2;
+    //                             border: none;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //             form :nth-child(3) {
+    //                 margin-right: 0;
+    //             }
+    //             form :nth-child(6) {
+    //                 margin-right: 0;
+    //             }
+    //         }
+    //     }
+    // }
 
     .iconery {
         width: 100%;

@@ -1199,29 +1199,24 @@ body {
           flex: 0 0 auto;
   width: 55%;
   position: relative;
-  padding-left: 0;
+  padding-left: 30px;
 }
 
-.profile .profile-header .photo-text .content {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.profile .profile-header .photo-text .content img {
-  padding-right: 5px;
-}
-
-.profile .profile-header .photo-text .content a {
-  text-decoration: none;
+.profile .profile-header .photo-text label {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
   color: #ca2233;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 15px;
 }
 
-.profile .profile-header .photo-text .content a:hover {
-  text-decoration: underline;
-  color: #000000;
+.profile .profile-header .photo-text label:hover {
+  color: black;
+}
+
+.profile .profile-header .photo-text input {
+  visibility: hidden;
 }
 
 .profile .profile-header .settings {
@@ -1292,7 +1287,7 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    width: 31.5%;
+    width: 30%;
     margin-right: 50px;
     margin-bottom: 30px;
   }

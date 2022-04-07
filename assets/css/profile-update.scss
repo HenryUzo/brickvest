@@ -93,24 +93,21 @@ body {
             flex: 0 0 auto;
             width: 55%;
             position: relative;
-            padding-left: 0;
-            .content {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                img {
-                    padding-right: 5px;
-                }
-                a {
-                    text-decoration: none;
-                    color: $primaryColor;
-                    font-weight: 600;
-                    &:hover {
-                        text-decoration: underline;
-                        color: $secondaryColor;
-                    }
-                }
-            }
+            padding-left: 30px;
+           label{
+               cursor: pointer;
+               background-color: transparent;
+               border: none;
+               color: $primaryColor;
+               font-weight: 500;
+               font-size: 15px;
+               &:hover{
+                   color: black;
+               }
+           }
+           input{
+               visibility: hidden;
+           }
         }
         .settings {
             flex: 0 0 auto;
@@ -162,7 +159,7 @@ body {
                     }
                     @media (min-width: 1200px) {
                         flex: 0 0 auto;
-                        width: 31.5%;
+                        width: 30%;
                         margin-right: 50px;
                         margin-bottom: 30px;
                     }

@@ -1197,39 +1197,21 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
-  .profile .profile-header .photo-text .content {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
-
-@media (min-width: 1700px) {
-  .profile .profile-header .photo-text .content {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-}
-
-.profile .profile-header .photo-text .content img {
-  padding-right: 5px;
-}
-
-.profile .profile-header .photo-text .content a {
-  text-decoration: none;
+.profile .profile-header .photo-text label {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
   color: #ca2233;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 15px;
 }
 
-.profile .profile-header .photo-text .content a:hover {
-  text-decoration: underline;
-  color: #000000;
+.profile .profile-header .photo-text label:hover {
+  color: black;
+}
+
+.profile .profile-header .photo-text input {
+  display: none;
 }
 
 @media (max-width: 999px) {
@@ -1331,7 +1313,6 @@ body {
 
 @media (min-width: 1000px) {
   .scroll {
-    overflow-y: scroll;
     overflow-x: hidden;
     height: 58vh;
   }
@@ -1339,7 +1320,6 @@ body {
 
 @media (min-width: 1200px) {
   .scroll {
-    overflow-y: scroll;
     overflow-x: hidden;
     height: 66vh;
   }
@@ -1362,6 +1342,7 @@ body {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 40%;
+    margin-left: 20px;
   }
 }
 
@@ -1486,217 +1467,5 @@ body {
   .scroll .widget .main-row-2 .cards .card-detail .wallet {
     margin-left: 10px;
   }
-}
-
-.scroll .widget .main-row-2 .atm-card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: 100%;
-  margin-top: 0px;
-  background-color: #f2f2f2;
-  margin-top: 30px;
-  padding-bottom: 30px;
-  border-radius: 20px;
-}
-
-@media (min-width: 600px) {
-  .scroll .widget .main-row-2 .atm-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-    background-color: #f2f2f2;
-    margin-top: 30px;
-    border-radius: 20px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .scroll .widget .main-row-2 .atm-card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 100%;
-    padding: 20px 30px;
-    background-color: #f2f2f2;
-  }
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM {
-  margin: auto;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM h5 {
-  margin-left: 0;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM {
-  background-color: #ffe3b9;
-  margin-left: 0px;
-}
-
-@media (min-width: 600px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 44%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 30%;
-    padding: 10px 10px;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM .bank {
-  font-size: 10pt;
-  font-weight: 500;
-  padding: 10px 10px 10px 10px;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM .sixteen-dgt {
-  font-size: 18px;
-  letter-spacing: 2px;
-  padding: 20px 10px 30px 10px;
-  font-weight: 500;
-}
-
-.scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info .name {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-@media (min-width: 1000px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .bank {
-    font-size: 12pt;
-    font-weight: 500;
-    padding: 20px 10px 10px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .sixteen-dgt {
-    font-size: 22px;
-    letter-spacing: 4px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info {
-    padding: 10px 10px 20px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info .name {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-}
-
-@media (min-width: 1200px) {
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .bank {
-    font-size: 12pt;
-    font-weight: 500;
-    padding: 20px 10px 10px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .sixteen-dgt {
-    font-size: 24px;
-    letter-spacing: 4px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info {
-    padding: 20px 10px 20px 10px;
-  }
-  .scroll .widget .main-row-2 .atm-card .myATM .ATM .holder-info .name {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-}
-
-.scroll .widget .main-row-2 .atm-card .add {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.scroll .widget .main-row-2 .atm-card .add .add-card {
-  color: #ca2233;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.scroll .widget .main-row-2 .atm-card .add .add-card img {
-  padding-left: 15px;
-}
-
-#addCard .modal-content .modal-header {
-  background-color: #ca2233;
-  position: relative;
-  height: 8vh;
-  overflow: hidden;
-}
-
-#addCard .modal-content .modal-header h5 {
-  padding-left: 30px;
-  color: white;
-}
-
-#addCard .modal-content .modal-body form .input-style span {
-  background-color: #f2f2f2;
-  border: none;
-}
-
-#addCard .modal-content .modal-body form .input-style span img {
-  width: 100%;
-}
-
-#addCard .modal-content .modal-body form .input-style input {
-  background-color: #f2f2f2;
-  border: none;
-}
-
-#addCard .modal-content .modal-body form .date span img {
-  width: 50%;
-}
-
-#addCard .modal-content .modal-body form .ccv span img {
-  width: 50%;
-}
-
-#addCard .modal-content .modal-footer {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 40px;
-}
-
-#addCard .modal-content .modal-footer button {
-  font-size: 13px;
-  border-radius: 0;
-  padding: 15px 25px;
-  background-color: #ca2233;
-  border: 2px #ca2233 solid;
-  border: none;
-  color: white;
-}
-
-@media (min-width: 600px) {
-  #addCard .modal-content .modal-footer button {
-    padding: 15px 30px;
-    font-size: 14px;
-  }
-}
-
-#addCard .modal-content .modal-footer button:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #000000;
 }
 /*# sourceMappingURL=profile.css.map */
